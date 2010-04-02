@@ -126,3 +126,35 @@ Last login: Wed Oct 28 14:35:54 2009 from manowar-wl.office.viewpoints.com
 [nkrimm@234776-app11 ~]$ cd /data02/archives/logs/hosts/www02.pro.viewpoints.com/mygofer/weblogs/
 
 rdoc app/helpers/ -o public/doc
+
+#svn propedit svn:ignore ./some_path
+svn propedit svn:ignore bin
+
+
+
+git log --author='sbro' --since='3 days' --oneline -p 
+
+git format-patch SHA --stdout > patch.diff
+git am < patch.diff
+
+# requires tons of caching to be set on dev machine
+./script/runner -e viewpointsdev AssetCache.build_cache
+
+
+tests
+#test 'should create a blog' do
+#post :create, :blog => { :title => "My Blog." }
+#assert_redirected_to blog_path(assigns(:blog))
+#assert_select
+#end
+
+
+# email find recent emails in dev
+select * from async_commands WHERE type="ETTriggeredSendAdd" ORDER BY created_at DESC limit 5;
+#construct path to sample
+http://craftsman.dev/email_contents/new_fan?cobrand=craftsman&uid=7&fid=8
+
+
+
+ssh key
+**** And the Wolf

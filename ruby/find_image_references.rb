@@ -1,4 +1,8 @@
 # find all .rhtml, .html, or .html.erb css or *rb files  containing a string
+# usage
+# find public/images -name "*jpg" -or -name "*JPG" -or -name "*png" -or -name "*PNG" -or -name "*gif" -or -name "*GIF"   | xargs ruby ~/dotfiles/ruby/find_image_references.rb > result2
+
+
 
 def view_files 
   return @files if @files 

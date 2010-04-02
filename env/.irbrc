@@ -49,4 +49,27 @@ def sel_init(env)
   load "spec/views/fixtures/#{env}.rb"
   load 'spec/views/lib/spec_helper.rb'
   setup
+  
+end
+
+
+class Object
+  # Easily print methods local to an object's class
+  def local_methods
+    (methods - Object.instance_methods).sort
   end
+  
+  # print documentation
+  #
+  #   ri 'Array#pop'
+  #   Array.ri
+  #   Array.ri :pop
+  #   arr.ri :pop
+  def ri(method = nil)
+    unless method && method =~ /^[A-Z]/ # if class isn't specified
+      klass = self.kind_of?(Class) ? name : self.class.name
+      method = [klass, method].compact.join('#')
+    end
+    puts `ri '#{method}'`
+  end
+end
