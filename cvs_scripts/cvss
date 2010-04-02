@@ -1,0 +1,111 @@
+#!/usr/bin/perl
+#
+# SAMPLE OUTPUT FROM "cvs -q status":
+#[psolomon@tauboo oneg]$ cvs status
+#? BOOKING_SOURCE.class
+#? ROBOT_CMD.class
+#? TICKET_STATUS.class
+#===================================================================
+#File: BOOKING_SOURCE.java    Status: Up-to-date
+#
+#   Working revision:    1.1
+#   Repository revision:    1.1    /usr/local/cvs/dc/com/orbitz/dc/core/oneg/BOOKING_SOURCE.java,v
+#   Sticky Tag:        (none)
+#   Sticky Date:        (none)
+#   Sticky Options:    (none)
+#
+#===================================================================
+#File: Makefile             Status: Up-to-date
+#
+#   Working revision:    1.1
+#   Repository revision:    1.1    /usr/local/cvs/dc/com/orbitz/dc/core/oneg/Makefile,v
+#   Sticky Tag:        (none)
+#   Sticky Date:        (none)
+#   Sticky Options:    (none)
+#
+
+$Debug = 0;  # set to one to turn on debugging messages
+$SkipU = 1;  # set to zero to show Up-to-date files
+$SkipN = 0;  # set to zero to show New files
+$ShowOnly = "";  # overrides SkipN setting (above)
+
+$Home = $ENV{'HOME'};
+$Pwd  = `pwd`;
+chop($Pwd);
+
+open(CVSSTAT, "cvs -q status $ARGV[0]|");
+
+while (<CVSSTAT>) {
+
+    if (/^\?/ && !/\.class/) {   # check for new files
+        /^\?\s+(.*)/;
+
+        next if (($SkipN == 1) && ($ShowOnly ne "N"));
+        print "N $1\n";
+        next;
+
+    } elsif (/Status:/) {
+        #next if (/CVS/);
+        next if (/Attic\//);
+        /File:\s+(.*)\s+Status:\s+(.*)/;
+        $file    = $1;
+        $status0 = $2;
+
+        if ($Debug == 1) {
+            print "status0  = |$status0|\n";
+            print "file     = |$file|\n";
+        }
+
+        next if (($SkipU == 1) && ($status0 eq "Up-to-date"));
+
+        $status = substr($status0, 0, 1);
+        if ($Debug == 1) {
+            print "status after substr = |$status|\n";
+        }
+
+        if ($status0 eq "Needs Checkout") {
+            $status = "?";
+        }
+	    if ($status eq "N") {   # needs patch
+            $status = "P";
+	    }
+	    if ($status eq "F") {   # merge conflicts
+            $status = "C";
+	    }
+
+        if ($Debug == 1) {
+            print "status   = |$status|\n";
+        }
+    
+    } elsif (/Repository revision:/) {
+        next if (($SkipU == 1) && ($status0 eq "Up-to-date"));
+
+        next if (($ShowOnly ne "") && ($status ne $ShowOnly));
+
+        /Repository revision:\s+(\d+\.\d+)\s+(.*)/;
+        $revision = $1;
+        $cvsfile0 = $2;
+
+        if ($Debug == 1) {
+            print "revision = |$revision|\n";
+            print "cvsfile0 = |$cvsfile0|\n";
+        }
+
+        $cvsfile = $cvsfile0;
+        $cvsfile =~ s/\/usr\/local\/cvs\///;
+        $cvsfile =~ s/,v//;
+
+        $cvsfile = "$Home/$cvsfile";
+        $cvsfile =~ s/$Pwd\///;
+
+        if ($ShowOnly ne "") {   # if we already know the status, don't show it.
+            print "$cvsfile\n";
+        } else {
+            #print "$status $cvsfile $revision\n";
+            print "$status $cvsfile\n";
+        }
+    }
+
+} # end while
+
+# --- end cvss script ---

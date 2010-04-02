@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# need to adjust this line per your setup
+DEPLOYMENT_DIR="/opt/nkrimm/dev/tip"
+CTIX_HOME=$DEPLOYMENT_DIR/ctix
+CTIX_WL=$CTIX_HOME/target/wl/bin
+NOVO_HOME=$DEPLOYMENT_DIR/novo
+NOVO_WL=$NOVO_HOME/target/wl/bin
+
+
+cd $NOVO_WL
+./stop
+
+cd $NOVO_HOME
+build.sh clean update deploy
+build.sh publish
+
+cd $NOVO_WL
+./start
+
+
+
+cd $CTIX_WL
+./stop
+cd $CTIX_HOME
+build.sh clean update deploy
+cd $CTIX_WL
+./start
+
+
+
+
+

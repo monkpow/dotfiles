@@ -1,0 +1,63 @@
+			#fname = path.sub( dir, '' )
+			#fdir, base = File.split( fname )
+			#if FileTest.directory? path
+				#Find.prune if base[0] == ?. or 
+										#base =~ /^(?:CVS|images|Old|Trash|delme|bak)/i
+				#makedirs( fname )
+			#elsif FileTest.file? path
+				#unless base =~ /(?:\.jpg|\.jpeg|\.pdf|\.gif|\.psd|~)$/
+					#copy path, fname
+				#end
+			#end
+		#end
+
+
+
+#			Dir['**/*.jsp'].each do |path|
+#				File.open( path ) do |f|
+					#f.grep( /search_string/ ) do |line|
+#						puts path #, ':', line
+#					end
+#				end
+#			end
+			#  Find.find(dir) do |path|
+			#		Find.find("*jsp") do |jsp|
+			#			p jsp
+			#		end
+		#end
+
+
+
+		#if FileTest.directory?(path)
+			#if excludes.include?(File.basename(path))
+#				Find.prune       # Don't look any further into this directory.
+			#else
+				#next
+			#end
+		#else
+			#p path
+		#end
+#  end
+#end
+
+
+
+		#d=test.gets;
+		#eval(d);
+		#print(flavor);
+#    print "success" if "happyabc".match(list[0].pattern);
+ #   print "success" if '<control:link url="abc"'.match(list[1].pattern);
+
+    # Output:
+    # <People: name=Smith, John age=35 weight=175 height=5'10>
+
+#Here we made use of the fact that the new class was returned from the make method. But the new class is also given the appropriate name, so that it can be accessed directly. The following code is exactly the same in effect.
+
+ #   require 'my-csv'
+ #   RuleSet.make("people.txt")  # Ignore the return value and
+ #   list = People.read             # refer to the class by name.
+ #   puts list[0]
+    # Output:
+    # <People: name=Smith, John age=35 weight=175 height=5'10>
+
+

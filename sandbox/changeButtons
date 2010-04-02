@@ -1,0 +1,131 @@
+#!/usr/bin/perl -w
+
+
+###########################
+#  1. iterate through jsps
+#  2. leave tags in place
+#  3. Append <orbitz:button tag>
+#	 4. Add characteristic to prop file
+#  5. Add data to change file
+###########################
+
+my $propsFile="/tmp/button.props";
+my $changeLog="/tmp/button.change.log";
+
+
+open (PROPS_FILE, ">$propsFile") || die "Cannot open $fileList ($!)";
+open (CHANGE_LOG, ">$changeLog") || die "Cannot open $fileList ($!)";
+
+
+
+if ($#ARGV==-1){
+		die "Need to specify files for operation";
+	}else{
+		@fileList=@ARGV;	
+	}
+
+	
+###  makes a backup copy and wri and writes in place	
+		local($^I, @ARGV) = ('.bak', @fileList);
+		while ($line = <>) {
+
+
+		if($line=~/(<in[^>]*src[^>]*>)/g){
+     $line_begin=$`;
+		 $line_end=$';
+	   $match=$1;	 
+		 
+		 #process input type string 
+#		
+		 if ($match=~/src="([^"]*)"/i)	{ $src=$1; }
+#		 if ($match=~/width="([^"]*)"/i)	{ $width=$1; }
+#		 if ($match=~/alt="([^"]*)"/i)	{ $alt=$1; }
+		 if ($match=~/onclick="([^>]*)"/i)	{ $onclick=$1; }
+#		 if ($match=~/value="([^"]*)"/i)	{ $value=$1; }
+#		 if ($match=~/title="([^"]*)"/i)	{ $title=$1; }
+#		 if ($match=~/name="([^"]*)"/i)	{ $name=$1; }
+#   
+#		 if ($alt){$key=$alt}
+#		 elsif($name){$key=$name}
+#		 elsif($value){$key=$value}
+#		 elsif($alt){$key=$alt}
+#		 else{$key=$src}
+#
+#		#create prop file entries
+#		$propFileEntry="# $key\n$key.type=formSubmit\n$key.src=$src\n$key.width=$width\n$key.alt=$alt\n$key.value=$value\n$key.title=$title\n$key.name=$name\n\n";
+#		print PROPS_FILE "$propFileEntry";
+#    
+
+							#find key	
+print CHANGE_LOG "$src = src. \n";
+if( $src eq "/img/buttons/addacar.gif"){						$key="addACar" ;}
+if( $src eq "/img/buttons/add_traveler.gif"){						$key="addTraveler" ;}
+if( $src eq "/img/buttons/agreeandpurchase.gif"){						$key="agreeAndPurchase" ;}
+if( $src eq "/img/buttons/agreeandreserve.gif"){						$key="agreeAndReserve" ;}
+if( $src eq "/img/buttons/applynow.gif"){						$key="applyNow" ;}
+if( $src eq "/img/buttons/back_80w.gif"){						$key="back" ;}
+if( $src eq "/img/buttons/book_as_guest.gif"){						$key="bookAsGuest" ;}
+if( $src eq "/img/buttons/booknow.gif"){						$key="bookNow" ;}
+if( $src eq "/img/buttons/CompareRates.gif"){						$key="compareRates" ;}
+						if( $src eq "/img/buttons/confirm.gif"){$key="confirm" ;}
+						if( $src eq "/img/buttons/continue_flight_only.gif"){$key="continueFlightOnly" ;}
+						if( $src eq "/img/buttons/continue_hotel_only.gif"){$key="contiueHotelOnly" ;}
+						if( $src eq "/img/buttons/expire.gif"){$key="expire" ;}
+						if( $src eq "/img/buttons/find_traveler.gif"){$key="findTraveler" ;}
+						if( $src eq "/img/buttons/preview.gif"){$key="preview" ;}
+						if( $src eq "/img/buttons/publish.gif"){$key="publish" ;}
+						if( $src eq "/img/buttons/refresh.gif"){$key="refresh" ;}
+						if( $src eq "/img/buttons/register.gif"){$key="register" ;}
+						if( $src eq "/img/buttons/reviewpurchase.gif"){$key="reviewPurchase" ;}
+						if( $src eq "/img/buttons/revise.gif"){$key="revise" ;}
+if( $src eq "/img/buttons/save_later.gif"){						$key="saveLater" ;}
+if( $src eq "/img/buttons/save_now.gif"){						$key="saveNow" ;}
+if( $src eq "/img/buttons/search_deals.gif"){						$key="searchDeals" ;}
+if( $src eq "/img/buttons/select_room.gif"){						$key="selectRoom" ;}
+if( $src eq "/img/buttons/sendnow.gif"){						$key="sendNow" ;}
+if( $src eq "/img/buttons/ShowCurrentFares.gif"){						$key="showCurrentFares" ;}
+						if( $src eq "/img/buttons/sign_in_continue.gif"){$key="signInAndContinue" ;}
+						if( $src eq "/img/buttons/sign_up.gif"){$key="signUp" ;}
+if( $src eq "/img/buttons/update_interests.gif"){						$key="updateInterests" ;}
+						if( $src eq "/img/buttons/show_fares_for_trip.gif"){$key="showFaresForThisTrip" ;}
+if( $src eq "/img/buttons/show_packages.gif"){						$key="showPackages" ;}
+						if( $src eq "/site/img/buttons/continue_package.gif"){$key="continuePackage" ;}
+if( $src eq "/site/img/buttons/hold.gif"){						$key="hold" ;}
+if( $src eq "/site/img/buttons/purchase.gif"){						$key="purchase" ;}
+						if( $src eq "/site/img/buttons/purchase_new_tickets.gif"){$key="purchaseNewTickets" ;}
+						if( $src eq "/site/img/buttons/reviewpurchase.gif"){$key="reviewPurchase" ;}
+if( $src eq "/site/img/buttons/select_room.gif"){						$key="selectRoom" ;}
+						if( $src eq "/site/img/buttons/signin.gif"){$key="signIn" ;}
+						if( $src eq "/site/img/buttons/submit.gif"){$key="submit" ;}
+						if( $src eq "/site/img/buttons/submit_my_claim.gif"){$key="submitMyClaim" ;}
+if( $src eq "/site/img/buttons/update.gif"){						$key="update" ;}
+
+
+
+
+
+
+		#assemble tag
+		if($onclick ne ""){$onclickTag="onclick=\"$onclick\""}
+		$tag="<orbitz:button key=\"$key\" type=\"formSubmit\" $onclickTag />";
+    
+			
+
+		
+		 print "$line_begin$tag$line_end \n <%-- NMK original button tag for reference. TODO remove after 6/05 --%>";
+		
+		#for debugging
+		print CHANGE_LOG "$ARGV \n";
+#		print CHANGE_LOG "$propFileEntry \n";
+		print CHANGE_LOG "$line_begin | $tag | $line_end \n";
+    print CHANGE_LOG "$line \n";
+
+		} else {
+	   	print $line;
+		}
+			  
+	
+			close ARGV if eof;              # Reset $.
+		}				
+
+#find . -name "*jsp" | xargs grep "input type=\"image\"" |  sed "s/.*\(<input[^>]*>\).*/\1/"  | sort | uniq -u | 

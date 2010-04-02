@@ -1,0 +1,29 @@
+#!/bin/bash
+
+SVS_DIR=~/dc
+OCOM_BUILD=~/n/
+CTIX_BUILT=~/c/
+
+
+
+#stop dc services prior to restart
+cd $SVS_DIR
+./stop.sh -a
+./update.sh -m dc
+./update.sh -m omh
+./update.sh -m odp
+
+#stop novo, and rebuild
+
+cd $OCOM_BUILD
+build.sh clean update
+build.sh publish
+cd target/wl/bin
+./start
+
+cd $CTIX_BUILD
+build.sh clean update
+cd target/wl/bin
+./start
+
+

@@ -1,0 +1,2 @@
+filetype,exclusions
+/properties/,/noexclusions/

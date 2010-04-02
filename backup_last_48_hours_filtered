@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DEST=/Volumes/192.168.1.102/levi
+for f in `find . -mtime -2 | egrep -v \\(tmp|bin|Library|Applications|Music|DS_Store\\)`; do
+  #cp $f $DEST/$f
+  echo $f
+done;
+

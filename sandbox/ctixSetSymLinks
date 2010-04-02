@@ -1,0 +1,1 @@
+ for word in `echo member air car global home hotel templates`; do ln -s ~/n/webapp/$word $word; done; 

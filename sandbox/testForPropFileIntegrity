@@ -1,0 +1,49 @@
+#!/usr/bin/perl -w
+
+#######################################################
+#
+#  Dig through $fileList for reference to $files, 
+#  and check $dir to see if they exist
+#
+#######################################################
+
+my $dir="/home/home01/nkrimm/n/webapp";
+my $fileList="/home/home01/nkrimm/n/property/web/shared/view/popup.properties";
+my $counter;
+my $numErrors;
+my @errorList;
+
+open (TEST_FILE, "<$fileList") || die "Cannot open $fileList ($!)";
+
+while (<TEST_FILE>){
+chomp;
+if (m/\.href/) { 
+	#$_=~ (s/=/_$1/);
+	$_=~ (s/[^=]*=\/?(.*)$/$1/);
+	if (m/^http/ || m/App\// || m/Secure\//){
+	#			print "REMOVING EXTERNALS: $_";
+				}else{
+				checkForExistance ($_);
+				}	
+	#print $_; 
+	$counter++;
+	}
+}
+print "----------------------------------------------------\n";
+print "Errors: \nThe following files referenced in $fileList do not exist\n";
+print "----------------------------------------------------\n";
+print "Total references: $counter\n";
+print "Total errors: $#errorList\n";
+print join ("\n", @errorList);
+
+sub checkForExistance{
+	$thisLine=shift;
+	chdir($dir) || die "Cannot chdir to $dir: ($!)";
+	if(! -e $thisLine){
+			push (@errorList, $thisLine);
+			}
+
+
+
+}
+

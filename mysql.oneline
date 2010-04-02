@@ -1,0 +1,20 @@
+  242  mysql -u root 
+  256  mysql -u root
+  257  mysql -u root
+  403  mysql -u root 
+  408  mysql -u root
+  409  mysql admin -h 'localhost' create conference_test
+  410  mysqladmin -h 'localhost' create conference_test
+  411  mysqladmin -h 'localhost' -u root create conference_test
+  412  mysqldump -h 'localhost' --opt --compress conferences | mysql conference_test
+  413  mysqldump -h 'localhost' --opt --compress -u root conferences | mysql conference_test
+  414  mysqldump -h 'localhost' --opt --compress -u root conferences | mysql -u root conference_test
+  415  mysql -u toor
+  416  mysql -u root
+  417  mysql -u root
+  501  mysql -u root -p
+  502  mysql -u nkrimm -p
+  503  mysql -u root
+  510  mysql -u root
+  511  history | grep mysql
+  512  history | grep mysql > ~/bin/mysql.oneline

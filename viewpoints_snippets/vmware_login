@@ -1,0 +1,13 @@
+ssh nkrimm@viewpoints.dev
+
+1  sudo su - prodbuild
+2  history
+
+
+129  cd /data01/web/
+130  ls
+131  cd mysears/
+132  ls
+133  cd current/
+134  ./script/console
+135  history

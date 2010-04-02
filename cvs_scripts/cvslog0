@@ -1,0 +1,67 @@
+#!/usr/bin/perl
+#
+# SAMPLE OUTPUT FROM "cvs log":
+# $ cvs log orbitzticketing.properties
+# 
+# RCS file: /usr/local/cvs/novo/property/orbitzticketing.properties,v
+# Working file: orbitzticketing.properties
+# head: 1.5
+# branch:
+# locks: strict
+# access list:
+# symbolic names:
+#     orbitz20010228-01: 1.5
+#     chill_20010227_11_11: 1.5
+#     chill: 1.5
+# keyword substitution: kv
+# total revisions: 5;    selected revisions: 5
+# description:
+# ----------------------------
+# revision 1.2
+# date: 2001/02/16 16:57:33;  author: psolomon;  state: Exp;  lines: +2 -2
+# Changed "dtd.url" property to point to a file-based URL.
+# ----------------------------
+# revision 1.1
+# date: 2001/02/15 23:31:42;  author: psolomon;  state: Exp;
+# Initial checkin.  Used by the TicketFulfillmentServlet
+# =============================================================================
+
+if ($ARGV[0] eq "") {
+    $files = "All Files";
+} else {
+    $files = "$ARGV[0]";
+}
+
+open(CVSLOG, "cvs -q log $ARGV[0]|");
+
+while (<CVSLOG>) {
+
+    if (/^RCS file:/) {
+        s/RCS file:/CVS Log for:/g;
+        print;
+        print "--------------------------------------------------------------------------------\n";
+    } elsif (/^revision/) {
+        /^revision\s+(\S+)$/;
+        #$revline = $_;
+        $revline = $1;
+        #chop($revline);
+        $_ = <CVSLOG>;  # date/author line
+
+        /date:\s*(.*);.*author/;
+        $date = $1;
+
+        /author:\s*(\w+)/;
+        $author = $1;
+
+        /lines:\s+(.*)$/;
+        $lines = $1;
+
+        print "$revline ($date; $author; lines: $lines)\n";
+        $_ = <CVSLOG>;
+        while ((!/^------/) && (!/^=====/)) {
+            print "      $_";
+            $_ = <CVSLOG>;
+        }
+        print "\n";
+    }
+}

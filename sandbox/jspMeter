@@ -1,0 +1,31 @@
+#!/usr/bin/perl -w
+
+#################################
+#
+#  JSP Refactoring Score Card
+#
+#################################
+
+my $prop_ct;
+my $pagedef_ct;
+my %meter;
+
+open(PROP, '/home/home01/nkrimm/current/property/web/shared/view/jsp.properties') || die "Can't open property: $!\n";
+	        while (<PROP>) {
+  		       $meter{'props'}++ if m/page/;
+						$meter{'pagedef'}++ if m/pagedef/;
+						$meter{'admin'}++ if m/admin/;	
+#			$prop_ct++ if m/page/;
+#					$pagedef_ct++ if m/pagedef/;      
+#					$admin++ if m/\/admin\//;
+					
+
+					}
+
+   for my $key ( keys %meter ) {
+        my $value = $meter{$key};
+        print "$key => $value\n";
+    }
+
+
+#print "Props $prop_ct; - Tiles $pagedef_ct - $pagedef_ct/$prop_ct";

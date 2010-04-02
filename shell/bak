@@ -1,0 +1,10 @@
+#!/bin/bash
+
+############################################################################
+#
+# Helper for backing up files from the command line
+#
+
+cp $1 .$1.bak.nkrimm
+
+

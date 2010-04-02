@@ -1,0 +1,1 @@
+java -cp /usr/local/rhino/js.jar:/usr/local/rhino/jline-0.9.94.jar  jline.ConsoleRunner  org.mozilla.javascript.tools.shell.Main -version 170

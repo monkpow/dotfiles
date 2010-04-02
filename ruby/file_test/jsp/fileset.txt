@@ -1,0 +1,2 @@
+filetype,exclusions
+/jsp/,/(pui|test|devtools|admin|email|internal)/

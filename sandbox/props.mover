@@ -1,0 +1,11 @@
+#!/bin/bash
+
+OUTPUT_TMP=prop.list
+
+
+
+cat popup.properties | grep ".jsp" | egrep -v "(?type|templates|^#)"  | sed "s/[^=]*=\/\(.*\)$/\1/"  > $OUTPUT_TMP
+#cat $OUTPUT_TMP | sed "s/\([a-zA-Z]*\/\)*\(.*\)$/\2/" > $OUTPUT_TMP.swp
+#cat $OUTPUT_TMP.swp | sed "s/\([a-zA-Z]*\/\)*\(.*\)/\2/" | grep -v "/" | sort | uniq -u 
+# cat $OUTPUT_TMP | sed "s/\([a-zA-Z]*\/\)*\(.*\)/\2/" | grep -v "/" > $OUTPUT_TMP 
+#cat $OUTPUT_TMP.bak

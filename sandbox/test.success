@@ -1,0 +1,15 @@
+#!/bin/bash
+
+chmod +x ~/go
+find . -name "*jsp" | egrep -v "(admin|ivr|CVS|devtools|WEB-INF|/img/|/images/|marketing|travelwatch|winvegas|spiketv|promos)" | xargs -n1 ~/go 
+
+
+grep  -ri --include="*jsp" "orbitz" . | grep -v "orbitz:" | egrep -v "(orbitztaglib|admin|ivr|CVS|devtools|WEB-INF|/img/|/images/|marketing|travelwatch|winvegas|spiketv|promos)" > failure.list
+egrep -ri --include="*jsp" "<(c|tiles|orbitz):[^>]*<c:" . > nested.jstl
+
+
+
+cat ~/go | egrep "siteProfile\.brand" | grep -v "^#" | sed "s/^.*\.brand\[\\\'\([^\\]*\)\\\'\].*$/\1/"  | sort | uniq -u > property.list.in.files
+for props in `cat property.list.in.files`; do echo "property:" $props `fgrep -c $props ~/props/web/ocom/view/brand.properties`; done; 
+
+vi failure.list nested.jstl property.list.in.files

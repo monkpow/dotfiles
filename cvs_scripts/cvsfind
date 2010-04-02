@@ -1,0 +1,74 @@
+#!/usr/bin/perl
+
+$author0 = "$ARGV[0]";
+$search0 = "$ARGV[1]";
+
+if ($author0 eq "") {
+    print "Usage:  cvsfind author [search_string]\n\n";
+    exit;
+}
+
+open(CVSLOG, "cvs -q log|");
+
+$ll      = "";
+$found   = 0;
+$newfile = 0;
+
+while (<CVSLOG>) {
+
+    $found = 0;
+
+    if (/^RCS file:/) {
+
+        $newfile = 1;
+
+        if ($ll ne "") {
+            print $ll;
+        }
+
+        $ll    = "";
+
+        s/RCS file:/CVS Log for:/;
+        s/,v//;
+        $llheader = "$_";
+        $llheader = "${llheader}--------------------------------------------------------------------------------\n";
+    } elsif (/^revision/) {
+        /^revision\s+(\S+)$/;
+        $revline = $1;
+        $_ = <CVSLOG>;  # date/author line
+
+        /date:\s*(.*);.*author/;
+        $date = $1;
+        /author:\s*(\w+)/;
+        $author = $1;
+        /lines:\s+(.*)$/;
+        $lines = $1;
+
+        if ($author eq $author0) {
+            $found = 1;
+            $llrevline    = "$revline ($date; $author; lines: $lines)\n";
+        }
+
+        $lltext = "";
+        $_ = <CVSLOG>;
+        while ((!/^------/) && (!/^=====/)) {
+            if ($found == 1) {
+                $lltext = "${lltext}      $_";
+            }
+            $_ = <CVSLOG>;
+        }
+
+        if ($found == 1) {
+            if (($search0 eq "") || ($lltext =~ /$search0/i)) {
+                if ($newfile == 1) {
+                    $newfile = 0;
+                    $ll = "${ll}${llheader}";
+                }
+
+                $ll = "${ll}${llrevline}${lltext}\n";
+            }
+        }
+    }
+}
+
+print $ll;

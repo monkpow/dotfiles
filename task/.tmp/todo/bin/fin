@@ -1,0 +1,10 @@
+#!/bin/bash
+#===============================================================================
+#===============================================================================
+FPATH=/home/nkrimm/docroot/todo/work
+
+date >> $FPATH/done
+cat $FPATH/projects.otl | grep "#"  >> $FPATH/done
+cat $FPATH/projects.otl | grep -v "#" >> $FPATH/.copy.removeDone
+mv $FPATH/projects.otl $FPATH/.projects.otl.bak
+mv $FPATH/.copy.removeDone $FPATH/projects.otl

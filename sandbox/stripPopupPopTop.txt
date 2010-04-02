@@ -1,0 +1,15 @@
+<%@ taglib uri="/c.tld" prefix="c" %>
+<%@ taglib uri="/struts-tiles-el.tld" prefix="tiles" %>
+<%@ taglib uri="/orbitztaglib.tld" prefix="orbitz" %>
+
+<%-- (START OF DEFINITIONS) set these references in the request scope
+(END OF DEFINITIONS) --%>
+
+<%-- Page Level Definition--%>
+<tiles:insert page="/layout/global/popup.jsp" flush="false">
+	<tiles:put name="pageId" value="" />
+	<tiles:put name="title" value="CheapTIX&reg; Privacy Policy" />
+	<tiles:put name="header" value="CheapTIX" />
+	<tiles:put name="body">
+	
+<%-- Content Block --%>

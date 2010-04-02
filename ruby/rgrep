@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -name "*.rb" -or -name "*.rake" -or -name "*.rhtml" -or -name "*.erb" -or -name "*.rjs" -or -name "*.builder" -or -name "*.rxml" | xargs grep "$*"

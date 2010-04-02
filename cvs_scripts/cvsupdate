@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo cvs -q update -d
+cvs -q update -d

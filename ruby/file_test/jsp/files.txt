@@ -1,0 +1,2 @@
+marker,filetype,exclusions
+0,/jsp/,["pui","test","devtools","admin","email","internal"]

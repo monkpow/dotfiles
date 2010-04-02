@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+cd ~/current
+./stop.sh
+cd
+rm current
+ln -s $1 current
+#cd /home/nkrimm/depots/schemas/
+#accurev update
+#
+#cd ~/current/
+#~/current/build.sh config clean install.sim
+#~/current/run.sh
+cd ~/current
+accurev info

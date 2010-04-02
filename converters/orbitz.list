@@ -1,0 +1,28 @@
+./booking/air/GuestWhosBooking.jsp:	<p>In order to provide the best customer service, Orbitz needs the name of the person placing the reservation.</p>
+./booking/air/GuestYourEmail.jsp:		<label for="emailSolicit:dealsEmail">Send me the latest Orbitz specials, travel news, and Fare Sale Alerts from my home airport.</label>
+./booking/air/RedeemValueUnusedTickets.jsp:	The unused e-ticket(s) below cannot be redeemed online. Call Orbitz For Business Customer Service to determine whether you can apply the value toward this purchase.
+./booking/air/RedeemValueUnusedTickets.jsp:	The unused e-ticket(s) below cannot be redeemed online. Call Orbitz Customer Service at 1-888-656-4546 to determine whether you can apply the value toward this purchase.
+./booking/air/TicketType.jsp:														<li><c:out value="${SelectTicketTypeModuleMB.postalServiceTicketingFee}" /> processing fee from Orbitz</li>
+./booking/air/TicketType.jsp:													<li><c:out value="${SelectTicketTypeModuleMB.twoDayTicketingFee}" /> processing fee from Orbitz</li>
+./booking/air/TicketType.jsp:												<li><c:out value="${SelectTicketTypeModuleMB.overnightTicketingFee}" /> processing fee from Orbitz</li>
+./booking/air/TicketType.jsp:											(By checking this box, you agree that Orbitz and FedEx will not be liable to you for any resulting claims.)</label>
+./booking/air/TicketType.jsp:											<li><c:out value="${SelectTicketTypeModuleMB.internationalTicketingFee}" /> processing fee from Orbitz</li>
+./booking/createGuestPassword.jsp:<p>If you wish to save your billing information and preferences for future booking on Orbitz, create a password.<br />
+./booking/createGuestPassword.jsp:Access or change this information later using your Orbitz member ID:&nbsp;<strong><c:out value="${GuestInfoModuleMB.membershipRegistrationMB.memberEmail.email}"/></strong>  &nbsp;<a href="<orbitz:encodeSSLUrl>/Secure/ViewTravelerInformation</orbitz:encodeSSLUrl>#emailAddress">Change e-mail address</a>
+./booking/creditCardList.jsp:	<c:when test="${ProvideBillingInformationModuleMB.usingOrbitzCreditCard && creditcard.primaryOrbitzCard}">
+./booking/creditCardList.jsp:	<td><c:if test="${creditcard.orbitzCard}">Orbitz</c:if>
+./booking/dp/hiaReviewDetails.jsp:<td class="sp_offer" colspan="3"><c:when test="${SelectedPackageMB.hotelEntryMB.exclusivePromo== 'true'}"><img src="/img/hotel/results/exclusive_offer_bar.gif" width="210" height="18" alt="Orbitz exclusive offer" border="0" /></c:when><c:otherwise><img src="/img/hotel/results/special_offer_bar.gif" width="192" height="18" alt="orbitz special offer" /></c:otherwise></c:choose></td>
+./booking/dp/hiaSelectRoom.jsp:										<div style="color: #009900"><img src="/img/icons/promo_sm.gif" alt="Promo" width="13" height="13" border="0" class="icon" /><strong>Orbitz special offer!</strong></div>
+./booking/dp/include/hiaHotelList.jsp:					<c:when test="${package.hotelEntryMB.exclusivePromo}"><img src="/img/hotel/results/exclusive_offer_bar.gif" width="210" height="18" alt="Orbitz exclusive offer" /></c:when>
+./booking/dp/include/hiaHotelList.jsp:					<c:otherwise><img src="/img/hotel/results/special_offer_bar.gif" width="192" height="18" alt="Orbitz special offer" /></c:otherwise>
+./booking/newCreditCard.jsp:    <strong><c:if test="${CreditCardMB.orbitzCard}">Orbitz</c:if>
+./booking/oas/bookingFailure.jsp:<title>Orbitz: Reservation confirmation</title>
+./booking/oas/oasProductList.jsp:                <h4><a href="<orbitz:encodeSSLUrl>/Secure/PrepareOASProductDetails?productId=<orbitz:valueof property="product:productId"/>&prodIdx=<orbitz:valueof property="productCount"/>&selectedOrbitzLocatorCode=<orbitz:valueof property="All_My_Trips:travelPlanMB:orbitzLocatorCode"/></orbitz:encodeSSLUrl>" onclick="runUnLoadActivity=false;return loadProductDetail('<orbitz:valueof property="product:productId"/>', '<orbitz:valueof property="productCount"/>');"><orbitz:valueof property="product:productTitle"/></a></h4>
+./booking/oas/oasProductList.jsp:                <p><orbitz:valueof property="product:productText"/> <a href="<orbitz:encodeSSLUrl>/Secure/PrepareOASProductDetails?productId=<orbitz:valueof property="product:productId"/>&prodIdx=<orbitz:valueof property="productCount"/>&selectedOrbitzLocatorCode=<orbitz:valueof property="All_My_Trips:travelPlanMB:orbitzLocatorCode"/></orbitz:encodeSSLUrl>" onclick="runUnLoadActivity=false;return loadProductDetail('<orbitz:valueof property="product:productId"/>', '<orbitz:valueof property="productCount"/>');">More...</a></p>
+./booking/provideBillingInformation.jsp:			<p><input type="checkbox" name="defaultBilling" value="true" />Always use this card when booking on Orbitz</p>
+./booking/provideBillingInformation.jsp:		<p><input type="checkbox" name="defaultBilling" value="true" class="chk" />Always use this card when booking on Orbitz</p>
+./rails/privacy.jsp:	<p>Orbitz pledges to keep your personal information private and protected.</p>
+./rails/seatmapBooking.jsp:	<p>Choose seats before you buy -- just another way Orbitz makes it easy.</p>
+./rails/security.jsp:	<h3 class="notch"><em id="securityIcon">Orbitz Security</em></h3>
+./rails/security.jsp:	<p>Orbitz uses advanced security technology to protect your credit card information.</p>
+./rails/security.jsp:	<p><orbitz:popup key="securityTerms">More about Orbitz Security</orbitz:popup></p>

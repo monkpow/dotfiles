@@ -1,0 +1,1000 @@
+2009/08/20 06:20:26 | I | 29013 | 23788992604960 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:20:26 | I | 29013 | 23788992604960 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:20:26 | I | 29013 | 23788992604960 | Completed in 0.04873 (20 reqs/sec) | Rendering: 0.00663 (13) | DB: 0.02965 (60) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 06:28:25 | D | 29013 | 23788992532840 |   [4;35;1mUser Columns (0.007466)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 06:28:25 | D | 29013 | 23788992532840 |   [4;36;1mCobrand Load (0.000815)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:28:25 | D | 29013 | 23788992532840 |   [4;35;1mCobrand Columns (0.001790)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 06:28:25 | D | 29013 | 23788992532840 |   [4;36;1mCobrand Load (0.000627)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:28:25 | D | 29013 | 23788992532840 |   [4;35;1mCobrand Load (0.001333)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:28:25 | D | 29013 | 23788992532840 |   [4;36;1mCobrand Load (0.000602)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:28:26 | D | 29013 | 23788992532840 |   [4;35;1mIdeaInstance Columns (0.003375)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 06:28:26) [POST]
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 06:28:26 | D | 29013 | 23788992532840 |   [4;36;1mCobrandHost Columns (0.002250)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 06:28:26 | D | 29013 | 23788992532840 |   [4;35;1mCobrandHost Load (0.000737)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 06:28:26 | D | 29013 | 23788992532840 |   [4;36;1mCobrand Load (0.000457)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 06:28:26 | D | 29013 | 23788992532840 |   [4;35;1mOperatingParam Load (0.000904)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 06:28:26 | D | 29013 | 23788992532840 |   [4;36;1mOperatingParam Columns (0.001707)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:28:26 | I | 29013 | 23788992532840 | Completed in 0.04845 (20 reqs/sec) | Rendering: 0.00651 (13) | DB: 0.02516 (51) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 06:36:25 | D | 29013 | 23788992117020 |   [4;35;1mUser Columns (0.010006)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 06:36:25 | D | 29013 | 23788992117020 |   [4;36;1mCobrand Load (0.000978)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:36:25 | D | 29013 | 23788992117020 |   [4;35;1mCobrand Columns (0.002348)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 06:36:25 | D | 29013 | 23788992117020 |   [4;36;1mCobrand Load (0.000945)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:36:25 | D | 29013 | 23788992117020 |   [4;35;1mCobrand Load (0.000775)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:36:25 | D | 29013 | 23788992117020 |   [4;36;1mCobrand Load (0.000728)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:36:26 | D | 29013 | 23788992117020 |   [4;35;1mIdeaInstance Columns (0.003590)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 06:36:26) [POST]
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 06:36:26 | D | 29013 | 23788992117020 |   [4;36;1mCobrandHost Columns (0.002678)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 06:36:26 | D | 29013 | 23788992117020 |   [4;35;1mCobrandHost Load (0.000476)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 06:36:26 | D | 29013 | 23788992117020 |   [4;36;1mCobrand Load (0.000417)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 06:36:26 | D | 29013 | 23788992117020 |   [4;35;1mOperatingParam Load (0.000919)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 06:36:26 | D | 29013 | 23788992117020 |   [4;36;1mOperatingParam Columns (0.001865)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:36:26 | I | 29013 | 23788992117020 | Completed in 0.04870 (20 reqs/sec) | Rendering: 0.00767 (15) | DB: 0.03052 (62) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 06:44:25 | D | 29013 | 23788991600260 |   [4;35;1mUser Columns (0.008344)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 06:44:25 | D | 29013 | 23788991600260 |   [4;36;1mCobrand Load (0.000914)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:44:25 | D | 29013 | 23788991600260 |   [4;35;1mCobrand Columns (0.002031)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 06:44:25 | D | 29013 | 23788991600260 |   [4;36;1mCobrand Load (0.000900)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:44:25 | D | 29013 | 23788991600260 |   [4;35;1mCobrand Load (0.000640)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:44:25 | D | 29013 | 23788991600260 |   [4;36;1mCobrand Load (0.000667)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:44:26 | D | 29013 | 23788991600260 |   [4;35;1mIdeaInstance Columns (0.003519)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 06:44:26) [POST]
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 06:44:26 | D | 29013 | 23788991600260 |   [4;36;1mCobrandHost Columns (0.002230)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 06:44:26 | D | 29013 | 23788991600260 |   [4;35;1mCobrandHost Load (0.001155)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 06:44:26 | D | 29013 | 23788991600260 |   [4;36;1mCobrand Load (0.000443)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 06:44:26 | D | 29013 | 23788991600260 |   [4;35;1mOperatingParam Load (0.000786)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 06:44:26 | D | 29013 | 23788991600260 |   [4;36;1mOperatingParam Columns (0.001684)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:44:26 | I | 29013 | 23788991600260 | Completed in 0.04735 (21 reqs/sec) | Rendering: 0.00660 (13) | DB: 0.02611 (55) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 06:52:25 | D | 29013 | 23788991585920 |   [4;35;1mUser Columns (0.010284)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 06:52:25 | D | 29013 | 23788991585920 |   [4;36;1mCobrand Load (0.000901)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:52:25 | D | 29013 | 23788991585920 |   [4;35;1mCobrand Columns (0.002083)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 06:52:25 | D | 29013 | 23788991585920 |   [4;36;1mCobrand Load (0.000891)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:52:25 | D | 29013 | 23788991585920 |   [4;35;1mCobrand Load (0.000632)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:52:25 | D | 29013 | 23788991585920 |   [4;36;1mCobrand Load (0.001388)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 06:52:26 | D | 29013 | 23788991585920 |   [4;35;1mIdeaInstance Columns (0.003595)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 06:52:26) [POST]
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 06:52:26 | D | 29013 | 23788991585920 |   [4;36;1mCobrandHost Columns (0.002126)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 06:52:26 | D | 29013 | 23788991585920 |   [4;35;1mCobrandHost Load (0.001025)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 06:52:26 | D | 29013 | 23788991585920 |   [4;36;1mCobrand Load (0.000453)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 06:52:26 | D | 29013 | 23788991585920 |   [4;35;1mOperatingParam Load (0.000922)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 06:52:26 | D | 29013 | 23788991585920 |   [4;36;1mOperatingParam Columns (0.001708)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 06:52:26 | I | 29013 | 23788991585920 | Completed in 0.04653 (21 reqs/sec) | Rendering: 0.00585 (12) | DB: 0.03096 (66) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:00:25 | D | 29013 | 23788991632800 |   [4;35;1mUser Columns (0.008580)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:00:25 | D | 29013 | 23788991632800 |   [4;36;1mCobrand Load (0.001488)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:00:25 | D | 29013 | 23788991632800 |   [4;35;1mCobrand Columns (0.001980)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:00:25 | D | 29013 | 23788991632800 |   [4;36;1mCobrand Load (0.000793)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:00:25 | D | 29013 | 23788991632800 |   [4;35;1mCobrand Load (0.000653)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:00:25 | D | 29013 | 23788991632800 |   [4;36;1mCobrand Load (0.001710)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:00:26 | D | 29013 | 23788991632800 |   [4;35;1mIdeaInstance Columns (0.003309)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:00:26) [POST]
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:00:26 | D | 29013 | 23788991632800 |   [4;36;1mCobrandHost Columns (0.002133)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:00:26 | D | 29013 | 23788991632800 |   [4;35;1mCobrandHost Load (0.001285)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:00:26 | D | 29013 | 23788991632800 |   [4;36;1mCobrand Load (0.000901)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:00:26 | D | 29013 | 23788991632800 |   [4;35;1mOperatingParam Load (0.001087)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:00:26 | D | 29013 | 23788991632800 |   [4;36;1mOperatingParam Columns (0.001786)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:00:26 | I | 29013 | 23788991632800 | Completed in 0.04989 (20 reqs/sec) | Rendering: 0.00649 (13) | DB: 0.03329 (66) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:08:25 | D | 29013 | 23788991469980 |   [4;35;1mUser Columns (0.008944)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:08:25 | D | 29013 | 23788991469980 |   [4;36;1mCobrand Load (0.001125)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:08:25 | D | 29013 | 23788991469980 |   [4;35;1mCobrand Columns (0.002263)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;36;1mCobrand Load (0.001156)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;35;1mCobrand Load (0.000737)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;36;1mCobrand Load (0.000675)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;35;1mIdeaInstance Columns (0.003715)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:08:26) [POST]
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;36;1mCobrandHost Columns (0.002334)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;35;1mCobrandHost Load (0.001149)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;36;1mCobrand Load (0.000447)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;35;1mOperatingParam Load (0.001083)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:08:26 | D | 29013 | 23788991469980 |   [4;36;1mOperatingParam Columns (0.001654)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:08:26 | I | 29013 | 23788991469980 | Completed in 0.04739 (21 reqs/sec) | Rendering: 0.00704 (14) | DB: 0.02835 (59) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:16:25 | D | 29013 | 23788991403800 |   [4;35;1mUser Columns (0.009043)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:16:25 | D | 29013 | 23788991403800 |   [4;36;1mCobrand Load (0.001396)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:16:25 | D | 29013 | 23788991403800 |   [4;35;1mCobrand Columns (0.002256)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;36;1mCobrand Load (0.000797)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;35;1mCobrand Load (0.001036)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;36;1mCobrand Load (0.000762)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;35;1mIdeaInstance Columns (0.003573)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:16:26) [POST]
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;36;1mCobrandHost Columns (0.002140)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;35;1mCobrandHost Load (0.000538)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;36;1mCobrand Load (0.001034)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;35;1mOperatingParam Load (0.000865)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:16:26 | D | 29013 | 23788991403800 |   [4;36;1mOperatingParam Columns (0.001929)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:16:26 | I | 29013 | 23788991403800 | Completed in 0.04765 (20 reqs/sec) | Rendering: 0.00658 (13) | DB: 0.02934 (61) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:24:25 | D | 29013 | 23788999497940 |   [4;35;1mUser Columns (0.010385)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:24:25 | D | 29013 | 23788999497940 |   [4;36;1mCobrand Load (0.000759)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:24:25 | D | 29013 | 23788999497940 |   [4;35;1mCobrand Columns (0.002533)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:24:25 | D | 29013 | 23788999497940 |   [4;36;1mCobrand Load (0.001400)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:24:25 | D | 29013 | 23788999497940 |   [4;35;1mCobrand Load (0.001100)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;36;1mCobrand Load (0.000631)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;35;1mIdeaInstance Columns (0.003611)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:24:26) [POST]
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;36;1mCobrandHost Columns (0.002308)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;35;1mCobrandHost Load (0.001001)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;36;1mCobrand Load (0.000704)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;35;1mOperatingParam Load (0.000871)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:24:26 | D | 29013 | 23788999497940 |   [4;36;1mOperatingParam Columns (0.001709)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:24:26 | I | 29013 | 23788999497940 | Completed in 0.04752 (21 reqs/sec) | Rendering: 0.00613 (12) | DB: 0.03059 (64) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:32:25 | D | 29013 | 23788999066000 |   [4;35;1mUser Columns (0.009179)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:32:25 | D | 29013 | 23788999066000 |   [4;36;1mCobrand Load (0.000658)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:32:25 | D | 29013 | 23788999066000 |   [4;35;1mCobrand Columns (0.002121)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:32:25 | D | 29013 | 23788999066000 |   [4;36;1mCobrand Load (0.000835)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;35;1mCobrand Load (0.000733)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;36;1mCobrand Load (0.001416)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;35;1mIdeaInstance Columns (0.003346)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:32:26) [POST]
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;36;1mCobrandHost Columns (0.002029)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;35;1mCobrandHost Load (0.000589)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;36;1mCobrand Load (0.000643)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;35;1mOperatingParam Load (0.001206)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:32:26 | D | 29013 | 23788999066000 |   [4;36;1mOperatingParam Columns (0.001516)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:32:26 | I | 29013 | 23788999066000 | Completed in 0.04684 (21 reqs/sec) | Rendering: 0.00681 (14) | DB: 0.02710 (57) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:40:25 | D | 29013 | 23788998656140 |   [4;35;1mUser Columns (0.009483)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:40:25 | D | 29013 | 23788998656140 |   [4;36;1mCobrand Load (0.001045)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:40:25 | D | 29013 | 23788998656140 |   [4;35;1mCobrand Columns (0.002037)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:40:25 | D | 29013 | 23788998656140 |   [4;36;1mCobrand Load (0.001017)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:40:25 | D | 29013 | 23788998656140 |   [4;35;1mCobrand Load (0.001016)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:40:25 | D | 29013 | 23788998656140 |   [4;36;1mCobrand Load (0.000502)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:40:26 | D | 29013 | 23788998656140 |   [4;35;1mIdeaInstance Columns (0.003198)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:40:26) [POST]
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:40:26 | D | 29013 | 23788998656140 |   [4;36;1mCobrandHost Columns (0.002308)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:40:26 | D | 29013 | 23788998656140 |   [4;35;1mCobrandHost Load (0.000528)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:40:26 | D | 29013 | 23788998656140 |   [4;36;1mCobrand Load (0.000449)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:40:26 | D | 29013 | 23788998656140 |   [4;35;1mOperatingParam Load (0.001121)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:40:26 | D | 29013 | 23788998656140 |   [4;36;1mOperatingParam Columns (0.001716)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:40:26 | I | 29013 | 23788998656140 | Completed in 0.04584 (21 reqs/sec) | Rendering: 0.00628 (13) | DB: 0.02758 (60) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:48:25 | D | 29013 | 23788998531140 |   [4;35;1mUser Columns (0.008673)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:48:25 | D | 29013 | 23788998531140 |   [4;36;1mCobrand Load (0.000931)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:48:25 | D | 29013 | 23788998531140 |   [4;35;1mCobrand Columns (0.002250)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:48:25 | D | 29013 | 23788998531140 |   [4;36;1mCobrand Load (0.000666)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;35;1mCobrand Load (0.001743)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;36;1mCobrand Load (0.004099)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;35;1mIdeaInstance Columns (0.003525)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:48:26) [POST]
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;36;1mCobrandHost Columns (0.002273)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;35;1mCobrandHost Load (0.000764)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;36;1mCobrand Load (0.000655)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;35;1mOperatingParam Load (0.000917)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:48:26 | D | 29013 | 23788998531140 |   [4;36;1mOperatingParam Columns (0.001738)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:48:26 | I | 29013 | 23788998531140 | Completed in 0.04624 (21 reqs/sec) | Rendering: 0.00645 (13) | DB: 0.03187 (68) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 07:56:25 | D | 29013 | 23788998004960 |   [4;35;1mUser Columns (0.009421)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 07:56:25 | D | 29013 | 23788998004960 |   [4;36;1mCobrand Load (0.000725)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:56:25 | D | 29013 | 23788998004960 |   [4;35;1mCobrand Columns (0.002060)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 07:56:25 | D | 29013 | 23788998004960 |   [4;36;1mCobrand Load (0.000984)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:56:25 | D | 29013 | 23788998004960 |   [4;35;1mCobrand Load (0.000976)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;36;1mCobrand Load (0.000901)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;35;1mIdeaInstance Columns (0.003414)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 07:56:26) [POST]
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;36;1mCobrandHost Columns (0.002485)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;35;1mCobrandHost Load (0.001218)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;36;1mCobrand Load (0.000813)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;35;1mOperatingParam Load (0.000964)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 07:56:26 | D | 29013 | 23788998004960 |   [4;36;1mOperatingParam Columns (0.001685)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 07:56:26 | I | 29013 | 23788998004960 | Completed in 0.04611 (21 reqs/sec) | Rendering: 0.01033 (22) | DB: 0.02917 (63) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:04:25 | D | 29013 | 23788998014700 |   [4;35;1mUser Columns (0.008974)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:04:25 | D | 29013 | 23788998014700 |   [4;36;1mCobrand Load (0.001249)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:04:25 | D | 29013 | 23788998014700 |   [4;35;1mCobrand Columns (0.002706)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;36;1mCobrand Load (0.000773)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;35;1mCobrand Load (0.001966)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;36;1mCobrand Load (0.000958)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;35;1mIdeaInstance Columns (0.003500)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:04:26 | I | 29013 | 23788998014700 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:04:26) [POST]
+2009/08/20 08:04:26 | I | 29013 | 23788998014700 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:04:26 | I | 29013 | 23788998014700 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;36;1mCobrandHost Columns (0.002291)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;35;1mCobrandHost Load (0.002680)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;36;1mCobrand Load (0.000822)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;35;1mOperatingParam Load (0.001123)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:04:26 | D | 29013 | 23788998014700 |   [4;36;1mOperatingParam Columns (0.001689)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:04:26 | I | 29013 | 23788998014700 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:04:26 | I | 29013 | 23788998014700 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:04:26 | I | 29013 | 23788998014700 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:04:27 | I | 29013 | 23788998014700 | Completed in 0.04897 (20 reqs/sec) | Rendering: 0.00652 (13) | DB: 0.03162 (64) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:12:25 | D | 29013 | 23788998058100 |   [4;35;1mUser Columns (0.007701)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:12:25 | D | 29013 | 23788998058100 |   [4;36;1mCobrand Load (0.001339)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:12:25 | D | 29013 | 23788998058100 |   [4;35;1mCobrand Columns (0.002176)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;36;1mCobrand Load (0.000996)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;35;1mCobrand Load (0.000774)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;36;1mCobrand Load (0.000677)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;35;1mIdeaInstance Columns (0.003494)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:12:26 | I | 29013 | 23788998058100 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:12:26) [POST]
+2009/08/20 08:12:26 | I | 29013 | 23788998058100 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:12:26 | I | 29013 | 23788998058100 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;36;1mCobrandHost Columns (0.001892)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;35;1mCobrandHost Load (0.000912)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;36;1mCobrand Load (0.000474)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;35;1mOperatingParam Load (0.000736)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:12:26 | D | 29013 | 23788998058100 |   [4;36;1mOperatingParam Columns (0.001531)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:12:26 | I | 29013 | 23788998058100 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:12:26 | I | 29013 | 23788998058100 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:12:26 | I | 29013 | 23788998058100 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:12:27 | I | 29013 | 23788998058100 | Completed in 0.04658 (21 reqs/sec) | Rendering: 0.00691 (14) | DB: 0.02633 (56) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:20:25 | D | 29013 | 23788997920800 |   [4;35;1mUser Columns (0.007934)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:20:25 | D | 29013 | 23788997920800 |   [4;36;1mCobrand Load (0.000792)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:20:25 | D | 29013 | 23788997920800 |   [4;35;1mCobrand Columns (0.001666)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;36;1mCobrand Load (0.000828)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;35;1mCobrand Load (0.000978)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;36;1mCobrand Load (0.000941)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;35;1mIdeaInstance Columns (0.002355)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:20:26 | I | 29013 | 23788997920800 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:20:26) [POST]
+2009/08/20 08:20:26 | I | 29013 | 23788997920800 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:20:26 | I | 29013 | 23788997920800 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;36;1mCobrandHost Columns (0.001445)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;35;1mCobrandHost Load (0.001328)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;36;1mCobrand Load (0.000784)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;35;1mOperatingParam Load (0.000786)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:20:26 | D | 29013 | 23788997920800 |   [4;36;1mOperatingParam Columns (0.001441)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:20:26 | I | 29013 | 23788997920800 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:20:26 | I | 29013 | 23788997920800 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:20:26 | I | 29013 | 23788997920800 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:20:27 | I | 29013 | 23788997920800 | Completed in 0.04337 (23 reqs/sec) | Rendering: 0.00574 (13) | DB: 0.02499 (57) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:28:25 | D | 29013 | 23788996902200 |   [4;35;1mUser Columns (0.009885)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:28:25 | D | 29013 | 23788996902200 |   [4;36;1mCobrand Load (0.001433)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:28:25 | D | 29013 | 23788996902200 |   [4;35;1mCobrand Columns (0.002278)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;36;1mCobrand Load (0.000742)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;35;1mCobrand Load (0.000758)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;36;1mCobrand Load (0.000813)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;35;1mIdeaInstance Columns (0.003320)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:28:26 | I | 29013 | 23788996902200 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:28:26) [POST]
+2009/08/20 08:28:26 | I | 29013 | 23788996902200 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:28:26 | I | 29013 | 23788996902200 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;36;1mCobrandHost Columns (0.002094)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;35;1mCobrandHost Load (0.000568)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;36;1mCobrand Load (0.000465)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;35;1mOperatingParam Load (0.000805)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:28:26 | D | 29013 | 23788996902200 |   [4;36;1mOperatingParam Columns (0.001951)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:28:26 | I | 29013 | 23788996902200 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:28:26 | I | 29013 | 23788996902200 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:28:26 | I | 29013 | 23788996902200 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:28:27 | I | 29013 | 23788996902200 | Completed in 0.04405 (22 reqs/sec) | Rendering: 0.00575 (13) | DB: 0.02904 (65) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:36:25 | D | 29013 | 23788997925600 |   [4;35;1mUser Columns (0.004020)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:36:25 | D | 29013 | 23788997925600 |   [4;36;1mCobrand Load (0.000668)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:36:25 | D | 29013 | 23788997925600 |   [4;35;1mCobrand Columns (0.001883)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;36;1mCobrand Load (0.000710)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;35;1mCobrand Load (0.001332)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;36;1mCobrand Load (0.000865)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;35;1mIdeaInstance Columns (0.002069)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:36:26 | I | 29013 | 23788997925600 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:36:26) [POST]
+2009/08/20 08:36:26 | I | 29013 | 23788997925600 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:36:26 | I | 29013 | 23788997925600 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;36;1mCobrandHost Columns (0.001643)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;35;1mCobrandHost Load (0.000738)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;36;1mCobrand Load (0.000466)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;35;1mOperatingParam Load (0.000930)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:36:26 | D | 29013 | 23788997925600 |   [4;36;1mOperatingParam Columns (0.000932)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:36:26 | I | 29013 | 23788997925600 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:36:26 | I | 29013 | 23788997925600 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:36:26 | I | 29013 | 23788997925600 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:36:27 | I | 29013 | 23788997925600 | Completed in 0.04402 (22 reqs/sec) | Rendering: 0.00705 (16) | DB: 0.02084 (47) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:44:25 | D | 29013 | 23788998341040 |   [4;35;1mUser Columns (0.004672)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:44:25 | D | 29013 | 23788998341040 |   [4;36;1mCobrand Load (0.000764)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:44:25 | D | 29013 | 23788998341040 |   [4;35;1mCobrand Columns (0.001602)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;36;1mCobrand Load (0.000880)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;35;1mCobrand Load (0.001029)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;36;1mCobrand Load (0.000759)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;35;1mIdeaInstance Columns (0.002159)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:44:26 | I | 29013 | 23788998341040 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:44:26) [POST]
+2009/08/20 08:44:26 | I | 29013 | 23788998341040 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:44:26 | I | 29013 | 23788998341040 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;36;1mCobrandHost Columns (0.001213)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;35;1mCobrandHost Load (0.000823)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;36;1mCobrand Load (0.000813)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;35;1mOperatingParam Load (0.000782)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:44:26 | D | 29013 | 23788998341040 |   [4;36;1mOperatingParam Columns (0.000994)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:44:26 | I | 29013 | 23788998341040 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:44:26 | I | 29013 | 23788998341040 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:44:26 | I | 29013 | 23788998341040 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:44:27 | I | 29013 | 23788998341040 | Completed in 0.04620 (21 reqs/sec) | Rendering: 0.00688 (14) | DB: 0.01883 (40) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 08:52:25 | D | 29013 | 23788998246260 |   [4;35;1mUser Columns (0.006834)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 08:52:25 | D | 29013 | 23788998246260 |   [4;36;1mCobrand Load (0.000745)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:52:25 | D | 29013 | 23788998246260 |   [4;35;1mCobrand Columns (0.001992)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;36;1mCobrand Load (0.001329)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;35;1mCobrand Load (0.000833)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;36;1mCobrand Load (0.000553)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;35;1mIdeaInstance Columns (0.003090)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 08:52:26 | I | 29013 | 23788998246260 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 08:52:26) [POST]
+2009/08/20 08:52:26 | I | 29013 | 23788998246260 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 08:52:26 | I | 29013 | 23788998246260 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;36;1mCobrandHost Columns (0.002257)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;35;1mCobrandHost Load (0.000500)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;36;1mCobrand Load (0.000410)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;35;1mOperatingParam Load (0.000712)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 08:52:26 | D | 29013 | 23788998246260 |   [4;36;1mOperatingParam Columns (0.001442)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 08:52:26 | I | 29013 | 23788998246260 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:52:26 | I | 29013 | 23788998246260 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:52:26 | I | 29013 | 23788998246260 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 08:52:27 | I | 29013 | 23788998246260 | Completed in 0.04634 (21 reqs/sec) | Rendering: 0.00678 (14) | DB: 0.02495 (53) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 09:00:25 | D | 29013 | 23788997629660 |   [4;35;1mUser Columns (0.006612)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 09:00:25 | D | 29013 | 23788997629660 |   [4;36;1mCobrand Load (0.000931)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:00:25 | D | 29013 | 23788997629660 |   [4;35;1mCobrand Columns (0.001935)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;36;1mCobrand Load (0.000703)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;35;1mCobrand Load (0.000855)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;36;1mCobrand Load (0.005062)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;35;1mIdeaInstance Columns (0.003177)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 09:00:26 | I | 29013 | 23788997629660 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 09:00:26) [POST]
+2009/08/20 09:00:26 | I | 29013 | 23788997629660 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 09:00:26 | I | 29013 | 23788997629660 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;36;1mCobrandHost Columns (0.002324)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;35;1mCobrandHost Load (0.001027)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;36;1mCobrand Load (0.000714)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;35;1mOperatingParam Load (0.001177)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 09:00:26 | D | 29013 | 23788997629660 |   [4;36;1mOperatingParam Columns (0.001422)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 09:00:26 | I | 29013 | 23788997629660 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:00:26 | I | 29013 | 23788997629660 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:00:26 | I | 29013 | 23788997629660 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:00:27 | I | 29013 | 23788997629660 | Completed in 0.04701 (21 reqs/sec) | Rendering: 0.00915 (19) | DB: 0.02903 (61) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 09:08:25 | D | 29013 | 23788997146740 |   [4;35;1mUser Columns (0.007144)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 09:08:26 | D | 29013 | 23788997146740 |   [4;36;1mCobrand Load (0.000571)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:08:26 | D | 29013 | 23788997146740 |   [4;35;1mCobrand Columns (0.001877)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 09:08:26 | D | 29013 | 23788997146740 |   [4;36;1mCobrand Load (0.002120)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:08:26 | D | 29013 | 23788997146740 |   [4;35;1mCobrand Load (0.000892)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:08:26 | D | 29013 | 23788997146740 |   [4;36;1mCobrand Load (0.000916)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:08:26 | D | 29013 | 23788997146740 |   [4;35;1mIdeaInstance Columns (0.003294)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 09:08:26 | I | 29013 | 23788997146740 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 09:08:26) [POST]
+2009/08/20 09:08:26 | I | 29013 | 23788997146740 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 09:08:26 | I | 29013 | 23788997146740 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 09:08:27 | D | 29013 | 23788997146740 |   [4;36;1mCobrandHost Columns (0.002126)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 09:08:27 | D | 29013 | 23788997146740 |   [4;35;1mCobrandHost Load (0.000533)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 09:08:27 | D | 29013 | 23788997146740 |   [4;36;1mCobrand Load (0.000600)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 09:08:27 | D | 29013 | 23788997146740 |   [4;35;1mOperatingParam Load (0.000700)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 09:08:27 | D | 29013 | 23788997146740 |   [4;36;1mOperatingParam Columns (0.002036)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 09:08:27 | I | 29013 | 23788997146740 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:08:27 | I | 29013 | 23788997146740 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:08:27 | I | 29013 | 23788997146740 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:08:27 | I | 29013 | 23788997146740 | Completed in 0.04869 (20 reqs/sec) | Rendering: 0.00770 (15) | DB: 0.02577 (52) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 09:16:25 | D | 29013 | 23788997031160 |   [4;35;1mUser Columns (0.005311)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 09:16:26 | D | 29013 | 23788997031160 |   [4;36;1mCobrand Load (0.000633)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:16:26 | D | 29013 | 23788997031160 |   [4;35;1mCobrand Columns (0.001133)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 09:16:26 | D | 29013 | 23788997031160 |   [4;36;1mCobrand Load (0.000981)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:16:26 | D | 29013 | 23788997031160 |   [4;35;1mCobrand Load (0.000877)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:16:26 | D | 29013 | 23788997031160 |   [4;36;1mCobrand Load (0.000876)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:16:26 | D | 29013 | 23788997031160 |   [4;35;1mIdeaInstance Columns (0.002825)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 09:16:27) [POST]
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 09:16:27 | D | 29013 | 23788997031160 |   [4;36;1mCobrandHost Columns (0.001484)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 09:16:27 | D | 29013 | 23788997031160 |   [4;35;1mCobrandHost Load (0.001040)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 09:16:27 | D | 29013 | 23788997031160 |   [4;36;1mCobrand Load (0.000453)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 09:16:27 | D | 29013 | 23788997031160 |   [4;35;1mOperatingParam Load (0.000772)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 09:16:27 | D | 29013 | 23788997031160 |   [4;36;1mOperatingParam Columns (0.000972)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:16:27 | I | 29013 | 23788997031160 | Completed in 0.18652 (5 reqs/sec) | Rendering: 0.15009 (80) | DB: 0.02079 (11) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 09:24:25 | D | 29013 | 23788996935880 |   [4;35;1mUser Columns (0.005182)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;36;1mCobrand Load (0.000610)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;35;1mCobrand Columns (0.001323)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;36;1mCobrand Load (0.000717)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;35;1mCobrand Load (0.000791)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;36;1mCobrand Load (0.000616)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;35;1mIdeaInstance Columns (0.003196)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 09:24:26 | I | 29013 | 23788996935880 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 09:24:26) [POST]
+2009/08/20 09:24:26 | I | 29013 | 23788996935880 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 09:24:26 | I | 29013 | 23788996935880 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;36;1mCobrandHost Columns (0.001528)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;35;1mCobrandHost Load (0.000561)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;36;1mCobrand Load (0.000476)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 09:24:26 | D | 29013 | 23788996935880 |   [4;35;1mOperatingParam Load (0.000817)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 09:24:27 | D | 29013 | 23788996935880 |   [4;36;1mOperatingParam Columns (0.001416)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 09:24:27 | I | 29013 | 23788996935880 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:24:27 | I | 29013 | 23788996935880 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:24:27 | I | 29013 | 23788996935880 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:24:27 | I | 29013 | 23788996935880 | Completed in 0.18762 (5 reqs/sec) | Rendering: 0.00714 (3) | DB: 0.02071 (11) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 09:32:25 | D | 29013 | 23788996886680 |   [4;35;1mUser Columns (0.012959)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;36;1mCobrand Load (0.001133)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;35;1mCobrand Columns (0.001894)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;36;1mCobrand Load (0.000852)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;35;1mCobrand Load (0.001454)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;36;1mCobrand Load (0.001057)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;35;1mIdeaInstance Columns (0.003642)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 09:32:26 | I | 29013 | 23788996886680 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 09:32:26) [POST]
+2009/08/20 09:32:26 | I | 29013 | 23788996886680 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 09:32:26 | I | 29013 | 23788996886680 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;36;1mCobrandHost Columns (0.001851)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;35;1mCobrandHost Load (0.001040)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 09:32:26 | D | 29013 | 23788996886680 |   [4;36;1mCobrand Load (0.001009)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 09:32:27 | D | 29013 | 23788996886680 |   [4;35;1mOperatingParam Load (0.000841)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 09:32:27 | D | 29013 | 23788996886680 |   [4;36;1mOperatingParam Columns (0.001927)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 09:32:27 | I | 29013 | 23788996886680 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:32:27 | I | 29013 | 23788996886680 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:32:27 | I | 29013 | 23788996886680 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:32:27 | I | 29013 | 23788996886680 | Completed in 0.18513 (5 reqs/sec) | Rendering: 0.00700 (3) | DB: 0.03253 (17) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 09:40:25 | D | 29013 | 23788996746400 |   [4;35;1mUser Columns (0.007204)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 09:40:26 | D | 29013 | 23788996746400 |   [4;36;1mCobrand Load (0.000638)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:40:26 | D | 29013 | 23788996746400 |   [4;35;1mCobrand Columns (0.001868)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 09:40:26 | D | 29013 | 23788996746400 |   [4;36;1mCobrand Load (0.000739)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:40:26 | D | 29013 | 23788996746400 |   [4;35;1mCobrand Load (0.000768)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:40:26 | D | 29013 | 23788996746400 |   [4;36;1mCobrand Load (0.000732)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 09:40:26 | D | 29013 | 23788996746400 |   [4;35;1mIdeaInstance Columns (0.003395)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 | 
+
+Processing SiteDownsController#show (for 10.0.7.150 at 2009-08-20 09:40:27) [POST]
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 |   Session ID: 491931f5593e61ab97a5c1e685e3649a
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 |   Parameters: {"action"=>"show", "controller"=>"site_downs"}
+2009/08/20 09:40:27 | D | 29013 | 23788996746400 |   [4;36;1mCobrandHost Columns (0.002219)[0m   [0;1mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/20 09:40:27 | D | 29013 | 23788996746400 |   [4;35;1mCobrandHost Load (0.001308)[0m   [0mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/20 09:40:27 | D | 29013 | 23788996746400 |   [4;36;1mCobrand Load (0.000857)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/20 09:40:27 | D | 29013 | 23788996746400 |   [4;35;1mOperatingParam Load (0.001108)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/20 09:40:27 | D | 29013 | 23788996746400 |   [4;36;1mOperatingParam Columns (0.001358)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/20 09:40:27 | I | 29013 | 23788996746400 | Completed in 0.19199 (5 reqs/sec) | Rendering: 0.00712 (3) | DB: 0.02537 (13) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/site_down/check]
+2009/08/20 10:23:02 | D | 29013 | 23788996598300 |   [4;35;1mUser Columns (0.008953)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 10:23:02 | D | 29013 | 23788996598300 |   [4;36;1mCobrand Load (0.001203)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:23:02 | D | 29013 | 23788996598300 |   [4;35;1mCobrand Columns (0.002740)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 10:23:03 | D | 29013 | 23788996598300 |   [4;36;1mCobrand Load (0.000769)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:23:03 | D | 29013 | 23788996598300 |   [4;35;1mCobrand Load (0.000959)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:23:03 | D | 29013 | 23788996598300 |   [4;36;1mCobrand Load (0.000487)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:23:03 | D | 29013 | 23788996598300 |   [4;35;1mIdeaInstance Columns (0.003286)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 10:23:03 | I | 29013 | 23788996598300 | 
+
+Processing ApplicationController#index (for 10.0.7.43 at 2009-08-20 10:23:03) [GET]
+2009/08/20 10:23:03 | I | 29013 | 23788996598300 |   Session ID: af66b60fdd9c14733c08a25d383ff01e
+2009/08/20 10:23:03 | I | 29013 | 23788996598300 |   Parameters: {}
+2009/08/20 10:23:03 | W | 29013 | 23788996598300 | ActionController::RoutingError No route matches "/api/v1/test/index.html" with {:method=>:get}
+2009/08/20 10:23:03 | I | 29013 | 23788996598300 | Rendering /home/build/Projects/site/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+2009/08/20 10:33:39 | D | 29013 | 23788991819380 |   [4;36;1mUser Columns (0.008348)[0m   [0;1mSHOW FIELDS FROM users[0m
+2009/08/20 10:33:39 | D | 29013 | 23788991819380 |   [4;35;1mCobrand Load (0.001323)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:39 | D | 29013 | 23788991819380 |   [4;36;1mCobrand Columns (0.001792)[0m   [0;1mSHOW FIELDS FROM cobrands[0m
+2009/08/20 10:33:40 | D | 29013 | 23788991819380 |   [4;35;1mCobrand Load (0.000794)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:40 | D | 29013 | 23788991819380 |   [4;36;1mCobrand Load (0.000847)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:40 | D | 29013 | 23788991819380 |   [4;35;1mCobrand Load (0.000879)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:40 | D | 29013 | 23788991819380 |   [4;36;1mIdeaInstance Columns (0.002571)[0m   [0;1mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 10:33:40 | I | 29013 | 23788991819380 | 
+
+Processing ApplicationController#index (for 10.0.7.43 at 2009-08-20 10:33:40) [GET]
+2009/08/20 10:33:40 | I | 29013 | 23788991819380 |   Session ID: 16524100c3ecaaccb25f89e79516a939
+2009/08/20 10:33:40 | I | 29013 | 23788991819380 |   Parameters: {"catentryId"=>"54091", "catalogId"=>"10104", "cmdStoreId"=>"10151", "partNumber"=>"9990000051352611P", "storeId"=>"10151"}
+2009/08/20 10:33:40 | W | 29013 | 23788991819380 | ActionController::RoutingError No route matches "/kmart_error/NetDownDealsCmd" with {:method=>:get}
+2009/08/20 10:33:40 | I | 29013 | 23788991819380 | Rendering /home/build/Projects/site/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;35;1mUser Columns (0.005152)[0m   [0mSHOW FIELDS FROM users[0m
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;36;1mCobrand Load (0.000767)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;35;1mCobrand Columns (0.001493)[0m   [0mSHOW FIELDS FROM cobrands[0m
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;36;1mCobrand Load (0.000810)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;35;1mCobrand Load (0.000873)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;36;1mCobrand Load (0.000662)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:41 | D | 29013 | 23788996418200 |   [4;35;1mIdeaInstance Columns (0.002521)[0m   [0mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 10:33:42 | I | 29013 | 23788996418200 | 
+
+Processing ApplicationController#index (for 10.0.7.43 at 2009-08-20 10:33:42) [GET]
+2009/08/20 10:33:42 | I | 29013 | 23788996418200 |   Session ID: 579ce1f120038fb1038b572aaf4028aa
+2009/08/20 10:33:42 | I | 29013 | 23788996418200 |   Parameters: {"A"=>"", "catentryId"=>"54091", "IK"=>"", "catalogId"=>"10104", "cmdStoreId"=>"10151", "C"=>"", "vendorId"=>"KMART", "GW"=>"", "PPP"=>"", "partNumber"=>"9990000051352611P", "SP"=>"YES", "H"=>"", "storeId"=>"10151", "MA"=>""}
+2009/08/20 10:33:42 | W | 29013 | 23788996418200 | ActionController::RoutingError No route matches "/kmart_error/ProductOptionsDisplayCmd" with {:method=>:get}
+2009/08/20 10:33:42 | I | 29013 | 23788996418200 | Rendering /home/build/Projects/site/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+2009/08/20 10:33:42 | D | 29013 | 23789001515900 |   [4;36;1mUser Columns (0.004450)[0m   [0;1mSHOW FIELDS FROM users[0m
+2009/08/20 10:33:42 | D | 29013 | 23789001515900 |   [4;35;1mCobrand Load (0.000652)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:42 | D | 29013 | 23789001515900 |   [4;36;1mCobrand Columns (0.001241)[0m   [0;1mSHOW FIELDS FROM cobrands[0m
+2009/08/20 10:33:43 | D | 29013 | 23789001515900 |   [4;35;1mCobrand Load (0.000731)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:43 | D | 29013 | 23789001515900 |   [4;36;1mCobrand Load (0.000682)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:43 | D | 29013 | 23789001515900 |   [4;35;1mCobrand Load (0.000592)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/20 10:33:43 | D | 29013 | 23789001515900 |   [4;36;1mIdeaInstance Columns (0.002091)[0m   [0;1mSHOW FIELDS FROM idea_instances[0m
+2009/08/20 10:33:44 | I | 29013 | 23789001515900 | 
+
+Processing ApplicationController#index (for 10.0.7.43 at 2009-08-20 10:33:44) [GET]
+2009/08/20 10:33:44 | I | 29013 | 23789001515900 |   Session ID: c79f241929bd4862fbac168c7b065aa1
+2009/08/20 10:33:44 | I | 29013 | 23789001515900 |   Parameters: {"catalogId"=>"10104", "bundlePartNums"=>"9990000052378411P|011W013451110001P", "storeId"=>"10151"}
+2009/08/20 10:33:44 | W | 29013 | 23789001515900 | ActionController::RoutingError No route matches "/kmart_error/BrowseFreqBoughtTogetherCmd" with {:method=>:get}
+2009/08/20 10:33:44 | I | 29013 | 23789001515900 | Rendering /home/build/Projects/site/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+2009/08/21 11:08:00 | D | 29013 | 23788996141520 |   [4;35;1mSQL (0.000450)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+2009/08/21 11:08:00 | D | 29013 | 23788996141520 |   [4;36;1mUser Columns (0.008804)[0m   [0;1mSHOW FIELDS FROM users[0m
+2009/08/21 11:08:01 | D | 29013 | 23788996141520 |   [4;35;1mCobrand Load (0.000595)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 11:08:01 | D | 29013 | 23788996141520 |   [4;36;1mCobrand Columns (0.001783)[0m   [0;1mSHOW FIELDS FROM cobrands[0m
+2009/08/21 11:08:01 | D | 29013 | 23788996141520 |   [4;35;1mCobrand Load (0.001510)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 11:08:01 | D | 29013 | 23788996141520 |   [4;36;1mCobrand Load (0.000806)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 11:08:01 | D | 29013 | 23788996141520 |   [4;35;1mCobrand Load (0.001668)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 11:08:01 | D | 29013 | 23788996141520 |   [4;36;1mIdeaInstance Columns (0.003128)[0m   [0;1mSHOW FIELDS FROM idea_instances[0m
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | 
+
+Processing HomeController#index (for 10.0.7.43 at 2009-08-21 11:08:02) [GET]
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 |   Session ID: 9627e4d9b3199abc7a247e03847d9076
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 |   Parameters: {"action"=>"index", "controller"=>"home"}
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mCobrandHost Columns (0.002409)[0m   [0mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mCobrandHost Load (0.000902)[0m   [0;1mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mykmart.dev') LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mCobrand Load (0.000853)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 2) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Resetting the session 9627e4d9b3199abc7a247e03847d9076 due to expiration
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mAnonymousToken Columns (0.001839)[0m   [0;1mSHOW FIELDS FROM anonymous_tokens[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mAnonymousToken Load (0.001014)[0m   [0mSELECT * FROM `anonymous_tokens` WHERE (`anonymous_tokens`.`value` = 'f48abb18-8c7c-11de-9c2b-000c29126855') ORDER BY created_at DESC LIMIT 1[0m
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | AnonymousToken: session changed for existing token.
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | WARNING: Can't mass-assign these protected attributes: created_at, updated_at, session_id, id, value, user_id
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mSQL (0.000793)[0m   [0;1mBEGIN[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mAnonymousToken Create (0.000812)[0m   [0mINSERT INTO `anonymous_tokens` (`created_at`, `updated_at`, `session_id`, `value`, `user_id`, `ip_address`) VALUES('2009-08-21 11:08:02', '2009-08-21 11:08:02', '1c50b2086fff3f4edb0d0775f745b857', 'cd5cbf04-8e6c-11de-bb1e-000c29126855', NULL, '10.0.7.43')[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mSQL (0.000591)[0m   [0;1mCOMMIT[0m
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | Cookie set: anonymous_token=cd5cbf04-8e6c-11de-bb1e-000c29126855; path=/; expires=Wed, 21 Aug 2019 16:08:02 GMT
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mOperatingParam Load (0.000854)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mOperatingParam Columns (0.001727)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | Rendering template within layouts/application
+2009/08/21 11:08:02 | I | 29013 | 23788996141520 | Rendering home/index
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mCobrandParam Load (0.001870)[0m   [0mSELECT * FROM `cobrand_params` [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mCobrandParam Columns (0.002005)[0m   [0;1mSHOW FIELDS FROM cobrand_params[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mCobrand Load (0.000725)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | ========in cobrand render for banner =====
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered home/_banner_mykmart (0.00009)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mCachedContents Load (0.004156)[0m   [0;1mSELECT * FROM `cached_contents` WHERE (contents_key = 'cms_home_l_0_mykmart' AND (expires_at IS NULL OR expires_at > NOW())) ORDER BY expires_at DESC LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mCachedContents Columns (0.001453)[0m   [0mSHOW FIELDS FROM cached_contents[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mLandingPage Columns (0.002339)[0m   [0;1mSHOW FIELDS FROM landing_pages[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mLandingPage Load (0.000877)[0m   [0mSELECT * FROM `landing_pages` WHERE (`landing_pages`.`id` IN (4056,4051,4048,4055,4517)) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mLandingPageInfo Columns (0.003888)[0m   [0;1mSHOW FIELDS FROM landing_page_infos[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mLandingPageInfo Load (0.000940)[0m   [0mSELECT * FROM `landing_page_infos` WHERE (`landing_page_infos`.`landing_page_id` = 4056) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mLandingPageInfo Load (0.001769)[0m   [0;1mSELECT * FROM `landing_page_infos` WHERE (`landing_page_infos`.`landing_page_id` = 4051) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mLandingPageInfo Load (0.000746)[0m   [0mSELECT * FROM `landing_page_infos` WHERE (`landing_page_infos`.`landing_page_id` = 4048) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mLandingPageInfo Load (0.000747)[0m   [0;1mSELECT * FROM `landing_page_infos` WHERE (`landing_page_infos`.`landing_page_id` = 4055) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mLandingPageInfo Load (0.000660)[0m   [0mSELECT * FROM `landing_page_infos` WHERE (`landing_page_infos`.`landing_page_id` = 4517) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered home/_popular_brands (0.02660)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered home/_featured_forums (0.00003)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | ========in cobrand render for feature =====
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered home/_feature_mykmart (0.00034)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | ========in cobrand render for center =====
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'center_mykmart'
+Missing template home/_center_mykmart.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | falling through to cobrand-parent
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'center_mysears'
+Missing template home/_center_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mCachedContents Load (0.001253)[0m   [0;1mSELECT * FROM `cached_contents` WHERE (contents_key = 'cms_home_c_0_mykmart' AND (expires_at IS NULL OR expires_at > NOW())) ORDER BY expires_at DESC LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mCachedContents Load (0.000640)[0m   [0mSELECT * FROM `cached_contents` WHERE (contents_key = 'cms_home_c_1a_mykmart' AND (expires_at IS NULL OR expires_at > NOW())) ORDER BY expires_at DESC LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mCachedContents Load (0.000849)[0m   [0;1mSELECT * FROM `cached_contents` WHERE (contents_key = 'cms_home_c_1b_mykmart' AND (expires_at IS NULL OR expires_at > NOW())) ORDER BY expires_at DESC LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mReview Columns (0.003583)[0m   [0mSHOW FIELDS FROM reviews[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mReview Load (0.004389)[0m   [0;1mSELECT * FROM `reviews` WHERE (`reviews`.`id` IN (439107,462133,460078,452626)) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mProduct Columns (0.003581)[0m   [0mSHOW FIELDS FROM products[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mProduct Load (0.011071)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 467891) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mProductStat Load (0.003721)[0m   [0mSELECT * FROM `product_stats` WHERE (`product_stats`.product_id = 467891) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mProductStat Columns (0.003009)[0m   [0;1mSHOW FIELDS FROM product_stats[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.054512)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 467891 AND `local_photos`.owner_type = 'Product' AND (sort_order = 0)) ORDER BY sort_order asc LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mRemotePhoto Load (0.046252)[0m   [0;1mSELECT * FROM `remote_photos` WHERE (`remote_photos`.owner_id = 467891 AND `remote_photos`.owner_type = 'Product') [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mRemotePhoto Columns (0.002063)[0m   [0mSHOW FIELDS FROM remote_photos[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered common/_product_thumb (0.23733)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered home/_review (0.31091)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mProduct Load (0.002285)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 449843) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mProductStat Load (0.002169)[0m   [0mSELECT * FROM `product_stats` WHERE (`product_stats`.product_id = 449843) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mLocalPhoto Load (0.037839)[0m   [0;1mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 449843 AND `local_photos`.owner_type = 'Product' AND (sort_order = 0)) ORDER BY sort_order asc LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mRemotePhoto Load (0.033371)[0m   [0mSELECT * FROM `remote_photos` WHERE (`remote_photos`.owner_id = 449843 AND `remote_photos`.owner_type = 'Product') [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered common/_product_thumb (0.07320)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 | Rendered home/_review (0.07909)
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mProduct Load (0.001940)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 438004) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mProductStat Load (0.004905)[0m   [0mSELECT * FROM `product_stats` WHERE (`product_stats`.product_id = 438004) LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mReview Load (0.002144)[0m   [0;1mSELECT * FROM `reviews` WHERE (`reviews`.product_id = 438004) AND (`reviews`.`status` = 'active') LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mReview Load (0.000674)[0m   [0mSELECT * FROM `reviews` WHERE (`reviews`.product_id = 438004) AND (`reviews`.`status` = 'active') LIMIT 1[0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;36;1mProduct Load (0.000596)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 438004) [0m
+2009/08/21 11:08:02 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.025608)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 438004 AND `local_photos`.owner_type = 'Product' AND (sort_order = 0)) ORDER BY sort_order asc LIMIT 1[0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;36;1mRemotePhoto Load (0.031966)[0m   [0;1mSELECT * FROM `remote_photos` WHERE (`remote_photos`.owner_id = 438004 AND `remote_photos`.owner_type = 'Product') [0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered common/_product_thumb (0.06175)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_review (0.07763)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;35;1mProduct Load (0.002340)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 503109) [0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;36;1mProductStat Load (0.022623)[0m   [0;1mSELECT * FROM `product_stats` WHERE (`product_stats`.product_id = 503109) LIMIT 1[0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.035635)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 503109 AND `local_photos`.owner_type = 'Product' AND (sort_order = 0)) ORDER BY sort_order asc LIMIT 1[0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;36;1mRemotePhoto Load (0.041123)[0m   [0;1mSELECT * FROM `remote_photos` WHERE (`remote_photos`.owner_id = 503109 AND `remote_photos`.owner_type = 'Product') [0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered common/_product_thumb (0.07783)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_review (0.10640)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_reviews (0.58790)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | ========in cobrand render for center_social =====
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_center_social_mykmart (0.00047)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_center (0.60553)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | ========in cobrand render for right =====
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'right_mykmart'
+Missing template home/_right_mykmart.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | falling through to cobrand-parent
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered common/_tracked_ad (0.00020)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_rr_ad (0.03424)
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;35;1mCachedContents Load (0.001247)[0m   [0mSELECT * FROM `cached_contents` WHERE (contents_key = 'cms_home_r_0_mykmart' AND (expires_at IS NULL OR expires_at > NOW())) ORDER BY expires_at DESC LIMIT 1[0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 |   [4;36;1mCachedContents Load (0.001393)[0m   [0;1mSELECT * FROM `cached_contents` WHERE (contents_key = 'cms_home_r_0_mysears' AND (expires_at IS NULL OR expires_at > NOW())) ORDER BY expires_at DESC LIMIT 1[0m
+2009/08/21 11:08:03 | D | 29013 | 23788996141520 | Rendered home/_right_mysears (0.03819)
+2009/08/21 11:08:07 | D | 29013 | 23788996141520 |   [4;35;1mUser Load (4.191001)[0m   [0mSELECT * FROM `users` WHERE (`users`.`screen_name` IN ('MrBluelight')) [0m
+2009/08/21 11:08:07 | D | 29013 | 23788996141520 |   [4;36;1mIdeaInstance Load (0.016591)[0m   [0;1mSELECT * FROM `idea_instances` WHERE (`idea_instances`.cobrand_id = 2) AND (`idea_instances`.`status` = 'active') [0m
+2009/08/21 11:08:07 | D | 29013 | 23788996141520 |   [4;35;1mUserActivity Load (0.103931)[0m   [0m SELECT a.* FROM user_activities a
+ LEFT OUTER JOIN posts p ON p.id = a.subject_id AND subject_type = 'Post'
+ LEFT OUTER JOIN topics t ON t.id = p.topic_id
+ LEFT OUTER JOIN forums f ON f.id = t.forum_id
+ LEFT OUTER JOIN ideas i ON i.id = a.subject_id AND subject_type = 'Idea'
+ INNER JOIN users u ON u.id = a.user_id AND a.user_id NOT IN (351091) AND u.cobrand_id = 2
+ WHERE a.created_at > DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY)
+ AND a.action in ('reviewed', 'posted', 'joined', 'blogged', 'posted_in_kmartideas')
+ AND (f.cobrand_id = 2 OR f.cobrand_id IS NULL)
+ ORDER BY created_at DESC LIMIT 4
+[0m
+2009/08/21 11:08:07 | D | 29013 | 23788996141520 | Rendered community/_activities (0.00003)
+2009/08/21 11:08:07 | D | 29013 | 23788996141520 | Rendered home/_activity (4.33060)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mSQL (3.047919)[0m   [0;1m SELECT DISTINCT(users.id) FROM users
+ INNER JOIN user_activities ON (users.id = user_activities.user_id
+ AND user_activities.created_at > DATE_SUB(CURRENT_DATE, INTERVAL 14 DAY))
+ INNER JOIN local_photos ON (local_photos.owner_type = 'User'
+ AND local_photos.owner_id = users.id
+ AND local_photos.sort_order = 0)
+ WHERE users.account_status = 'active'
+ AND users.cobrand_id = 2
+ AND users.proxy_user = 0
+[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mUser Load (0.002108)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IN (410672,412733,388997,414915,412606,414857,411119,415073,408344)) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mLocalPhoto Load (0.002071)[0m   [0;1mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 411119 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Columns (0.003381)[0m   [0mSHOW FIELDS FROM local_photos[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/222/12 1249926166-14039_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mLocalPhoto Load (0.001032)[0m   [0;1mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 415073 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/226/20 1250301345-9112_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.001168)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 408344 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/219/11 1249663291-96818_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mLocalPhoto Load (0.000989)[0m   [0;1mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 412606 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/223/23 1250050425-66_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.007791)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 412733 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/224/8 1250084384-87769_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mLocalPhoto Load (0.000951)[0m   [0;1mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 388997 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/191/18 1247270349-72638_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.000940)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 414915 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/226/17 1250287697-32455_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mLocalPhoto Load (0.001042)[0m   [0;1mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 410672 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/221/21 1249870429-42215_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mLocalPhoto Load (0.001322)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 414857 AND `local_photos`.owner_type = 'User' AND (sort_order = 0)) ORDER BY sort_order LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | building fully_scoped_url for 2009/226/16 1250283844-30227_mini.jpg
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered home/_faces (0.04771)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered layouts/_default_css (0.00281)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Columns (0.003218)[0m   [0;1mSHOW FIELDS FROM categories[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.000643)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`name` = '__root__') LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mAdTag Load (0.001165)[0m   [0;1mSELECT * FROM `ad_tags` WHERE (`ad_tags`.owner_id = 1 AND `ad_tags`.owner_type = 'Category') ORDER BY position[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mAdTag Columns (0.002287)[0m   [0mSHOW FIELDS FROM ad_tags[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered layouts/_gam (0.32165)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered layouts/_head (0.33168)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered layouts/_site_down_warning (0.00003)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | ========in cobrand render for header/first =====
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | ========in cobrand render for header/offsite_navigation =====
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered header/_offsite_navigation_mykmart (0.00075)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered header/_first_mykmart (0.00440)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | Rendered layouts/_admin_wrapper (0.00058)
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | ========in cobrand render for header/header =====
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mDisplayTaxonomyItem Columns (0.002043)[0m   [0;1mSHOW FIELDS FROM display_taxonomy_items[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mDisplayTaxonomyItem Load (0.014436)[0m   [0mSELECT * FROM `display_taxonomy_items` WHERE (`display_taxonomy_items`.`name` = 'Navigation tabs root - 2') LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mDisplayTaxonomyItem Load (0.000648)[0m   [0;1mSELECT * FROM `display_taxonomy_items` WHERE (`display_taxonomy_items`.`name` = 'Navigation tabs root - 1') LIMIT 1[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mDisplayTaxonomyItem Load (0.000670)[0m   [0mSELECT * FROM `display_taxonomy_items` WHERE (`display_taxonomy_items`.parent_id = 527) ORDER BY position[0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000731)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3889) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.001035)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4030) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000655)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2654) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.000710)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2716) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000855)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2752) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.000856)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4580) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000876)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2924) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.000852)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4939) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000869)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5584) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.000891)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 6733) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000877)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 6881) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.000873)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 7018) [0m
+2009/08/21 11:08:10 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.000888)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 7287) [0m
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_categories (0.06150)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_browse_categories_mykmart (0.06196)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_search_mykmart (0.00174)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_links (0.00041)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | ========in cobrand render for header/tabs =====
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 |   [4;35;1mIdeaInstance Load (0.001103)[0m   [0mSELECT * FROM `idea_instances` WHERE (`idea_instances`.`short_name` = 'kmartideas') LIMIT 1[0m
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_tabs_mykmart (0.00346)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_header_mykmart (0.07216)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | ========in cobrand render for header/last =====
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_bread_crumbs (0.00001)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_leaderboard (0.00002)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_title (0.00003)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered header/_last_mykmart (0.00308)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | ========in cobrand render for footer/content =====
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | ========in cobrand render for footer/review_categories =====
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'footer/review_categories_mykmart'
+Missing template footer/_review_categories_mykmart.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand-parent
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'footer/review_categories_mysears'
+Missing template footer/_review_categories_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 |   [4;36;1mCategory Load (0.001024)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`name` = '__root__') LIMIT 1[0m
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 |   [4;35;1mCategory Load (0.001992)[0m   [0mSELECT `categories`.* FROM `categories` INNER JOIN category_relationships ON categories.id = category_relationships.narrower_than_category_id WHERE ((`category_relationships`.broader_than_category_id = 1)) ORDER BY narrower_than_position[0m
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered footer/_review_categories (0.03214)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | ========in cobrand render for footer/copyright =====
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'footer/copyright_mykmart'
+Missing template footer/_copyright_mykmart.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand-parent
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'footer/copyright_mysears'
+Missing template footer/_copyright_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered footer/_copyright (0.00003)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered common/_web_analytics (0.00076)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered common/_tacoda_insight (0.00002)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered footer/_content_mykmart (0.04139)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | ========in cobrand render for footer/page_scripts =====
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'footer/page_scripts_mykmart'
+Missing template footer/_page_scripts_mykmart.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | falling through to cobrand-parent
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Attempted cobrand render not found 'footer/page_scripts_mysears'
+Missing template footer/_page_scripts_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered footer/_page_scripts (0.00001)
+2009/08/21 11:08:11 | D | 29013 | 23788996141520 | Rendered layouts/_template (0.46069)
+2009/08/21 11:08:11 | I | 29013 | 23788996141520 | Completed in 9.02127 (0 reqs/sec) | Rendering: 0.98617 (10) | DB: 7.93792 (87) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mykmart.dev/]
+2009/08/21 12:39:30 | D | 29013 | 23788991621240 |   [4;36;1mUser Columns (0.006395)[0m   [0;1mSHOW FIELDS FROM users[0m
+2009/08/21 12:39:30 | D | 29013 | 23788991621240 |   [4;35;1mCobrand Load (0.000589)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 12:39:30 | D | 29013 | 23788991621240 |   [4;36;1mCobrand Columns (0.001819)[0m   [0;1mSHOW FIELDS FROM cobrands[0m
+2009/08/21 12:39:30 | D | 29013 | 23788991621240 |   [4;35;1mCobrand Load (0.000676)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 12:39:30 | D | 29013 | 23788991621240 |   [4;36;1mCobrand Load (0.000796)[0m   [0;1mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 12:39:30 | D | 29013 | 23788991621240 |   [4;35;1mCobrand Load (0.000867)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`status` = 'active') [0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mIdeaInstance Columns (0.003101)[0m   [0;1mSHOW FIELDS FROM idea_instances[0m
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | 
+
+Processing ReviewController#new_full (for 10.0.7.43 at 2009-08-21 12:39:31) [GET]
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 |   Session ID: 458d35cb41644cecf834d0482085091f
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 |   Parameters: {"action"=>"new_full", "pk"=>"05710221000P", "pu"=>"http://pulse.ecom.sears.com:1184/shc/s/p_10153_12605_04691772000P", "prs"=>"sears_dot_com", "partner_style"=>"ros", "pn"=>"1.7 cu. ft. Compact Refrigerator", "controller"=>"review"}
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mCobrandHost Columns (0.002176)[0m   [0mSHOW FIELDS FROM cobrand_hosts[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mCobrandHost Load (0.000705)[0m   [0;1mSELECT * FROM `cobrand_hosts` WHERE (`cobrand_hosts`.`name` = 'mysears.dev') LIMIT 1[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mCobrand Load (0.000698)[0m   [0mSELECT * FROM `cobrands` WHERE (`cobrands`.`id` = 1) [0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 | Resetting the session 458d35cb41644cecf834d0482085091f due to expiration
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mAnonymousToken Columns (0.002615)[0m   [0;1mSHOW FIELDS FROM anonymous_tokens[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mAnonymousToken Load (0.003398)[0m   [0mSELECT * FROM `anonymous_tokens` WHERE (`anonymous_tokens`.`value` = 'd773ec02-8d03-11de-bb1e-000c29126855') ORDER BY created_at DESC LIMIT 1[0m
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | AnonymousToken: session changed for existing token.
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 | WARNING: Can't mass-assign these protected attributes: created_at, updated_at, session_id, id, value, user_id
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mSQL (0.000679)[0m   [0;1mBEGIN[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mAnonymousToken Create (0.002367)[0m   [0mINSERT INTO `anonymous_tokens` (`created_at`, `updated_at`, `session_id`, `value`, `user_id`, `ip_address`) VALUES('2009-08-21 12:39:31', '2009-08-21 12:39:31', '5d0c39c03a944c4041654160348fda8c', '95695f64-8e79-11de-bb1e-000c29126855', NULL, '10.0.7.43')[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mSQL (0.000686)[0m   [0;1mCOMMIT[0m
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | Cookie set: anonymous_token=95695f64-8e79-11de-bb1e-000c29126855; path=/; expires=Wed, 21 Aug 2019 17:39:31 GMT
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mOperatingParam Load (0.001066)[0m   [0mSELECT * FROM `operating_params` [0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mOperatingParam Columns (0.001374)[0m   [0;1mSHOW FIELDS FROM operating_params[0m
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | Cookie set: logged_in=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | Cookie set: zinfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | Cookie set: ginfo=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+2009/08/21 12:39:31 | I | 29013 | 23788991621240 | Cookie set: referer=http%3A%2F%2Fwww.sears.com%2Fvp%2Fint%2Fapi%2Fv1%2Ftest%2Fwrite.html%3FdataBrand%3Dkmart%26dataWriteReviewsUrl%3Dhttp%3A%2F%2Fwww.sears.com%2Fvp%2Fint%2Fapi%2Fv1%2Ftest%2Fwrite.html%26dataProductPageUrl%3Dhttp%3A%2F%2Fwww.sears.com%2Fshc%2Fs%2Fp_10153_12605_09685441000P%26dataProductTitle%3DCraftsman%2520Socket%2520Set%26dataProductId%3D05771558000P; path=/
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mSource Columns (0.001686)[0m   [0mSHOW FIELDS FROM sources[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mSource Load (0.000919)[0m   [0;1mSELECT * FROM `sources` WHERE (`sources`.`short_name` = 'sears_dot_com') LIMIT 1[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mSource Load (0.000529)[0m   [0mSELECT * FROM `sources` WHERE (`sources`.`name` = 'Sears') LIMIT 1[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mPartnerProduct Columns (0.001855)[0m   [0;1mSHOW FIELDS FROM partner_products[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mPartnerProduct Load (0.003471)[0m   [0mSELECT * FROM `partner_products` WHERE (`partner_products`.`partner_key` = '05710221000P' AND `partner_products`.`source_id` = 5) LIMIT 1[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mProduct Columns (0.002859)[0m   [0;1mSHOW FIELDS FROM products[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mProduct Load (0.000763)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 424875) [0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mPartnerProduct Load (0.000712)[0m   [0;1mSELECT * FROM `partner_products` WHERE (`partner_products`.product_id = 424875) LIMIT 1[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mSource Load (0.000483)[0m   [0mSELECT * FROM `sources` WHERE (`sources`.`id` = 5) [0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mSource Load (0.000521)[0m   [0;1mSELECT * FROM `sources` WHERE (`sources`.`name` = 'Shopping.com') LIMIT 1[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mProduct Load (0.000609)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 424875) [0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mReview Columns (0.003143)[0m   [0;1mSHOW FIELDS FROM reviews[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;35;1mReviewStat Columns (0.002578)[0m   [0mSHOW FIELDS FROM review_stats[0m
+2009/08/21 12:39:31 | D | 29013 | 23788991621240 |   [4;36;1mSQL (0.000637)[0m   [0;1mSELECT value FROM blacklisted_tags WHERE kind = 'about_me'[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mSQL (0.068139)[0m   [0m SELECT DISTINCT tt.kind, COUNT(distinct reviews.id) AS cnt, tt.value
+ FROM reviews
+ INNER JOIN review_tags tt ON tt.review_id = reviews.id
+ 
+ WHERE product_id = 424875
+ AND points >= 20
+ AND reviews.status = 'active'
+ AND reviews.id NOT IN ('')
+ GROUP BY tt.kind, tt.value
+ ORDER BY tt.kind, cnt DESC, tt.value ASC
+[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | cur_kind pro
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | cur_kind con
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Columns (0.003639)[0m   [0;1mSHOW FIELDS FROM categories[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.001502)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2914) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategoryTag Columns (0.002774)[0m   [0;1mSHOW FIELDS FROM category_tags[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategoryTag Load (0.000585)[0m   [0mSELECT * FROM `category_tags` WHERE (`category_tags`.`kind` = 'about_me') AND (`category_tags`.category_id = 2914) ORDER BY sort_order, sort_order[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCachedTag Load (0.001203)[0m   [0;1mSELECT * FROM `cached_tags` WHERE (owner_type = 'Category' AND owner_id = 2914 AND kind = 'about_me') ORDER BY position LIMIT 75[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCachedTag Columns (0.002010)[0m   [0mSHOW FIELDS FROM cached_tags[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mReviewRequirement Columns (0.002819)[0m   [0;1mSHOW FIELDS FROM review_requirements[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mLocalPhoto Load (0.000948)[0m   [0mSELECT * FROM `local_photos` WHERE (`local_photos`.owner_id = 424875 AND `local_photos`.owner_type = 'Product') ORDER BY sort_order asc[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mRemotePhoto Load (0.004623)[0m   [0;1mSELECT * FROM `remote_photos` WHERE (`remote_photos`.owner_id = 424875 AND `remote_photos`.owner_type = 'Product') [0m
+2009/08/21 12:39:32 | I | 29013 | 23788991621240 | Rendering template within layouts/application
+2009/08/21 12:39:32 | I | 29013 | 23788991621240 | Rendering review/edit
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for review_header =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Attempted cobrand render not found 'review_header_mysears'
+Missing template review/_review_header_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand-parent
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered common/_reviewer_guidelines (0.00000)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_review_header (0.00001)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for full_review_form =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Attempted cobrand render not found 'full_review_form_mysears'
+Missing template review/_full_review_form_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand-parent
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_review_page_scripts (0.00033)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_errors (0.00001)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_hidden_fields (0.00070)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_product_title (0.00004)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_star_rating (0.00003)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_star_rating_section (0.00080)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_sound_bite (0.00027)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_write_tag_selection (0.00187)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_add_new_tag (0.00002)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_about_me_tags (0.00304)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered common/_review_top_tips (0.00002)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_review_body (0.00116)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_product_photo (0.00003)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_add_new_tag (0.00033)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_write_tag_selection (0.00144)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_add_new_tag (0.00029)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_write_tag_selection (0.00089)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_pros_and_cons (0.00291)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review_photo/_uploaded_photo (0.00002)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_uploaded_photos (0.00222)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_recommend_to_friend (0.00003)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_affiliation (0.00070)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_buttons (0.00071)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered review/_full_review_form (0.01861)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCobrandParam Load (0.001355)[0m   [0mSELECT * FROM `cobrand_params` [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCobrandParam Columns (0.002452)[0m   [0;1mSHOW FIELDS FROM cobrand_params[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_default_css (0.00207)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_gam (0.00004)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_head (0.04818)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_site_down_warning (0.00032)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for header/first =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for header/offsite_navigation =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_offsite_navigation_mysears (0.00033)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_first_mysears (0.00077)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_admin (0.00004)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_admin_wrapper (0.00035)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for header/header =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mDisplayTaxonomyItem Columns (0.002357)[0m   [0mSHOW FIELDS FROM display_taxonomy_items[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mDisplayTaxonomyItem Load (0.003157)[0m   [0;1mSELECT * FROM `display_taxonomy_items` WHERE (`display_taxonomy_items`.`name` = 'Navigation tabs root - 1') LIMIT 1[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mDisplayTaxonomyItem Load (0.001790)[0m   [0mSELECT * FROM `display_taxonomy_items` WHERE (`display_taxonomy_items`.parent_id = 527) ORDER BY position[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000561)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3889) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.000717)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4030) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000671)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2654) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.000599)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2716) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000566)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2752) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.000868)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4580) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000830)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2924) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.000659)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 4939) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000749)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 5584) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.001029)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 6733) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000633)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 6881) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.000704)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 7018) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.000908)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 7287) [0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_categories (0.04149)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_browse_categories_mysears (0.04219)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_search_mysears (0.00032)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_links (0.00029)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for header/tabs =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mIdeaInstance Load (0.000799)[0m   [0mSELECT * FROM `idea_instances` WHERE (`idea_instances`.`short_name` = 'ideas') LIMIT 1[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_tabs_mysears (0.00587)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_header_mysears (0.05141)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for header/last =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_bread_crumbs (0.00002)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_leaderboard (0.00002)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_title (0.00004)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered header/_last_mysears (0.00093)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for footer/content =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for footer/review_categories =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Attempted cobrand render not found 'footer/review_categories_mysears'
+Missing template footer/_review_categories_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand-parent
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;36;1mCategory Load (0.001741)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`name` = '__root__') LIMIT 1[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 |   [4;35;1mCategory Load (0.001323)[0m   [0mSELECT `categories`.* FROM `categories` INNER JOIN category_relationships ON categories.id = category_relationships.narrower_than_category_id WHERE ((`category_relationships`.broader_than_category_id = 1)) ORDER BY narrower_than_position[0m
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered footer/_review_categories (0.02103)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for footer/copyright =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Attempted cobrand render not found 'footer/copyright_mysears'
+Missing template footer/_copyright_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand-parent
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered footer/_copyright (0.00005)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered common/_web_analytics (0.00178)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered common/_tacoda_insight (0.00003)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered footer/_content_mysears (0.15883)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | ========in cobrand render for footer/page_scripts =====
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Attempted cobrand render not found 'footer/page_scripts_mysears'
+Missing template footer/_page_scripts_mysears.html.erb in view path /home/build/Projects/site/app/views
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | falling through to cobrand-parent
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered footer/_page_scripts (0.00003)
+2009/08/21 12:39:32 | D | 29013 | 23788991621240 | Rendered layouts/_template (0.27028)
+2009/08/21 12:39:32 | I | 29013 | 23788991621240 | Completed in 0.88906 (1 reqs/sec) | Rendering: 0.39901 (44) | DB: 0.17132 (19) | Endeca: 0.00000 (0) | SDC: 0.00000 (0) | Amazon: 0.00000 (0) | 200 OK [http://mysears.dev/new/review?pn=1.7%20cu.%20ft.%20Compact%20Refrigerator&pu=http://pulse.ecom.sears.com:1184/shc/s/p_10153_12605_04691772000P&pk=05710221000P&partner_style=ros&prs=sears_dot_com]

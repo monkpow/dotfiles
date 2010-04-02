@@ -1,0 +1,7 @@
+#!/bin/bash
+#===============================================================================
+FPATH=/Users/Nik/bin/task/
+
+cat $FPATH/projects.otl | grep "@" | sed "s/[^@]*@ *\(.*\)/\1/" | sort > $FPATH/next
+cat $FPATH/next 
+

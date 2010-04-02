@@ -1,0 +1,5 @@
+1071  ac stat -m | sed "s/ .*//" | tee changelist
+1081  ac purge -l changelist
+1088  find . -name "*jsp" | xargs ruby -i.bak -ne  "gsub(/<%--\s*\{[^}]*\}\}\s*--%>/,'')"
+1106  find . -name "*jsp" | xargs ruby -i.bak -pe  "gsub(/<%--\s*\{[^}]*\}\}\s*--%>/,'')"
+

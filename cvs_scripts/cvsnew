@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo " "
+cvs -q status | grep "^?" | grep -v "\.class"
+echo " "

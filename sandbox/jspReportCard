@@ -1,0 +1,22 @@
+#!/bin/bash
+
+JSP_PROPS="/home/nkrimm/t/novo/property/web/shared/view/jsp.properties"
+OUTPUTFILE="/home/nkrimm/docroot/reports/platformConversion.html"
+totalJSP=`cat $JSP_PROPS | grep "jsppage" | grep -v "^#" | wc -l`
+totalPageDef=`cat $JSP_PROPS | egrep "(pagedef|shared\/util|error)" | grep -v "^#" | wc -l`
+echo "<html><head></head><body>" > $OUTPUTFILE
+
+echo "<h1>JSP conversion report card</h1>" >> $OUTPUTFILE
+echo "<p>"`date`"</p>" >> $OUTPUTFILE
+
+echo "<p>Total number of JSP Files: $totalJSP</p>" >> $OUTPUTFILE
+echo "<p>Total number of pageDefs: $totalPageDef</p>" >> $OUTPUTFILE
+VALUE=$(echo "scale=2; $totalPageDef/$totalJSP*100" | bc -l) 
+echo "<p>Percent complete : $VALUE</p>" >> $OUTPUTFILE
+
+echo "<p>List of unconverted JSPs</p>" >> $OUTPUTFILE
+echo "<pre>" >> $OUTPUTFILE
+cat  $JSP_PROPS | grep "page\." | grep -v "pagedef" >> $OUTPUTFILE
+echo "</pre></body></html>" >> $OUTPUTFILE
+
+

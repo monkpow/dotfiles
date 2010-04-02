@@ -1,0 +1,2 @@
+severity,pattern,response
+1,/=.*[ \t]$/,"no whitespace allowed at end of line"

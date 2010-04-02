@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cvslog0 $1 | more

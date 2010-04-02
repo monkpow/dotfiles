@@ -1,0 +1,21 @@
+#!/bin/bash
+
+alias ls="ls"
+mkdir ~/n/webapp/shared/css
+cd ~/n/webapp/site/css
+for file in `ls *css`; do
+cp $file ~/n/webapp/shared/css/$file.jsp;
+done;
+
+cd -
+cd ~/n/webapp/pagedef
+~/x/changeCss/applyChangesToPagedefAndLayout `find ~/n/webapp/pagedef -name "*jsp" | xargs grep -l "\/site\/css"`
+cd ~/n/webapp/layout
+~/x/changeCss/applyChangesToPagedefAndLayout `find ~/n/webapp/layout -name "*jsp" | xargs grep -l "\/site\/css"`
+
+cd ~/n/webapp/shared/css
+~/x/changeCss/applyCssJSP `ls *css.jsp`
+
+
+
+

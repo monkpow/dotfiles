@@ -1,0 +1,42 @@
+#!/usr/bin/perl -w
+
+
+my $searchType="OrbitzSaver";
+
+#if($searchType eq "OrbitzSaver"){
+my $searchTerm=qr/OrbitzSaver\b/;
+my $replaceTerm='<c:out value="${siteProfile.brand[\'hotelSaver\']}" />';
+#my $searchTerm=qr/Orbitz\b/;
+#my $replaceTerm='<c:out value="${siteProfile.agency[\'agency.name\']}" />';
+#}
+
+
+my $currentFile;
+my $fileNamedInInputList;
+my $searchPattern;
+my $regexFinal;
+my $replacePattern;
+
+while (<>){
+	chomp;
+	if ($_ =~ (/^([^:]*):(.*$)/)){
+	$fileNamedInInputList = $1;
+	$searchPattern=$2;
+	$replacePattern=$searchPattern;
+ 	$replacePattern =~ (s/$searchTerm/$replaceTerm/);	
+	print "accessed:           	$fileNamedInInputList ";
+	}
+	# very inefficient, should be refactored if this is used more than as one off
+
+
+	use Tie::File;
+	tie @array, 'Tie::File', $ARGV or die "$fileNamedInInputList: error  / not found";
+	for  (@array) {
+		s@$searchTerm@$replaceTerm@;
+   	}
+  untie @array;            
+ 
+   print "$fileNamedInInputList \n";
+  print "$searchPattern \n";
+   print "$replacePattern \n";
+ }

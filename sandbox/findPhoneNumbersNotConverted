@@ -1,0 +1,1 @@
+Find . -name "*jsp" | grep -v "deals" | xargs egrep "[0-9]{3}-[0-9]{3}-[0-9]{4}" | sed "s/.*\([0-9]\{3\}-[0-9]\{3\}-[0-9]\{4\}\).*/\1/g" | sort | uniq -u

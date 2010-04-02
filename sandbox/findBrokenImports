@@ -1,0 +1,75 @@
+#!/usr/bin/perl -w
+
+
+
+#########################################################################################################
+#
+# Goal of this test is to identify any
+# c:import
+# jsp:include
+# tiles:add
+# tiles:insert
+# tiles:put
+# @ import
+# reference that points to an invalid resource
+# and return 'failed on filename reference in filename' 
+# if failed, and succeess code if success
+#########################################################################################################
+
+my $counter;
+my $numErrors;
+my @errorList;
+
+while (<>) {
+	chomp;
+	if(m/<c:import url="\/([^?"]*)"/){
+		$fileName=$1;
+		&checkForExistance($fileName);
+		#print "check for existantce of $fileName. File $@: line $offender \n";	
+	}
+	if(m/<jsp:include page="\/([^?"]*)"/){
+		$fileName=$1;
+		&checkForExistance($fileName);
+		#print "check for existantce of $fileName. File $@: line $offender \n";	
+	}
+if(m/\@include file="\/([^?"]*)"/){
+		$fileName=$1;
+		&checkForExistance($fileName);
+		#print "check for existantce of $fileName. File $@: line $offender \n";	
+	}
+# <tiles:put name="body" value="/module/results/hotel/hotelDetails.jsp" />
+if(m/<tiles:put([^>]*)>/){
+		if ($1=~/"\/([^\.]*?\.jsp)"/){
+		$fileName=$1;
+		&checkForExistance($fileName);
+		#print "check for existantce of $fileName. File $@: line $offender \n";	
+		}
+	}
+if(m/<tiles:insert([^>]*)>/){
+		if ($1=~/"\/([^\.]*?\.jsp)"/){
+		$fileName=$1;
+		&checkForExistance($fileName);
+		#print "check for existantce of $fileName. File $@: line $offender \n";	
+		}
+	}
+}				
+#print "----------------------------------------------------\n";
+#print "Errors: \nThe following files referenced in $fileList do not exist\n";
+print "----------------------------------------------------\n";
+print "Running importedFileExists test \n";
+#print "Total references: $counter\n";
+#print "Total errors: $#errorList\n";
+print join ("\n", @errorList);
+
+sub checkForExistance{
+	$thisLine=shift(@_);
+#	chdir($dir) || die "Cannot chdir to $dir: ($!)";
+#	print "debug: filename $thisLine \n";
+	#$fileReference=@ARGV;
+	$fileReference="$ARGV";
+	if(! -e $thisLine){
+      my $errorMsg="$thisLine included in $fileReference does not exist";
+			push (@errorList, $errorMsg);
+			}else{
+#			print "does exist \n";
+}}

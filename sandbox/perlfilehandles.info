@@ -1,0 +1,159 @@
+#!/usr/bin/perl -w
+
+#######################################################
+#
+#  Dig through $fileList for reference to $files, 
+#  and check $dir to see if they exist
+#
+#######################################################
+
+my $dir="/home/home01/nkrimm/c/webapp";
+my $fileList="/home/home01/nkrimm/c/property/web/ctix/view/popup.properties";
+my $counter;
+my $numErrors;
+my @errorList;
+
+open (TEST_FILE, "<$fileList") || die "Cannot open $fileList ($!)";
+
+while (<TEST_FILE>){
+chomp;
+if (m/\.href/) { 
+	#$_=~ (s/=/_$1/);
+	$_=~ (s/[^=]*=\/?(.*)$/$1/);
+	if (m/^http/ || m/App\// || m/Secure\//){
+	#			print "REMOVING EXTERNALS: $_";
+				}else{
+				checkForExistance ($_);
+				}	
+	#print $_; 
+	$counter++;
+	}
+}
+print "----------------------------------------------------\n";
+print "Errors: \nThe following files referenced in $fileList do not exist\n";
+print "----------------------------------------------------\n";
+print "Total references: $counter\n";
+print "Total errors: $#errorList\n";
+print join ("\n", @errorList);
+
+sub checkForExistance{
+	$thisLine=shift;
+	chdir($dir) || die "Cannot chdir to $dir: ($!)";
+	if(! -e $thisLine){
+			push (@errorList, $thisLine);
+			}
+
+
+
+}
+
+
+##Regular Expressions and String Manipulation :: Manipulating Files and Directories :: Process Management
+##Table of Contents
+##Manipulating Files and Directories
+##
+##    * Building on the previous File I/O section, we will now look at how we can modify various directory and file properties.
+##
+##Manipulating Directories :: Directory Access
+##
+##    * If you want to change directories you can issue the chdir command:
+##
+##  chdir("/some/path") || die "Cannot chdir to /some/path ($!)";
+##
+##    * In order to glob a list, you can do it in either of these two ways:
+##
+##  @a = </some/path/*.c>
+##  @a = glob("/some/path/*.c");
+##
+##      This would create a list of all of the .c files in the /some/path directory. We could loop through a glob directly by:
+##
+##  if (-d "/some/path") {
+##    $where = "/some/path";
+##  } else {
+##    $where = "/another/path";
+##  }
+##  while (defined($next = <$where/*.c>)) {
+##    print "found a c file in $where directory named $name\n";
+##  }
+##
+##      Notice we used the -d check for a directory for its existence. Very powerful indeed.
+##
+##Manipulating Directories :: Directory Handles
+##
+##    * Just like we can create file handles for our files, we can create directory handles for our directories!
+##    * Using Directory Handles:
+##
+##  opendir(DIRHANDLE, "/some/path") || die "Cannot opendir /some/path: $!";
+##  foreach $name (sort readdir(DIRHANDLE)) {
+##    print "found file: $name\n";
+##  }
+##  closedir(DIRHANDLE);
+##
+##      This prints out a sorted directory listing. For an unsorted list, we could have simplified the loop construct:
+##
+##  while ($name = readdir(DIRHANDLE)) {
+##    print "found file: $name\n";
+##  }
+##
+##      Remember to close your directory handles!
+##
+##Manipulating Directories :: Creating and Removing Directories
+##
+##    * There is no trick to creating and removing directories in Perl:
+##
+##  mkdir("newdir", 0755) || die "Cannot mkdir newdir: $!";
+##  rmdir("olddir") || dir "Cannot rmdir olddir: $!";
+##
+##      Notice the 0755 in the mkdir function call is permission bits. A quick rundown: 4 = read, 5 = read + execute, 6 = read + write, 7 = read + write + execute. You need to set the execute bit on in order for you to access the directory.
+##
+##Manipulating Files :: Removing and Renaming Files
+##
+##    * Removing files can be done by using the unlink function:
+##
+##  print "file to delete? ";
+##  chomp($name = <STDIN>);
+##  unlink($name) || die "Cannont unlink $name: $!";
+##
+##      You can even give unlink a glob or a list of files to delete.
+##    * Renaming files is a simple function call:
+##
+##  rename("file.txt", "file-old.txt") || die "Cannot rename file.txt: $!";
+##  rename("data.in", "/some/new/path/data.in") || die "Cannot rename data.in: $!";
+##
+##      Notice that Perl's rename function is almost the same as the mv command under *NIX. 
+##
+##Manipulating Files :: Linking
+##
+##    * To create a symbolic link under Perl, use the symlink function:
+##
+##  # Under *NIX shell:
+##  ln -s file.txt /some/other/path/reference.txt
+##  # Under Perl:
+##  symlink("file.txt", "/some/other/path/reference.txt") || die "Cannot symlink file.txt: $!";
+##
+##      Perl gives us a way to read symlinks:
+##
+##  if (defined($x = readlink("reference.txt"))) {
+##    print "reference.txt points at '$x'\n";
+##  }
+##
+##Manipulating Files :: Modifying Permissions
+##
+##    * Modifying permissions is very similar to the shell chmod command:
+##
+##  chmod(0644, "file1", "file2") || die "Cannot chmod file1, file2: $!";
+##
+##      Notice we can give a list of files to the chmod command (as we have seen with other File/Dir modification functions.
+##
+##Manipulating Files and Directories Review
+##
+##    * Perl proves again to be a swiss army knife of programming languages. We can modify our directories and files with ease, while ther Perl interpreter takes care of the gory details.
+##
+##Regular Expressions and String Manipulation :: Manipulating Files and Directories :: Process Management
+##Table of Contents
+##(C) 1999-2001 The Sherrill Group
+##Georgia Institute of Technology
+##Document author: Alfred Park
+##Questions, suggestions, comments? E-mail the Webmaster.
+##Last Modified: August 1, 2001
+##

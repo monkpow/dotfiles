@@ -1,0 +1,93 @@
+#!/usr/bin/perl
+
+$author0 = "$ARGV[0]";
+#$search0 = "$ARGV[1]";
+$date0 = "$ARGV[1]";
+
+if ($author0 eq "") {
+    print "Usage:  cvsfinddate author [YYYY/MM/DD]\n";
+    print "    (if date is omitted, today's date is used)\n";
+    print "\n";
+    exit;
+}
+
+open(CVSLOG, "cvs -q log|");
+
+$ll      = "";
+$found   = 0;
+$newfile = 0;
+
+if ($date0 eq "") {
+    $date0 = `date '+%Y/%m/%d'`;
+    chop($date0);
+}
+
+print "author0 = |$author0|\n";
+print "date0 = |$date0|\n";
+
+while (<CVSLOG>) {
+
+    $found = 0;
+
+    if (/^RCS file:/) {
+
+        $newfile = 1;
+
+        if ($ll ne "") {
+            print $ll;
+        }
+
+        $ll    = "";
+
+        s/RCS file:/CVS Log for:/;
+        s/,v//;
+        $llheader = "$_";
+        $llheader = "${llheader}--------------------------------------------------------------------------------\n";
+    } elsif (/^revision/) {
+        /^revision\s+(\S+)$/;
+        $revline = $1;
+        $_ = <CVSLOG>;  # date/author line
+
+        /date:\s*(.*);.*author/;
+        $date = $1;
+        /author:\s*(\w+)/;
+        $author = $1;
+        /lines:\s+(.*)$/;
+        $lines = $1;
+
+        /date:\s*(\d+\/\d+\/\d+)\s+/;
+        $date1 = $1;
+
+#print "\n";
+#print "author0 = |$author0|\n";
+#print "date1 = |$date1|\n";
+#print "\n";
+
+        if (($author eq $author0) && ($date1 eq $date0)) {
+            $found = 1;
+            $llrevline    = "$revline ($date; $author; lines: $lines)\n";
+        }
+
+        $lltext = "";
+        $_ = <CVSLOG>;
+        while ((!/^------/) && (!/^=====/)) {
+            if ($found == 1) {
+                $lltext = "${lltext}      $_";
+            }
+            $_ = <CVSLOG>;
+        }
+
+        if ($found == 1) {
+            if (($search0 eq "") || ($lltext =~ /$search0/i)) {
+                if ($newfile == 1) {
+                    $newfile = 0;
+                    $ll = "${ll}${llheader}";
+                }
+
+                $ll = "${ll}${llrevline}${lltext}\n";
+            }
+        }
+    }
+}
+
+print $ll;

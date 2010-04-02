@@ -1,0 +1,102 @@
+Tue Jul  4 22:03:22 CDT 2006
+	# Move CSS discussion to forum.  Resolve issue with IE filters.  Decide on correct, validating filters.
+# Create layout library, set pattern for toolkits
+		# Cut a stream
+# Visit Brian regarding Picture viewer.// code review
+		# defunct old layouts
+		# remove all references to old layouts
+		# Add nested layout example to layouts.ppt
+		# Refactor r:layout to pull a key vs a file path
+Wed Jul  5 17:35:13 CDT 2006
+		# [js_ppt] research observer pattern. read and understand two articles. ( 30 pg ppt deck ).
+Fri Jul  7 16:12:48 CDT 2006
+*# [js_ppt] Javascript Presentation, part 2
+		# [js_ppt] Case Study 2: Event.obeserver [2h]
+		# [js_ppt] Create one- to two-pager on Event.observer pattern, with smaples, expalnainations, and sample patterns
+			# [js_ppt] Create outline
+		# [js_ppt] Code Walkthrough [2h]
+		# Direcory Structure/File Structure 
+		# Final Outline and Transitions
+		# Post to Austin.Duncllc.com
+# schedule javascript part 2
+Fri Jul  7 16:13:15 CDT 2006
+		# [js_codereview] namespace javascript
+		# [js_codereview] Check in profiler
+Mon Jul 10 14:59:57 CDT 2006
+# [js_params] Prepare for code review regarding passing parameters via json
+			# [js_params] Chris questions about "more" link.  How do we content into javascript in those cases where javascript is not allowed in-line?
+		#	Use cases: calendar
+		#	Use cases: images
+		#	Use cases: html snippet
+		#	Uses cases: escaped text
+		#		Use case: loops
+		#		Use cases: lots of attributes
+		#		Use case: passing functions?
+Mon Jul 10 15:13:25 CDT 2006
+Wed Jul 12 15:49:23 CDT 2006
+# [admin] http://www.digitalmediaminute.com/screencast/firebug-js/ (for next weeks team meeting)
+Thu Jul 13 10:03:01 CDT 2006
+Thu Jul 13 10:11:35 CDT 2006
+# [admin] send out javascript URL, and article URLs
+Thu Jul 13 10:14:31 CDT 2006
+Thu Jul 13 10:38:08 CDT 2006
+# [css] add print style sheet to system {1hr}
+Fri Jul 14 15:48:02 CDT 2006
+# [code_review] schedule chris code review {.5hr}
+# [code_review] new image gallery  /7/11 {1hr}
+Fri Jul 14 15:48:42 CDT 2006
+# [js_params]  Refactor current code base with examples
+# [js_params]  Revise design document, and publish
+# [js_params]  implement in code base, including stripping code
+Fri Jul 14 16:06:08 CDT 2006
+# estimates for pop-ups
+Wed Jul 19 09:20:26 CDT 2006
+	    # [interstitial]  Mock a interstitial page expecting a form, Submit a form {2hrs}
+		# [interstitial]   Retrieve interstitial
+# [code_review] prepare for Tabs review {2hr}
+Wed Jul 19 11:45:47 CDT 2006
+		# [interstitial] Create pretty transition page, reporting values
+Wed Jul 19 16:15:53 CDT 2006
+# [js_opt] implement refactoring of  page object as detailed in the presentation
+# [js_opt] implement refactoring on each control instatiate.
+Thu Jul 20 13:37:10 CDT 2006
+	# create image use case doc for discussion, and distribute
+Thu Jul 20 13:37:26 CDT 2006
+# publish notes about images
+Mon Jul 24 11:39:43 CDT 2006
+	 #		create a directory structure for layouts
+     #		Update layout presentation with more information  about forms
+# code review javascript
+# [admin] Mid-year review: Complete Scott's questionaire: {1hr}
+# Javascript namespacing
+# give a great presentation on Wednesday; fully explain the observer event pattern.  Show Brian's code. Show passing parameters.
+ # [css] Review Gena's comments about overflow, determine the best way to approach layouts.
+ # [code_review] review tabs implementation
+# [js_opt]implement js code optimizations
+# clean up depots, all are dirty right now
+Tue Aug  1 09:44:01 CDT 2006
+# Additional of interstitial functionality. 
+# js: add Element.getParentByTagName(targetTagName)
+# js: add Form.HiddenField.add(form, name, value)
+# jsp: add query String debugging (debug=true)
+Tue Aug  1 10:29:22 CDT 2006
+# add getParams routine to module
+Mon Aug  7 13:44:35 CDT 2006
+[interstitial] # launching mechanism finalized
+[panel] # create use cases for panel.  Work with Gena to implement
+# add params to modules, 
+# document interstitial
+# complete intersitial documentation
+#  post panels and jsParams to austin, talk with matt haddock and matt duhan about their questions
+# schedule meeting with ben schmitz, mlaford, mokeefe, ed to discuss caching issues
+Wed Aug  9 11:17:06 CDT 2006
+[admin] # follow up on mixed content
+[admin] # Mid-year review (July 28)
+[cms_img] #	Image storage and retrieval
+# send header, footer and buttons to vivian tedford
+Mon Aug 28 10:17:31 CDT 2006
+[task] # script cleanup of prolog tags
+Mon Aug 28 13:23:06 CDT 2006
+# [debug] debug problems with air search results/format dateTime tag
+Mon Aug 28 17:34:42 CDT 2006
+[schemas] # move pageConfig and styles schemas, and update calling xml files

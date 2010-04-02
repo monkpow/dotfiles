@@ -1,0 +1,78 @@
+#!/usr/bin/perl -w
+
+
+my @fileList;
+my $FAILURE_LIST="~/tmp/failure.test.results";
+my $NESTED_JSTL="~/tmp/nestedJstl.test.results";
+my $PROPERTY_LIST="~/tmp/property_list.test.results";
+
+
+##############################################
+#
+#  Get a list of files.
+#   If file names are supplied on command line, take these
+#   If script is called without params, apply to current directory
+#   and recursively
+#
+##############################################
+
+if ($#ARGV==-1){
+	#@fileList=`find . -name "*jsp" | egrep -v "(admin|ivr|CVS|devtools|WEB-INF|/img/|/images/|marketing|travelwatch|winvegas|spiketv|promos)" | xargs ls`;
+		die "Need to specify files for operation";
+	}else{
+		@fileList=@ARGV;	
+	}
+
+	
+###  makes a backup copy and wri and writes in place	
+		local($^I, @ARGV) = ('.bak', @fileList);
+		while (<>) {
+			if ($. == 1) {
+				if (!/c.tld/){
+				print '<%@ page contentType="text/html; charset=UTF-8" %>' . "\n";	
+				print '<%@ taglib uri="/c.tld" prefix="c" %>' . "\n";
+				}
+			}
+			if($.>=2){
+			$removeExtraCTaglibDeclaration="<%@ taglib uri=\"/c.tld\" prefix=\"c\" %>";
+			s/^$removeExtraCTaglibDeclaration$//;
+			}
+			
+			
+			#The order of these tests is important.  An implicit assumption is that the earlier tests will consume
+			#matches that would erroneously be changed by later replacements
+			# Example.  Replacement of Orbitz.com should be run prior to replacements of Orbitz
+			
+		
+				$replacement= '<c:out value="${siteProfile.style[\'templateBg\']}" />';
+				s@\#cef\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'bodyText\']}" />';
+				s@\b#000\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'link\']}" />';
+				s@\b#36f\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'linkVisited\']}" />';
+				s@\b#69f\b@$replacement@g;
+				$replacement= '<c:out value="${siteProfile.style[\'linkHover\']}" />';
+				s@\b#039\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'moduleHdrBg\']}" />';
+				s@\b#adf@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'moduleBg\']}" />';
+				s@\b#fff\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'errorStripe\']}" />';
+				s@\b#f30\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'errorText\']}" />';
+				s@\b#f30@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'railBg\']}" />';
+				s@\b#adf\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'railHeadTxt\']}" />';
+				s@\b#000@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'railTxt\']}" />';
+				s@\b#000\b@$replacement@gi;
+				$replacement= '<c:out value="${siteProfile.style[\'railLink\']}" />';
+				s@\b#000\b@$replacement@gi;
+				
+				 	print;
+			close ARGV if eof;              # Reset $.
+		}
+
+

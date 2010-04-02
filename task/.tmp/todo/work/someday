@@ -1,0 +1,28 @@
+Maybe/Someday
+	Static code analysis:
+		detect image references or style references in scripts folder
+		detect branded code references
+		detect in-line script blocks, in-line event handlers 
+    
+
+* CSS layouts
+fierce layout which keeps any number of columns locked to site width
+loose layout which allows one column to breakout
+?loose layout which allows two columns to breakout?
+
+
+Collect CSS patterns
+	as developers present good patterns, add to known toolbox
+	how to host it?
+	make it layout agnostic
+	easy to test global changes
+	layouts are generated automatically from css commands
+	design patterns with known flexibility
+  structure
+	build on css toolbar
+	showcase
+	test framework
+
+Publish IE information
+	ie 7 differences and installs, etc
+

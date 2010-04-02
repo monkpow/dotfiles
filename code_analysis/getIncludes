@@ -1,0 +1,2 @@
+#!/bin/bash
+cat $1 | grep "include" |grep -v "global" | sed -e 's/^.*<jsp:include page="\([^"]*\)" \/>/\1/' | sort - | uniq -

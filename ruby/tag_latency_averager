@@ -1,0 +1,45 @@
+#!/usr/bin/ruby -w
+# pass in a log file using erma and extract times, average, etc.
+
+@timesCalled=0
+@average=0
+@totalLatency=0
+@minLatency=0
+@maxLatency=0
+tagList=Hash.new
+while (line=gets)
+  currentTagAndTime=line.split("org.apache.jsp.tag.web.")[1]
+  if currentTagAndTime !=nil
+  currentTag, currentTime=currentTagAndTime.split("|") 
+  #currentValue=line.split("|")[2].to_i
+  if tagList.has_key?(currentTag)
+    #puts "exists"
+  else
+    tagList.store(currentTag,[])
+  end
+  tagList[currentTag].push(currentTime)
+  end
+end
+
+# at this point I have a data stucture with each tag name and an array of values
+  
+
+puts "tag\ttotal calls\taverage"
+
+tagList.each do |tag, values|
+  @n=0
+  @totalCalls=values.size
+  values.each do |value| 
+      @n+=value.to_i
+  end
+  @average=@n/@totalCalls
+  
+  puts "#{tag}\t#{@totalCalls}\t#{@average}"
+end
+
+#@average=@totalLatency/@timesCalled
+
+#puts "total calls #{@timesCalled}"
+#puts "average latency #{@average}"
+#puts "min latency #{@minLatency}"
+#puts "max latency  #{@maxLatency}"

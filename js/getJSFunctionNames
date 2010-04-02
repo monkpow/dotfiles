@@ -1,0 +1,36 @@
+#!/usr/bin/perl -w
+
+#########################################################################################################
+#
+# Goal of this test is to identify any javascript functions which are never called
+# 
+#
+#########################################################################################################
+
+my $counter;
+my @errorList;
+my $string;
+my $src_dir='~/depots/novo_js/';
+
+@ARGV=`find $src_dir -name "*js" -type f| egrep -v "(prototype.js|admin|ivr|devtools|ldc)"`;
+
+#| grep -v "prototype.js" |  xargs grep "function\s*(" . | sed "s/[^:]*:\s*//" | sed "s/this\.//" | sed "s/\s*=\s*function([^)]*)\s{//" | sed "s/var\s*//" | sed "s/Event.observe.*$//" | sed "s/each//" | sort 
+
+while (<>) {
+ 	chomp;
+ 	
+  if(m/function\b/){  # find function (\b=word boundry)
+    $function=$_;
+    if($function =~ /function\s*(\w+?)\s*\([^(]*\)/){ # find function(\s*?=optional whitespace, non-greedy | (\w)+?=capture word, non-greedy | rest of line=followed by parens
+    $functionName=$1;
+    }elsif (m/(\w*)\s*=\s*(new)?\s*function/) { # [function] = new function ()
+      $functionName=$1;
+    }elsif (m/(\w*)\s*:\s*function/) { # [label]:function()
+      $functionName=$1;  
+    }else{
+      #    print "$_\n";  #a place to capture non-matching expressions for testing
+    }
+    print "$functionName\n";
+
+  }
+}

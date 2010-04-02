@@ -1,0 +1,61 @@
+[admin] 15 min cleanup
+
+[arch] @  jsp compile!
+
+[bugs]  bugs: height on layouts in px instead of ems; set in height only; only set on one layout
+[bugs]  bugs: width of pages!=width of module+rail
+[bugs]  lots of unclosed img and meta tags. Chase downn and alert author.
+
+[cms] @ images.xsd complete, and training
+
+[code_review] @ print out a short packet describing a code review and the standards {1hr}
+
+[css_filters]	CSS validation turned on
+[css_filters]   Outcome: using validating selector
+[css_filters]	Refactor existing code, remove [_*] filters, replace with * html, *+html filters {2 hours}
+[css_filters]	Send e-mail update that refactoring has been completed
+
+[css_test] @! CSS Test tool broken
+
+[docs]	Continue to update documentataion directory
+[docs] convert CSS slides to power point for boot camp  {2hours}
+[docs:ui_capabilities] @ Draft ui_capabilites doc
+[docs:ui_capabilities]  - front end capabilities matrix
+
+[error_pages] error pages to webapp
+
+[interstitial]  close out interstitial
+[interstitial]  create required model spec
+[interstitial]  review requirements
+
+[javascript] send out clarifying communication about modules vs controls
+
+[json_params]  update ppt
+[json_params]  update documentation
+
+[js_opt] add getParentMethods to Element /getParentByTagName / getParentByClassName
+[js_opt] javascript profiling, scripts extremely slow
+
+[popup_tag]  Document updates to tag, and javascript {1hr}
+[popup_tag]  Implement JS to find popup links, and execute{2hr}
+[popup_tag]  requirements, use cases {1hr}
+[popup_tag]  Test, commit to accurev {1hr}
+[popup_tag]  Update tag to enable popup attributes to be handed to class attribute.  Support for multiple pop configs. {1hr}
+
+[research] Explore aspect oriented javascript
+[research] localizeation issues with javascript and css  separators in equastions  separators in css
+[research]  read article on design patterns (http://www.lukew.com/ff/entry.asp?347)
+[research]  scott olson: suggestion on speeding up prototypes $$
+
+[review] directory structure getting wierd/ see page vs module
+[review] @ matt duhan code review
+[review] Review hide/reveal control, and usage.  Detach markup from collapse {3 hrs}
+
+[task] remove bogus taglib declarations from WEB-INF
+[task] @ resolve questions: hotel promo enahncement in im
+
+
+[util]  cover util:debug in communication to team
+
+[web_services] @ web services conversation documentation draft
+[schemas] # move pageConfig and styles schemas, and update calling xml files

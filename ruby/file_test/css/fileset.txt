@@ -1,0 +1,2 @@
+filetype,exclusions
+/css/,/(brand|debug|pui|test|devtools|admin|email|internal)/

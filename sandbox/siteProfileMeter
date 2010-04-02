@@ -1,0 +1,6 @@
+
+for prop in `cat ~/x/property.list.in.files`;
+	 do echo $prop ":" `cat siteProfile.success | fgrep $prop | wc -l`;
+	 done;
+	
+

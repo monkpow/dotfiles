@@ -1,0 +1,128 @@
+ select * from reviews ORDER by CREATED_AT DESC LIMIT 5;
+ sbrs1tvp
+svn list svn+ssh://build@svn.hive.viewpoints.com/usr/local/svn/jabberbot/trunk
+
+<% %w{ home mail }.each do |action| -%> 
+<li> 
+<%= link_to_unless_current(action.capitalize, :action => action, :id=>@guardian) %> 
+</li> 
+<% end -%></li>
+
+@sel.get_eval('window.frames[1].js_close_custom_lightbox')
+
+history | tail -n50 > /tmp/.snip | vi /tmp/.snip ~/.snippets
+/usr/local/mysql/bin/mysql -h localhost -u site --password=code1T site_development < viewpointspro-prod-data-latest 
+scp nkrimm@integration.hive.viewpoints.com:/usr/local/prod-repl/mysearspro/mysearspro-prod-data-latest.gz .
+mysql -h localhost -u site --password=code1T mysearsdev < `zcat mysearspro-prod-data-latest.gz` 
+mysqldump --all-databases -u site -p -h localhost > vp_all_db.mysql_dump
+/mysql -h localhost -u site --password=code1T site_development < viewpointspro-prod-data-latest 
+config.cache_classes
+config.action_controller.perform_caching
+#:svn diff --diff-cmd diff -x -uw -rPREV:HEAD admin.css
+
+# get list of all layouts in use
+find . -name "*rb" | xargs grep "layout ['\"]" . | awk '{print $3}' | sed "s/,$//" | sort | uniq
+
+#:svn co svn+ssh://nkrimm@svn.hive.viewpoints.com/usr/local/svn/site/branches/bv_reviewer
+/usr/sbin/apachectl
+
+:: apache access logs
+
+vpn in; ssh office.viewpoints.com; ssh www01.prod; cd /data01/web/viewpoints/current/log
+
+
+
+:: util
+nkrimm@util01.prod's password: 
+[nkrimm@118178-app1 ~]$ cd /data01/archives/logs/hosts/www01.prod.viewpoints.com/weblogs
+
+
+turn on caching in development:
+
+development.rb:   config.action_controller.perform_caching             = false
+
+patching a svn diff back: 
+-i is input file
+patch -p0 -i ~/fix_ugly_bug.diff
+
+
+## Integration branching ##
+so here's what you need to do
+1.  ssh into hornet
+2. sudo su - build
+3.  ./bin/integration_branch mysearsint reload_database
+
+you should probably cut and paste the new branch name from the stdout and email it out to tech in case folks need to place patches on it
+
+## Integration updating ##
+yes, checkout that branch locally.  then when you want to push to int do this as build from ~build:
+./bin/integration_build mysearsint
+in ~build there are 3 files (.current_branch_mysearsint, etc)
+if you ever need to roll back to a different branch, you can just edit that file and rerun the build
+
+
+
+merging:
+ fishhook:~/src/viewpoints/branches/2009-08-16-r13345  
+ #:svn merge -r13355:13356 svn+ssh://nkrimm@svn.hive.viewpoints.com/usr/local/svn/site/trunk/site
+
+
+  prepend_view_path Rails.root + "/cobrands/app/views/"
+
+restarting jabberbot:
+yeah as the tinkerbell user
+cd /data01/web/jabberbot/current/ && RAILS_ENV=production ./script/backgroundrb stop && sleep 10 && RAILS_ENV=production ./script/backgroundrb start
+
+4:48:40 PM Leon Chism: control.akamai.com
+4:49:00 PM Leon Chism: user is lchism1
+4:49:19 PM Leon Chism: pword is leonis1
+
+
+
+# show all of the layouts used in this webapp
+grep -r ":layout" app | grep -v 'svn' | sed "s/.*\(:layout\)/\1/" | sort | uniq
+
+
+# show all of the names of helpers in this application
+cat profile_base_helper.rb  | grep "def" | sed -e "s/\s*def//" | sed -e "s/(.*/
+
+build to int:  [build@hornet ~]$ ./bin/integration_build mysearsint
+
+
+ mysql -u site -h disneyland -p
+
+#what branch is in int
+cat ~build/.current_branch_ssuint on hornet to find out though
+
+
+#selenium_on_tinkerbell
+from gnome ./bin/start_selenium.
+restart gnome session:  /etc/init.d/selenium_X
+
+
+
+[build@hornet ~]$ ~/bin/integration_build mysearsint
+
+
+
+to log into tinkerbell and show selenium tests:
+ssh -X nkrimm@tinkerbell
+
+
++  cas_host: <%= cas_host = "https://sso.sears.com" %>
++  cis_host: <%= cis_host = "https://accounts.sears.com" %>
++  base_uri: <%= cis_host %>/universalservices/v1
++  base_uri_v1_1: <%= cis_host %>/universalservices/v1.1
++  auth_path: <%= cas_host %>/shccas/shcLogin
++  validation_path: <%= cas_host %>/shccas/serviceValidate
++  logout_path: <%= cas_host %>/shccas/logout
+
+
+
+manowar-wl:~/site/trunk/site  
+> ssh nkrimm@util01.pro.viewpoints.com
+nkrimm@util01.pro.viewpoints.com's password: 
+Last login: Wed Oct 28 14:35:54 2009 from manowar-wl.office.viewpoints.com
+[nkrimm@234776-app11 ~]$ cd /data02/archives/logs/hosts/www02.pro.viewpoints.com/mygofer/weblogs/
+
+rdoc app/helpers/ -o public/doc

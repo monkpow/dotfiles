@@ -1,0 +1,13 @@
+#!/bin/bash
+
+WL_DIR="/home/home01/nkrimm/n/target/wl/bin"
+BUILD_DIR="/home/home01/nkrimm/n/"
+
+cd $WL_DIR
+./stop
+cd $BUILD_DIR
+build.sh
+cd $WL_DIR
+./start
+./logview
+

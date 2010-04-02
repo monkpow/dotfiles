@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp /usr/local/rhino1_6R5/js.jar org.mozilla.javascript.tools.shell.Main 

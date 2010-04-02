@@ -1,0 +1,169 @@
+Index: home/air_advanced.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/air_advanced.jsp,v
+retrieving revision 2.7
+diff -r2.7 air_advanced.jsp
+1d0
+< <%@ taglib uri="/orbitztaglib.tld" prefix="orbitz" %>
+2a2,3
+> <%@ taglib uri="/orbitztaglib.tld" prefix="orbitz" %>
+> 
+9c10
+< <title>Airline Tickets - Book Cheap Airline Tickets Here | ORBITZ.COM</title>
+---
+> <title>Airline Tickets - Book Cheap Airline Tickets Here | <c:out value="${siteProfile.brand['name.CAPS']}" />.COM</title>
+14c15
+< <META NAME="description" CONTENT="Need discount airline tickets? Search for the lowest airfare and book your airline tickets online.  ORBITZ helps you find great travel deals!">
+---
+> <META NAME="description" CONTENT="Need discount airline tickets? Search for the lowest airfare and book your airline tickets online.  <c:out value="${siteProfile.brand['name.CAPS']}" /> helps you find great travel deals!">
+Index: home/air_flex.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/air_flex.jsp,v
+retrieving revision 2.3
+diff -r2.3 air_flex.jsp
+0a1
+> <%@ taglib uri="/c.tld" prefix="c" %>
+5c6
+< <title>Orbitz: Flexible Search</title>
+---
+> <title><c:out value="${siteProfile.brand['name']}" />: Flexible Search</title>
+Index: home/air_flex_option_2_only.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/air_flex_option_2_only.jsp,v
+retrieving revision 2.4
+diff -r2.4 air_flex_option_2_only.jsp
+0a1
+> <%@ taglib uri="/c.tld" prefix="c" %>
+5c6
+< <title>Orbitz: Flexible Search</title>
+---
+> <title><c:out value="${siteProfile.brand['name']}" />: Flexible Search</title>
+Index: home/air_flex_rec.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/air_flex_rec.jsp,v
+retrieving revision 2.4
+diff -r2.4 air_flex_rec.jsp
+0a1
+> <%@ taglib uri="/c.tld" prefix="c" %>
+5c6
+< <title>Orbitz: Flexible Search</title>
+---
+> <title><c:out value="${siteProfile.brand['name']}" />: Flexible Search</title>
+Index: home/car_advanced.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/car_advanced.jsp,v
+retrieving revision 2.6
+diff -r2.6 car_advanced.jsp
+1d0
+< <%@ taglib uri="/orbitztaglib.tld" prefix="orbitz" %>
+2a2,3
+> <%@ taglib uri="/orbitztaglib.tld" prefix="orbitz" %>
+> 
+34c35
+< <title>Car Rentals: Rent-a-Car, Make Reservations | ORBITZ.COM</title>
+---
+> <title>Car Rentals: Rent-a-Car, Make Reservations | <c:out value="${siteProfile.brand['name.CAPS']}" />.COM</title>
+39c40
+< <meta name="description" content="Car rentals from Orbitz help you find and book more low price rental cars.  Top national car rental brands available!">
+---
+> <meta name="description" content="Car rentals from <c:out value="${siteProfile.brand['name']}" /> help you find and book more low price rental cars.  Top national car rental brands available!">
+Index: home/hotel_advanced.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/hotel_advanced.jsp,v
+retrieving revision 2.5
+diff -r2.5 hotel_advanced.jsp
+0a1
+> <%@ taglib uri="/c.tld" prefix="c" %>
+5c6
+< <title>Hotels: Discount Hotel Rooms, Rates, and Reservations | ORBITZ.COM</title>
+---
+> <title>Hotels: Discount Hotel Rooms, Rates, and Reservations | <c:out value="${siteProfile.brand['name.CAPS']}" />.COM</title>
+10c11
+< <meta name="description" content="Find discount hotel rooms and the lowest rates on hotel reservations  ORBITZ offers great discounts on hotels. Book flight + hotel and save more!">
+---
+> <meta name="description" content="Find discount hotel rooms and the lowest rates on hotel reservations  <c:out value="${siteProfile.brand['name.CAPS']}" /> offers great discounts on hotels. Book flight + hotel and save more!">
+Index: home/quick_search.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/quick_search.jsp,v
+retrieving revision 2.9
+diff -r2.9 quick_search.jsp
+0a1
+> <%@ taglib uri="/c.tld" prefix="c" %>
+12c13
+< <title>Orbitz: Airline Tickets, Hotels, Car Rentals, Travel Deals</title>
+---
+> <title><c:out value="${siteProfile.brand['name']}" />: Airline Tickets, Hotels, Car Rentals, Travel Deals</title>
+20c21
+< <meta name="keywords" content="Orbitz, airline tickets, hotels, car rentals, travel deals, vacation packages, low fares, airfare, hotel reservations, travel, cruises">
+---
+> <meta name="keywords" content="<c:out value="${siteProfile.brand['name']}" />, airline tickets, hotels, car rentals, travel deals, vacation packages, low fares, airfare, hotel reservations, travel, cruises">
+Index: home/vacation.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/home/vacation.jsp,v
+retrieving revision 2.8
+diff -r2.8 vacation.jsp
+6c6
+< <title>Vacation Packages: Book Air &amp; Hotel Together &amp; Save! | ORBITZ.COM</title>
+---
+> <title>Vacation Packages: Book Air &amp; Hotel Together &amp; Save! | <c:out value="${siteProfile.brand['name.CAPS']}" />.COM</title>
+11c11
+< <meta name="Description" content="Book discount vacation packages at ORBITZ.  Find great travel deals when you book airline tickets and hotel rooms together.">
+---
+> <meta name="Description" content="Book discount vacation packages at <c:out value="${siteProfile.brand['name.CAPS']}" />.  Find great travel deals when you book airline tickets and hotel rooms together.">
+Index: sitemap.jsp
+===================================================================
+RCS file: /usr/local/cvs/orbitz2005/novo/webapp/sitemap.jsp,v
+retrieving revision 2.7
+diff -r2.7 sitemap.jsp
+0a1
+> <%@ taglib uri="/c.tld" prefix="c" %>
+7c8
+< <title>Orbitz: Sitemap</title>
+---
+> <title><c:out value="${siteProfile.brand['name']}" />: Sitemap</title>
+49,52c50,53
+< 						<div class="t5"><b><a href="http://faq.orbitz.com/cgi-bin/orbitz.cfg/php/enduser/home.php">Customer Service</a></b></div>
+< 							<a href="http://faq.orbitz.com/cgi-bin/orbitz.cfg/php/enduser/home.php">Frequently asked questions</a><br>
+< 							<a href="http://faq.orbitz.com/cgi-bin/orbitz.cfg/php/enduser/home.php">Email us your questions</a><br>
+< 							<a href="http://faq.orbitz.com/cgi-bin/orbitz.cfg/php/enduser/home.php">Call us</a><br>
+---
+> 						<div class="t5"><b><a href="<c:out value="${siteProfile.brand['customer.service']}" />">Customer Service</a></b></div>
+> 							<a href="<c:out value="${siteProfile.brand['customer.service']}" />">Frequently asked questions</a><br>
+> 							<a href="<c:out value="${siteProfile.brand['customer.service']}" />">Email us your questions</a><br>
+> 							<a href="<c:out value="${siteProfile.brand['customer.service']}" />">Call us</a><br>
+68c69
+< 							<a href="http://orbitzhotels.orbitz.com/signup/">Orbitz for Hotels</a><br>
+---
+> 							<a href="http://orbitzhotels.orbitz.com/signup/"><c:out value="${siteProfile.brand['name']}" /> for Hotels</a><br>
+103c104
+< 						<div class="t5"><b><a href="<orbitz:encodeUrl>/App/ViewAllPromotions</orbitz:encodeUrl>">Orbitz Promotions</a></b></div>
+---
+> 						<div class="t5"><b><a href="<orbitz:encodeUrl>/App/ViewAllPromotions</orbitz:encodeUrl>"><c:out value="${siteProfile.brand['name']}" /> Promotions</a></b></div>
+109c110
+< 						<div class="t5"><b><a href="http://www.juniper.com/app/japply/lp/10607.jsp">Orbitz credit card</a></b></div>
+---
+> 						<div class="t5"><b><a href="http://www.juniper.com/app/japply/lp/10607.jsp"><c:out value="${siteProfile.brand['name']}" /> credit card</a></b></div>
+114c115
+< 							<b><a href="http://biz.orbitz.com/">Corporate travel - Orbitz for<br>Business</a></b></div>
+---
+> 							<b><a href="http://biz.orbitz.com/">Corporate travel - <c:out value="${siteProfile.brand['name']}" /> for<br>Business</a></b></div>
+131c132
+<         					<a href="<orbitz:valueof property="OrbitzProperty:system:cityguides.homepage"/>">City guides</a><br>
+---
+>         					<a href="<orbitz:valueof property="<c:out value="${siteProfile.brand['name']}" />Property:system:cityguides.homepage"/>">City guides</a><br>
+146c147
+< 							<a href="<orbitz:encodeSSLUrl>/Secure/ViewOrbitzPoints</orbitz:encodeSSLUrl>">Orbitz Points</a><br>
+---
+> 							<a href="<orbitz:encodeSSLUrl>/Secure/View<c:out value="${siteProfile.brand['name']}" />Points</orbitz:encodeSSLUrl>"><c:out value="${siteProfile.brand['name']}" /> Points</a><br>
+155,157c156,158
+< 							<a href="http://orbitzhotels.orbitz.com/signup" target="_blank">Orbitz for Hotels</a><br>
+< 							<a href="<orbitz:encodeHTTPUrl>/App/business/tripfinder.jsp</orbitz:encodeHTTPUrl>" target="_blank">Orbitz for Business</a><br>
+< 							<orbitz:popup key="advertise">Advertise on Orbitz</orbitz:popup><br>
+---
+> 							<a href="http://orbitzhotels.orbitz.com/signup" target="_blank"><c:out value="${siteProfile.brand['name']}" /> for Hotels</a><br>
+> 							<a href="<orbitz:encodeHTTPUrl>/App/business/tripfinder.jsp</orbitz:encodeHTTPUrl>" target="_blank"><c:out value="${siteProfile.brand['name']}" /> for Business</a><br>
+> 							<orbitz:popup key="advertise">Advertise on <c:out value="${siteProfile.brand['name']}" /></orbitz:popup><br>
+214c215
+< 							<a href="http://www.orbitz.com/hotel_information.htm">Travel info</a><br>
+---
+> 							<a href="http://<c:out value="${siteProfile.brand['website']}" />/hotel_information.htm">Travel info</a><br>

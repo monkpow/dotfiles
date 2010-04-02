@@ -1,0 +1,1 @@
+ruby viewpoints_test_suite.rb -s "http://viewpoints.dev"

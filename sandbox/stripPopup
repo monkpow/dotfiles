@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+while [ $# -ne 0  ] 
+do POPUP_FILE=$1    
+#for POPUP_FILE in `ls *jsp`;
+	 cat ~/x/stripPopupPopTop.txt > $POPUP_FILE.swp
+	 cat $POPUP_FILE | egrep -v "(DOCTYPE|<.?html|<.?head|<.?title|<.?link|<.?script|<.?head|<%@|popup_top|popup_footer|top_popup|footer_popup|<.?body|http://www.w3.org/)" >> $POPUP_FILE.swp
+		cat ~/x/stripPopUpPopBot.txt >> $POPUP_FILE.swp 
+		mv $POPUP_FILE.swp $POPUP_FILE.new
+    echo $POPUP_FILE.new completed...
+		shift
+	done
+
+# get air popup list
+#cat popup.properties | grep "\.jsp" |  egrep -v "(/pagedef|App)" | egrep "air.popups" | sed "s/[^=]*=\(.*\)/\1/" | sed "s/\/\([a-zA-Z]*\/\)*//" > cat air.popup.list
+	 
+# mv all .new files to .jsp
+# for file in `ls *new | sed "s/\(.*\)\.new/\1/"`; do mv $file.new $file; done;

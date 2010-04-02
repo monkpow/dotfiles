@@ -1,0 +1,6 @@
+#!/usr/bin/ruby
+
+
+puts "wmcontentwww01.stag.o.com, staging.tnetnoctest.com"
+puts "wmobdev14dp.wm.orbitz.com, devqa box"
+puts "egapp01.qa1.o.com, qa1"

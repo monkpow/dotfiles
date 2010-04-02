@@ -1,0 +1,42 @@
+#!/usr/bin/perl -w
+
+
+my @fileList;
+my $FAILURE_LIST="~/tmp/failure.test.results";
+my $NESTED_JSTL="~/tmp/nestedJstl.test.results";
+my $PROPERTY_LIST="~/tmp/property_list.test.results";
+
+
+##############################################
+#
+#  Get a list of files.
+#   If file names are supplied on command line, take these
+#   If script is called without params, apply to current directory
+#   and recursively
+#
+##############################################
+#useful sed for converting property file to replacement list
+#cat style.properties | sed "s/\([^=]*\)=\(.*\)/\$replacement='<c:out value=\"\${siteProfile.style[\\\'\1\\\']}\" \/>\';s@\2@\$replacement;/"
+
+
+
+
+@fileList=@ARGV;	
+#@fileList=`find . -name "*jsp" | xargs ls`;
+
+	
+###  makes a backup copy and wri and writes in place	
+		local($^I, @ARGV) = ('.bak', @fileList);
+		while (<>) {
+			
+			
+			#The order of these tests is important.  An implicit assumption is that the earlier tests will consume
+			#matches that would erroneously be changed by later replacements
+			# Example.  Replacement of Orbitz.com should be run prior to replacements of Orbitz
+			
+			s#global/js/global.js#shared/js/global.js#;
+		 	print;
+			close ARGV if eof;              # Reset $.
+		}
+
+

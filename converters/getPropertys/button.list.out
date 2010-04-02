@@ -1,0 +1,1068 @@
+
+# print
+print.alt=print 
+print.src=/img/buttons/print.gif 
+print.height= 
+print.width= 
+
+# print
+print.alt=print 
+print.src=/img/buttons/print.gif 
+print.height= 
+print.width= 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# join_now
+join_now.alt=Join Now 
+join_now.src=/site/img/buttons/join_now.gif 
+join_now.height=19 
+join_now.width=80 
+
+# print_voucher
+print_voucher.alt=Print Voucher 
+print_voucher.src=/img/buttons/print_voucher.gif 
+print_voucher.height=19 
+print_voucher.width=100 
+
+# back_gr_80w
+back_gr_80w.alt= 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# Keep_MyFlights
+Keep_MyFlights.alt= 
+Keep_MyFlights.src=/img/buttons/Keep_MyFlights.gif 
+Keep_MyFlights.height=19 
+Keep_MyFlights.width=120 
+
+# keep_my_flights
+keep_my_flights.alt=Keep my flights 
+keep_my_flights.src=/site/img/buttons/keep_my_flights.gif 
+keep_my_flights.height=19 
+keep_my_flights.width=120 
+
+# close_karat_onwhite
+close_karat_onwhite.alt=Keep my flights 
+close_karat_onwhite.src=/images/buttons/close_karat_onwhite.gif 
+close_karat_onwhite.height=10 
+close_karat_onwhite.width=10 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Keep my flights 
+back_blue_onwhite.src=/img/admin/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=10 
+back_blue_onwhite.width=10 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Back to credit card administration 
+back_blue_onwhite.src=/img/admin/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=21 
+back_blue_onwhite.width=77 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Back to credit cardadministration 
+back_blue_onwhite.src=/img/admin/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=21 
+back_blue_onwhite.width=77 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Back to finance administration 
+back_blue_onwhite.src=/img/admin/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=21 
+back_blue_onwhite.width=77 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Back to fraud administration 
+back_blue_onwhite.src=/img/admin/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=21 
+back_blue_onwhite.width=77 
+
+# done_onwhite
+done_onwhite.alt=Back to fraud administration 
+done_onwhite.src=/img/admin/buttons/done_onwhite.gif 
+done_onwhite.height=21 
+done_onwhite.width=77 
+
+# new_blue_onwhite
+new_blue_onwhite.alt=New 
+new_blue_onwhite.src=/img/admin/buttons/new_blue_onwhite.gif 
+new_blue_onwhite.height=21 
+new_blue_onwhite.width=77 
+
+# print_onwhite
+print_onwhite.alt=New 
+print_onwhite.src=/img/admin/buttons/print_onwhite.gif 
+print_onwhite.height=21 
+print_onwhite.width=77 
+
+# update_blue_onwhite
+update_blue_onwhite.alt=Refresh list 
+update_blue_onwhite.src=/img/admin/buttons/update_blue_onwhite.gif 
+update_blue_onwhite.height=21 
+update_blue_onwhite.width=77 
+
+# activate
+activate.alt=Activate for this trip 
+activate.src=/img/buttons/activate.gif 
+activate.height=21 
+activate.width=77 
+
+# activate
+activate.alt=Activate for this trip 
+activate.src=/img/buttons/activate.gif 
+activate.height=21 
+activate.width=77 
+
+# activate
+activate.alt=Activate 
+activate.src=/img/buttons/activate.gif 
+activate.height=21 
+activate.width=77 
+
+# addacar
+addacar.alt= 
+addacar.src=/img/buttons/addacar.gif 
+addacar.height=19 
+addacar.width=76 
+
+# addahotel
+addahotel.alt=Add Hotel 
+addahotel.src=/img/buttons/addahotel.gif 
+addahotel.height=19 
+addahotel.width=100 
+
+# applynow
+applynow.alt=Apply Now 
+applynow.src=/img/buttons/applynow.gif 
+applynow.height=19 
+applynow.width=80 
+
+# back_80w
+back_80w.alt=Apply Now 
+back_80w.src=/img/buttons/back_80w.gif 
+back_80w.height=19 
+back_80w.width=80 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Back 
+back_blue_onwhite.src=/img/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=19 
+back_blue_onwhite.width=80 
+
+# back_blue_onwhite
+back_blue_onwhite.alt=Go back 
+back_blue_onwhite.src=/img/buttons/back_blue_onwhite.gif 
+back_blue_onwhite.height=19 
+back_blue_onwhite.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Cancel 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt= 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt= 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt= 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=back 
+back_gr_80w.src=/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back-grey
+back-grey.alt= 
+back-grey.src=/img/buttons/back-grey.gif 
+back-grey.height=20 
+back-grey.width=81 
+
+# back_gr
+back_gr.alt=back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=20 
+back_gr.width=81 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=20 
+back_gr.width=81 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=BACK 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=BACK 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=BACK 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=back 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt= 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt= 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back to credit card administration 
+back_gr.src=/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_search_res_gr
+back_search_res_gr.alt= 
+back_search_res_gr.src=/img/buttons/back_search_res_gr.gif 
+back_search_res_gr.height=19 
+back_search_res_gr.width=150 
+
+# back_search_res_gr
+back_search_res_gr.alt= 
+back_search_res_gr.src=/img/buttons/back_search_res_gr.gif 
+back_search_res_gr.height=19 
+back_search_res_gr.width=150 
+
+# book_as_guest
+book_as_guest.alt=Book as guest 
+book_as_guest.src=/img/buttons/book_as_guest.gif 
+book_as_guest.height=19 
+book_as_guest.width=105 
+
+# book_hia_included_room
+book_hia_included_room.alt=book it 
+book_hia_included_room.src=/img/buttons/book_hia_included_room.gif 
+book_hia_included_room.height=19 
+book_hia_included_room.width=200 
+
+# book_hia_included_room
+book_hia_included_room.alt=book package with included room 
+book_hia_included_room.src=/img/buttons/book_hia_included_room.gif 
+book_hia_included_room.height=19 
+book_hia_included_room.width=200 
+
+# bookit_car
+bookit_car.alt=Select 
+bookit_car.src=/img/buttons/bookit_car.gif 
+bookit_car.height=19 
+bookit_car.width=64 
+
+# bookIt
+bookIt.alt= 
+bookIt.src=/img/buttons/bookIt.gif 
+bookIt.height=19 
+bookIt.width=72 
+
+# bookIt
+bookIt.alt= 
+bookIt.src=/img/buttons/bookIt.gif 
+bookIt.height=19 
+bookIt.width=72 
+
+# bookIt
+bookIt.alt=Select 
+bookIt.src=/img/buttons/bookIt.gif 
+bookIt.height=19 
+bookIt.width=72 
+
+# booknow
+booknow.alt=Book now 
+booknow.src=/img/buttons/booknow.gif 
+booknow.height=19 
+booknow.width=80 
+
+# booknow
+booknow.alt=Book nows 
+booknow.src=/img/buttons/booknow.gif 
+booknow.height=19 
+booknow.width=80 
+
+# business
+business.alt=Book nows 
+business.src=/img/buttons/business.gif 
+business.height=19 
+business.width=80 
+
+# cancel_blue_onyellow
+cancel_blue_onyellow.alt=Book nows 
+cancel_blue_onyellow.src=/img/buttons/cancel_blue_onyellow.gif 
+cancel_blue_onyellow.height=21 
+cancel_blue_onyellow.width=77 
+
+# cancel
+cancel.alt=Cancel 
+cancel.src=/img/buttons/cancel.gif 
+cancel.height=21 
+cancel.width=77 
+
+# cancel
+cancel.alt=Cancel 
+cancel.src=/img/buttons/cancel.gif 
+cancel.height=19 
+cancel.width=64 
+
+# cancel_gr
+cancel_gr.alt=back 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cacnel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt= 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt= 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt= 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt= 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_gr
+cancel_gr.alt= 
+cancel_gr.src=/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# cancel_reservation
+cancel_reservation.alt= 
+cancel_reservation.src=/img/buttons/cancel_reservation.gif 
+cancel_reservation.height=19 
+cancel_reservation.width=125 
+
+# cancel_reservation
+cancel_reservation.alt= 
+cancel_reservation.src=/img/buttons/cancel_reservation.gif 
+cancel_reservation.height=19 
+cancel_reservation.width=125 
+
+# check_price_and_avail
+check_price_and_avail.alt=Check for rates and availability 
+check_price_and_avail.src=/img/buttons/check_price_and_avail.gif 
+check_price_and_avail.height=19 
+check_price_and_avail.width=125 
+
+# close_karat_onwhite
+close_karat_onwhite.alt=Check for rates and availability 
+close_karat_onwhite.src=/img/buttons/close_karat_onwhite.gif 
+close_karat_onwhite.height=10 
+close_karat_onwhite.width=10 
+
+# continue_flight_only
+continue_flight_only.alt=Continue booking your flight only 
+continue_flight_only.src=/img/buttons/continue_flight_only.gif 
+continue_flight_only.height=19 
+continue_flight_only.width=190 
+
+# continue
+continue.alt=Continue booking your flight only 
+continue.src=/img/buttons/continue.gif 
+continue.height=19 
+continue.width=190 
+
+# continue
+continue.alt= 
+continue.src=/img/buttons/continue.gif 
+continue.height=19 
+continue.width=80 
+
+# continue
+continue.alt=back 
+continue.src=/img/buttons/continue.gif 
+continue.height=19 
+continue.width=80 
+
+# continue
+continue.alt=Continue 
+continue.src=/img/buttons/continue.gif 
+continue.height=19 
+continue.width=80 
+
+# continue
+continue.alt=Continue 
+continue.src=/img/buttons/continue.gif 
+continue.height=20 
+continue.width=80 
+
+# continue_hotel_only
+continue_hotel_only.alt=Continue booking your hotel only 
+continue_hotel_only.src=/img/buttons/continue_hotel_only.gif 
+continue_hotel_only.height=19 
+continue_hotel_only.width=190 
+
+# continue_package
+continue_package.alt=Continue booking your package only 
+continue_package.src=/img/buttons/continue_package.gif 
+continue_package.height=19 
+continue_package.width=190 
+
+# edit
+edit.alt= 
+edit.src=/img/buttons/edit.gif 
+edit.height=19 
+edit.width=64 
+
+# find_flights_hotels
+find_flights_hotels.alt=Find flights + hotels 
+find_flights_hotels.src=/img/buttons/find_flights_hotels.gif 
+find_flights_hotels.height=19 
+find_flights_hotels.width=120 
+
+# find_flights_hotels
+find_flights_hotels.alt=Find flights + hotels 
+find_flights_hotels.src=/img/buttons/find_flights_hotels.gif 
+find_flights_hotels.height=19 
+find_flights_hotels.width=120 
+
+# go
+go.alt=Go 
+go.src=/img/buttons/go.gif 
+go.height=14 
+go.width=20 
+
+# go
+go.alt= 
+go.src=/img/buttons/go.gif 
+go.height=14 
+go.width=20 
+
+# go
+go.alt= 
+go.src=/img/buttons/go.gif 
+go.height=14 
+go.width=20 
+
+# go
+go.alt= 
+go.src=/img/buttons/go.gif 
+go.height=14 
+go.width=20 
+
+# go
+go.alt= 
+go.src=/img/buttons/go.gif 
+go.height=14 
+go.width=20 
+
+# hold
+hold.alt=Hold 
+hold.src=/img/buttons/hold.gif 
+hold.height=19 
+hold.width=64 
+
+# join_now
+join_now.alt=Join Now 
+join_now.src=/img/buttons/join_now.gif 
+join_now.height=19 
+join_now.width=80 
+
+# Keep_MyFlights
+Keep_MyFlights.alt= 
+Keep_MyFlights.src=/img/buttons/Keep_MyFlights.gif 
+Keep_MyFlights.height=19 
+Keep_MyFlights.width=120 
+
+# leisure
+leisure.alt= 
+leisure.src=/img/buttons/leisure.gif 
+leisure.height=19 
+leisure.width=120 
+
+# no_changes
+no_changes.alt=No Changes 
+no_changes.src=/img/buttons/no_changes.gif 
+no_changes.height=19 
+no_changes.width=107 
+
+# no_gr
+no_gr.alt=Cancel 
+no_gr.src=/img/buttons/no_gr.gif 
+no_gr.height=19 
+no_gr.width=107 
+
+# preview
+preview.alt=View email in new window 
+preview.src=/img/buttons/preview.gif 
+preview.height=19 
+preview.width=80 
+
+# print
+print.alt= 
+print.src=/img/buttons/print.gif 
+print.height=19 
+print.width=64 
+
+# print
+print.alt= 
+print.src=/img/buttons/print.gif 
+print.height=19 
+print.width=64 
+
+# print_voucher
+print_voucher.alt= 
+print_voucher.src=/img/buttons/print_voucher.gif 
+print_voucher.height=19 
+print_voucher.width=100 
+
+# purchase-blue
+purchase-blue.alt=Purchase 
+purchase-blue.src=/img/buttons/purchase-blue.gif 
+purchase-blue.height=20 
+purchase-blue.width=80 
+
+# purchase
+purchase.alt=Purchase 
+purchase.src=/img/buttons/purchase.gif 
+purchase.height=19 
+purchase.width=80 
+
+# purchase
+purchase.alt=Purchase 
+purchase.src=/img/buttons/purchase.gif 
+purchase.height=19 
+purchase.width=80 
+
+# register
+register.alt=Purchase 
+register.src=/img/buttons/register.gif 
+register.height=19 
+register.width=80 
+
+# return_flight_results
+return_flight_results.alt= 
+return_flight_results.src=/img/buttons/return_flight_results.gif 
+return_flight_results.height=19 
+return_flight_results.width=140 
+
+# return_flight_results
+return_flight_results.alt=return to search results 
+return_flight_results.src=/img/buttons/return_flight_results.gif 
+return_flight_results.height=19 
+return_flight_results.width=140 
+
+# returnresults
+returnresults.alt= 
+returnresults.src=/img/buttons/returnresults.gif 
+returnresults.height=19 
+returnresults.width=140 
+
+# returnresults
+returnresults.alt=return to search results 
+returnresults.src=/img/buttons/returnresults.gif 
+returnresults.height=19 
+returnresults.width=100 
+
+# reviewpurchase
+reviewpurchase.alt= 
+reviewpurchase.src=/img/buttons/reviewpurchase.gif 
+reviewpurchase.height=19 
+reviewpurchase.width=151 
+
+# revise
+revise.alt=Revise 
+revise.src=/img/buttons/revise.gif 
+revise.height=19 
+revise.width=151 
+
+# search_deals
+search_deals.alt= 
+search_deals.src=/img/buttons/search_deals.gif 
+search_deals.height=19 
+search_deals.width=96 
+
+# search
+search.alt=Find 
+search.src=/img/buttons/search.gif 
+search.height=19 
+search.width=64 
+
+# selectbutton
+selectbutton.alt= 
+selectbutton.src=/img/buttons/selectbutton.gif 
+selectbutton.height=19 
+selectbutton.width=59 
+
+# selectbutton
+selectbutton.alt=select 
+selectbutton.src=/img/buttons/selectbutton.gif 
+selectbutton.height=19 
+selectbutton.width=59 
+
+# select_room
+select_room.alt=select a room 
+select_room.src=/img/buttons/select_room.gif 
+select_room.height=19 
+select_room.width=100 
+
+# set_up_now
+set_up_now.alt=Set up now 
+set_up_now.src=/img/buttons/set_up_now.gif 
+set_up_now.height=19 
+set_up_now.width=80 
+
+# set_up_now
+set_up_now.alt=Set up now 
+set_up_now.src=/img/buttons/set_up_now.gif 
+set_up_now.height=19 
+set_up_now.width=80 
+
+# ShowCurrentFares
+ShowCurrentFares.alt=Show current fares 
+ShowCurrentFares.src=/img/buttons/ShowCurrentFares.gif 
+ShowCurrentFares.height=19 
+ShowCurrentFares.width=129 
+
+# ShowCurrentFares
+ShowCurrentFares.alt=Show current fares 
+ShowCurrentFares.src=/img/buttons/ShowCurrentFares.gif 
+ShowCurrentFares.height=19 
+ShowCurrentFares.width=129 
+
+# signin
+signin.alt=Show current fares 
+signin.src=/img/buttons/signin.gif 
+signin.height=19 
+signin.width=64 
+
+# sign_up
+sign_up.alt=Show current fares 
+sign_up.src=/img/buttons/sign_up.gif 
+sign_up.height=19 
+sign_up.width=64 
+
+# sign_up_now
+sign_up_now.alt=Sign up now 
+sign_up_now.src=/img/buttons/sign_up_now.gif 
+sign_up_now.height=19 
+sign_up_now.width=100 
+
+# update
+update.alt=Update 
+update.src=/img/buttons/update.gif 
+update.height=19 
+update.width=64 
+
+# update
+update.alt=Update 
+update.src=/img/buttons/update.gif 
+update.height=19 
+update.width=64 
+
+# update_interests
+update_interests.alt=Update Interests 
+update_interests.src=/img/buttons/update_interests.gif 
+update_interests.height=19 
+update_interests.width=115 
+
+# update_onyellow
+update_onyellow.alt=Update Interests 
+update_onyellow.src=/img/buttons/update_onyellow.gif 
+update_onyellow.height=19 
+update_onyellow.width=115 
+
+# view_full_trip_details
+view_full_trip_details.alt=Update Interests 
+view_full_trip_details.src=/img/buttons/view_full_trip_details.gif 
+view_full_trip_details.height=19 
+view_full_trip_details.width=125 
+
+# view_full_trip_details
+view_full_trip_details.alt=Update Interests 
+view_full_trip_details.src=/img/buttons/view_full_trip_details.gif 
+view_full_trip_details.height=19 
+view_full_trip_details.width=125 
+
+# view_full_trip_details
+view_full_trip_details.alt=Update Interests 
+view_full_trip_details.src=/img/buttons/view_full_trip_details.gif 
+view_full_trip_details.height=19 
+view_full_trip_details.width=125 
+
+# view_full_trip_details
+view_full_trip_details.alt=Update Interests 
+view_full_trip_details.src=/img/buttons/view_full_trip_details.gif 
+view_full_trip_details.height=19 
+view_full_trip_details.width=125 
+
+# view_trip_summary
+view_trip_summary.alt=Update Interests 
+view_trip_summary.src=/img/buttons/view_trip_summary.gif 
+view_trip_summary.height=19 
+view_trip_summary.width=120 
+
+# view_trip_summary
+view_trip_summary.alt=Update Interests 
+view_trip_summary.src=/img/buttons/view_trip_summary.gif 
+view_trip_summary.height=19 
+view_trip_summary.width=120 
+
+# yes
+yes.alt=Update Interests 
+yes.src=/img/buttons/yes.gif 
+yes.height=19 
+yes.width=120 
+
+# activate
+activate.alt=Activate 
+activate.src=/site/img/buttons/activate.gif 
+activate.height=19 
+activate.width=120 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=120 
+
+# back_gr_80w
+back_gr_80w.alt=Cancel 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt= 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=Back 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=back 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back_gr_80w
+back_gr_80w.alt=back 
+back_gr_80w.src=/site/img/buttons/back_gr_80w.gif 
+back_gr_80w.height=19 
+back_gr_80w.width=80 
+
+# back-grey
+back-grey.alt= 
+back-grey.src=/site/img/buttons/back-grey.gif 
+back-grey.height=20 
+back-grey.width=81 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/site/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/site/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/site/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# back_gr
+back_gr.alt=Back 
+back_gr.src=/site/img/buttons/back_gr.gif 
+back_gr.height=19 
+back_gr.width=64 
+
+# book_as_guest
+book_as_guest.alt=Book as guest 
+book_as_guest.src=/site/img/buttons/book_as_guest.gif 
+book_as_guest.height=19 
+book_as_guest.width=105 
+
+# cancel_gr
+cancel_gr.alt=Cancel 
+cancel_gr.src=/site/img/buttons/cancel_gr.gif 
+cancel_gr.height=19 
+cancel_gr.width=64 
+
+# continue
+continue.alt= 
+continue.src=/site/img/buttons/continue.gif 
+continue.height=19 
+continue.width=80 
+
+# continue
+continue.alt=Continue 
+continue.src=/site/img/buttons/continue.gif 
+continue.height=19 
+continue.width=80 
+
+# continue
+continue.alt=back 
+continue.src=/site/img/buttons/continue.gif 
+continue.height=19 
+continue.width=80 
+
+# hold
+hold.alt=Hold 
+hold.src=/site/img/buttons/hold.gif 
+hold.height=19 
+hold.width=64 
+
+# purchase-blue
+purchase-blue.alt=Purchase 
+purchase-blue.src=/site/img/buttons/purchase-blue.gif 
+purchase-blue.height=20 
+purchase-blue.width=80 
+
+# reserve
+reserve.alt=Reserve 
+reserve.src=/site/img/buttons/reserve.gif 
+reserve.height=19 
+reserve.width=72 
+
+# select
+select.alt=Reserve 
+select.src=/site/img/buttons/select.gif 
+select.height=19 
+select.width=72 
+
+# select
+select.alt= 
+select.src=/site/img/buttons/select.gif 
+select.height=19 
+select.width=72 
+
+# select
+select.alt=Select 
+select.src=/site/img/buttons/select.gif 
+select.height=19 
+select.width=72 
+
+# select_room
+select_room.alt=select a room 
+select_room.src=/site/img/buttons/select_room.gif 
+select_room.height=19 
+select_room.width=100 
+
+# view_full_trip_details
+view_full_trip_details.alt=select a room 
+view_full_trip_details.src=/site/img/buttons/view_full_trip_details.gif 
+view_full_trip_details.height=19 
+view_full_trip_details.width=125 
+
+# view_full_trip_details
+view_full_trip_details.alt=View full trip details 
+view_full_trip_details.src=/site/img/buttons/view_full_trip_details.gif 
+view_full_trip_details.height=19 
+view_full_trip_details.width=125 
