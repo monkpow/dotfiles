@@ -1,0 +1,136 @@
+#!/usr/bin/ruby
+
+require 'net/http'
+require 'uri'
+
+
+def clean_up_existing_cache
+  `rm -rf tmp/cache`
+  `rm public/javascripts/base_*.js`
+  `rm public/javascripts/cached_*.js`
+  `rm public/stylesheets/default_css.css`
+end
+
+def get_size_of_asset(asset_url)
+  res = Net::HTTP.start(@url.host, @url.port) { |http| http.get(asset_url) }
+  res.response.body.size
+end
+
+def sum(array)
+  # yukky old skool bs
+  @result = 0
+  array.each do |num| @result = @result + num.to_i end
+  @result
+end
+
+def collect_asset_sizes(array)
+  array.map do |asset|
+    get_size_of_asset(asset)
+  end
+end
+
+def images_from(document)
+  re =  /(\/images.*(?:PNG|GIF|JPG))/i
+  collect_asset_sizes document.scan(re)
+end
+
+def javascripts_from(document)
+  re =  /<script.*src\s*=\s*['"](.*js)/i
+  collect_asset_sizes document.scan(re)
+end
+
+def stylesheets_from(document)
+  re =  /<link.*href\s*=\s*['"](.*?css)/i
+  collect_asset_sizes document.scan(re)
+end
+
+def html_weight_in_k
+  @document.response.body.size
+end
+
+def url
+  @url
+end
+
+def raw_req
+  css_req + js_req + img_req + html_req
+end
+
+def css_req
+  @stylesheets.size
+
+end
+
+def css_weight_in_k
+  sum @stylesheets
+end
+
+def html_req
+  1
+end
+
+def img_weight_in_k
+  sum @images
+end
+
+def img_req
+  @images.size
+end
+
+def js_req
+  @javascripts.size
+end
+
+def js_weight_in_k
+  sum @javascripts
+end
+
+def date_stamp
+  Time.new
+end
+
+def commit
+  `git log HEAD --oneline | head -n1`
+end
+
+
+
+# procedural mumbo jumbo starts here
+
+
+@url = ARGV[0] || 'http://viewpoints.dev/'
+puts "Checking page weight for #{@url}:"
+@url = URI.parse(@url)
+
+clean_up_existing_cache
+
+
+@document    = Net::HTTP.start(@url.host, @url.port) { |http| http.get('/') }
+@images      = images_from @document.response.body
+@stylesheets = stylesheets_from @document.response.body
+@javascripts = javascripts_from @document.response.body
+
+
+fields = %w{
+ url
+ raw_req
+ css_req
+ css_weight_in_k
+ html_req
+ html_weight_in_k
+ img_req
+ img_weight_in_k
+ js_req
+ js_weight_in_k
+ date_stamp
+ commit
+ }
+
+path = ".tmp-tracking-site-speed-#{@url.host}.csv"
+should_write_header = !(File.exists? path)
+file   = File.open(path, "a")
+file.puts fields.join ',' if should_write_header
+file.puts fields.map { |fn| eval fn }.join ','
+file.close
+
+puts %x{ cat #{path} } 
