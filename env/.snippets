@@ -163,3 +163,30 @@ ssh key
 https://members.exacttarget.com
 username: kyle@viewpoints.com
 password: Airstream@1
+
+
+// to see which event types are being observed
+Element.getStorage(yourElement).get('prototype_event_registry').keys();
+
+// to get array of handlers for particular event type
+Element.getStorage(yourElement).get('prototype_event_registry').get('click');
+
+// to get array of all handlers
+Element.getStorage(yourElement).get('prototype_event_registry').values();
+
+// etc.
+
+
+
+#find products with no reviews
+Product.first :joins => "LEFT OUTER JOIN reviews ON reviews.product_id = products.id", :conditions => "reviews.product_id IS NULL"
+
+# grab list of modified files in git
+git st | grep modified | sed "s/.*:\s*\(.*\)/\1/"
+
+rake test:units TEST=test/unit/user_test.rb 
+rake test:functionals TEST=test/functional/users_controller_test.rb
+
+
+sudo /etc/init.d/endeca start
+

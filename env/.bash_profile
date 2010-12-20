@@ -12,6 +12,8 @@ export USERNAME BASH_ENV
 export VISUAL=vim
 export EDITOR=vim
 export RAILS_ENV=viewpointsdev
+export DISPLAY=0:0
+
 
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:$HOME/bin
@@ -19,6 +21,7 @@ PATH=$PATH:$HOME/bin/spidermonkey
 PATH=$PATH:$HOME/bin/ruby
 #PATH=$PATH:/Applications/MacVim-7_2-stable-1_2  
 PATH=$PATH:/usr/local/mysql/bin
+PATH=$PATH:/opt/firefox/
 export PATH
 unset USERNAME
 PS1="\n$:"

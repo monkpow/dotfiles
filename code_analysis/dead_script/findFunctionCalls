@@ -1,0 +1,32 @@
+#!/usr/bin/perl -w
+
+#########################################################################################################
+#
+# Takes a list of javascript function names, and searches un-excluded directories for references
+# Sloppy.  Errs towards finding false positive.
+#
+#########################################################################################################
+
+# Should write this in rhino javascript and compile as a jar.
+
+# to be externalized
+my $src_dir='/data01/web/viewpoints/current/';
+
+
+#$numArgs = $#ARGV + 1;
+#print "thanks, you gave me $numArgs command-line arguments.\n";
+
+foreach $argnum (0 .. $#ARGV) {
+  $functionName=$ARGV[$argnum];
+  @functionCalls=`grep -r "$functionName" $src_dir`;  
+#  if($#functionCalls>1){  # at least 1 will always be returned, because the sloppy grep finds the function definition in the source files
+#  print "$functionName : $#functionCalls\n";  # $#functionCalls=last index of functionCalls array
+#}else{
+  print "$#functionCalls : \"$functionName\"\n";  # $#functionCalls=last index of functionCalls array
+  # print ">> function $functionName() : Never called \n";
+  # exit 1
+#   }
+#print "@found\n";
+
+   }
+
