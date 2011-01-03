@@ -2,8 +2,8 @@
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
-if [ -f ~/bin/env/.alias ]; then
-  . ~/bin/env/.alias
+if [ -f ~/dotfiles/env/.alias ]; then
+  . ~/dotfiles/env/.alias
 fi
 
 BASH_ENV=$HOME/.bashrc
