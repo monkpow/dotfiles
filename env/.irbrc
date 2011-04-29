@@ -1,3 +1,8 @@
+require 'rubygems'
+require 'wirble'
+Wirble.init
+Wirble.colorize
+
 require 'irb/completion'
 ARGV.concat [ "--readline", "noprompt" ]
 

@@ -163,3 +163,105 @@ ssh key
 https://members.exacttarget.com
 username: kyle@viewpoints.com
 password: Airstream@1
+
+
+// to see which event types are being observed
+Element.getStorage(yourElement).get('prototype_event_registry').keys();
+
+// to get array of handlers for particular event type
+Element.getStorage(yourElement).get('prototype_event_registry').get('click');
+
+// to get array of all handlers
+Element.getStorage(yourElement).get('prototype_event_registry').values();
+
+// etc.
+
+
+
+#find products with no reviews
+Product.first :joins => "LEFT OUTER JOIN reviews ON reviews.product_id = products.id", :conditions => "reviews.product_id IS NULL"
+
+# grab list of modified files in git
+git st | grep modified | sed "s/.*:\s*\(.*\)/\1/"
+
+rake test:units TEST=test/unit/user_test.rb 
+rake test:functionals TEST=test/functional/users_controller_test.rb
+
+
+sudo /etc/init.d/endeca start
+
+
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+if [ -f ~/dotfiles/env/.alias ]; then
+  . ~/dotfiles/env/.alias
+fi
+
+BASH_ENV=$HOME/.bashrc
+USERNAME=""
+export USERNAME BASH_ENV
+export VISUAL=vim
+export EDITOR=vim
+export RAILS_ENV=viewpointsdev
+export DISPLAY=0:0
+
+
+PATH=/usr/local/bin:$PATH
+PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin/spidermonkey
+PATH=$PATH:$HOME/bin/ruby
+#PATH=$PATH:/Applications/MacVim-7_2-stable-1_2  
+PATH=$PATH:/usr/local/mysql/bin
+PATH=$PATH:/opt/firefox/
+export PATH
+unset USERNAME
+PS1="\n$:"
+
+#PS1="\n \n \h:\w  \n\247:"
+PS1="\n \n\h:\w  \n> "
+source ~/.git_completion
+
+if [ "\$(type -t __git_ps1)" ]; then
+  export PS1="\n \n\h:\w  \n\$(__git_ps1 '(%s) '): "
+fi
+
+
+# perl global search and replace
+# perl -i.bak -pe 's/<//g' `find . -name "*jsp"`
+
+
+#get a backtrace of how something is called
+  begin
+  raise.
+  rescue => e
+  RAILS_DEFAULT_LOGGER.info "HEY CORY: #{e.backtrace}"
+  end
+
+
+ vi `git diff --name-only`
+
+
+ du -sk name
+
+ where name can be:
+ the name of a file (gives size of file in kilobytes), or
+ the name of a directory (gives size of directory, including subdirectories, in kilobytes), or
+ an asterisk (gives size of all files and directories, including subdirectories, in current directory in kilobytes), or
+ just enter du -sk without an argument (gives size of current directory, including subdirectories, in kilobytes).
+
+
+ git diff --no-prefix b24b259ed7bed673e3131f759d2f19bb9dd9cea2~1 b24b259ed7bed673e3131f759d2f19bb9dd9cea2 > cory-patch.txt
+
+
+mysqld shutdown complete, giving RS the goahead to shut down the server
+
+Kevin Lilly cap output will show it
+Kevin Lilly it will say "already started port 9001" or similar
+Kevin Lilly so then just hop on that machine and run "sudo /etc/init.d/mongrel restart_port site_viewpoints 9001"
+
+
+choksi is learning new things
+
