@@ -1,42 +1,79 @@
 # Get the aliases and functions
-<<<<<<< Updated upstream
 
-=======
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
->>>>>>> Stashed changes
+
 if [ -f ~/dotfiles/env/.alias ]; then
   . ~/dotfiles/env/.alias
 fi
 
+if [ -f .git_completion ]; then
+   . .git_completion
+fi
+
 export VISUAL=vim
 export EDITOR=vim
-#export DISPLAY=0:0
 
-PATH=/usr/local/bin:$PATH
-PATH=$PATH:$HOME/bin
-PATH=$PATH:$HOME/bin/spidermonkey
-PATH=$PATH:$HOME/bin/ruby
-PATH=$PATH:/usr/local/mysql/bin
-PATH=$PATH:/opt/firefox/
-export PATH
 PS1="\n \n\h:\w  \n:"
-#PS1="\n\n\h:\w  \n\245"
-
-
 
 if [ "\$(type -t __git_ps1)" ]; then
   export PS1="\n \n\h:\w  \n\$(__git_ps1 '(%s) '): "
 fi
 
-<<<<<<< Updated upstream
-=======
-
-# connecting to demo server.  first to gateway. egg01. then to demo: eghost10.dev.o.com
 
 # perl global search and replace
 # perl -i.bak -pe 's/<//g' `find . -name "*jsp"`
 export CLICOLOR=1
 export LSCOLORS=exFxCxDxBxegedabagacad
->>>>>>> Stashed changes
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/bin:${PATH}"
+#PATH="/opt/local/bin:${PATH}"
+#export PATH
+
+##
+# Your previous /Users/nkrimm/.bash_profile file was backed up as /Users/nkrimm/.bash_profile.macports-saved_2011-05-09_at_14:35:54
+##
+
+# MacPorts Installer addition on 2011-05-09_at_14:35:54: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# for selenium/capybara test runner
+export capybara_app_host='dashboard.nextagqa.com:3000'
+
+
+# git functions
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+
+function gbin {
+    COMMITS=$(git log ..$1 --no-merges --format='%h | %an | %ad | %s' --date=local)
+    if [ -n "$COMMITS" ]; then
+        echo branch \($1\) has these commits and \($(parse_git_branch)\) does not
+        echo "$COMMITS"
+        echo
+    fi
+}
+
+function gbout {
+    COMMITS=$(git log $1.. --no-merges --format='%h | %an | %ad | %s' --date=local)
+    if [ -n "$COMMITS" ]; then
+        echo branch \($(parse_git_branch)\) has these commits and \($1\) does not
+        echo "$COMMITS"
+        echo
+    fi
+}
+
+
+function git-list-old-merged-branches {
+    # never allow the master branch to show up here
+    COMMITS=$(git branch -a --merged|grep -v "master$"|grep -v "\->"|sed s/^..//)
+    for k in $COMMITS;do
+        echo -e $(git log -1 --pretty=format:"%Cgreen%ci %Cred%cr%Creset" "$k")\\t"$k";
+    done | sort
+}

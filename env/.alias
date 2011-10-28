@@ -1,17 +1,15 @@
 alias snip="cat ~/dotfiles/env/.snippets"
+
 alias snip!="vi ~/dotfiles/env/.snippets"
 alias alias!="vi ~/dotfiles/env/.alias;. ~/dotfiles/env/.alias"
 #alias jslint="~/jslint/jsl-0.2.6-linux/jsl -process "
 alias ls="ls -lhoG"
 alias profile="vi ~/.bash_profile && . ~/.bash_profile" 
 #alias vim="/usr/local/bin/vim"
-alias riht='ruby -e"%x{ri -f html #{ARGV[0]}>/tmp/ri.html; open -a Safari /tmp/ri.html}"'
-alias site='cd /home/build/git/viewpoints'
-alias widget='cd /data01/web/widget'
-alias int='cd ~/work/int/viewpoints/'
+alias site='cd ~/src/merchant_dashboard'
 alias hosts='sudo vi /etc/hosts'
 alias mgr='/home/build/dotfiles/ruby/mgr.rb'
-alias apache_restart='sudo /etc/init.d/httpd restart'
-alias jira=~/bin/jira/jira.rb
-alias vm='ssh -A build@fishhook-vm.office.viewpoints.com'
-alias yk='ssh -A build@yak-killer.hive.viewpoints.com'
+alias pm='python manage.py'
+#alias jenkins='(cd ~/src/emerald-main/ && ./bin/run_jenkins.sh)'
+alias activate='(cd ~/src/emerald-main && source ./bin/activate_env.sh)'
+alias run_tests='./manage-dev.sh test user templates product search tags'
