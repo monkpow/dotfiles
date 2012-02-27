@@ -77,3 +77,16 @@ function git-list-old-merged-branches {
         echo -e $(git log -1 --pretty=format:"%Cgreen%ci %Cred%cr%Creset" "$k")\\t"$k";
     done | sort
 }
+
+
+
+# convenience function for gerrit code reviews
+postgreview ()
+{
+   if [ -z "$1" -o -z "$2" ]; then
+       echo "usage: postgreview <repository> <branch>"
+   else
+       echo "submitting review for branch $2 in repo $1"
+       git push ssh://dev-git1.corp.nextag.com:29418/$1 HEAD:refs/for/$2;
+   fi
+}

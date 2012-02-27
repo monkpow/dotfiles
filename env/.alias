@@ -1,15 +1,19 @@
 alias snip="cat ~/dotfiles/env/.snippets"
-
+alias apollo="cd ~/src/apollo"
+alias core="cd ~/src/ror_core"
 alias snip!="vi ~/dotfiles/env/.snippets"
 alias alias!="vi ~/dotfiles/env/.alias;. ~/dotfiles/env/.alias"
 #alias jslint="~/jslint/jsl-0.2.6-linux/jsl -process "
 alias ls="ls -lhoG"
 alias profile="vi ~/.bash_profile && . ~/.bash_profile" 
 #alias vim="/usr/local/bin/vim"
-alias site='cd ~/src/merchant_dashboard'
+alias site='cd ~/src/tiger'
 alias hosts='sudo vi /etc/hosts'
 alias mgr='/home/build/dotfiles/ruby/mgr.rb'
 alias pm='python manage.py'
 #alias jenkins='(cd ~/src/emerald-main/ && ./bin/run_jenkins.sh)'
 alias activate='(cd ~/src/emerald-main && source ./bin/activate_env.sh)'
 alias run_tests='./manage-dev.sh test user templates product search tags'
+alias log5='git log --oneline | head -n5'
+alias brake='bundle exec rake'
+alias jenkins='ssh buildadmin@dev-build1.corp.nextag.com'
