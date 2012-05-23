@@ -298,3 +298,21 @@ echo "scale=2;3 / 1" | bc
 
 
 ssh nkrimm@ssa1.pv.sv.nextag.com # Orang3ric3753
+
+#delete all merged branches
+ git branch --merged  | egrep -v "(^\*|master)" | xargs git branch -d 
+
+ git push gerrit HEAD:refs/for/master
+
+
+
+ (rack_app_for_thrift_tests) : jenkins
+ buildadmin@dev-build1.corp.nextag.com's password: 
+ Last login: Tue May  8 09:03:18 2012 from 172.23.6.111
+ [buildadmin@dev-build1 ~]$ sudo su - jenkins
+ [sudo] password for buildadmin: 
+ [jenkins@dev-build1 ~]$ ssh kato@ssa2.pv.sv.nextag.com
+ Last login: Tue May  8 09:03:42 2012 from 216.185.210.251
+ [kato@ssa2 ~]$ ssh mb-app1
+ Last login: Tue May  8 09:03:48 2012 from 10.28.24.2
+ [kato@mb-app1 ~]$ 

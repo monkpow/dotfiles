@@ -90,3 +90,14 @@ postgreview ()
        git push ssh://dev-git1.corp.nextag.com:29418/$1 HEAD:refs/for/$2;
    fi
 }
+
+# Setting PATH for JRuby 1.6.7
+# The orginal version is saved in .bash_profile.jrubysave
+PATH="${PATH}:/Library/Frameworks/JRuby.framework/Versions/Current/bin"
+export PATH
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+export JAVA_HOME=/Library/Java/Home
+export CATALINA_HOME=/Library/Tomcat/Home
