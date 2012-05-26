@@ -1,0 +1,28 @@
+[color]
+	ui = true
+[alias]
+	ci = commit
+	co = checkout
+	br = branch
+	st = status
+	a = add
+	d = rm
+	sh = show
+[user]
+	name = Nik Krimm
+	email = nik.krimm@nextag.com
+[push]
+	default = current
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/nkrimm/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[pull]
+	default = current
+[diff]
+	mnemonicprefix = true
