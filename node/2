@@ -1,0 +1,4 @@
+var doxie = function () {
+  this.simple_member = 'true';   
+  this.simple_method = function(){ return 'true' }
+}
