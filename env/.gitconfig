@@ -10,12 +10,13 @@
 	sh = show
 [user]
 	name = Nik Krimm
-	email = nik.krimm@nextag.com
+	email = nik@tunein.com
 [push]
 	default = current
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/nkrimm/.gitignore_global
+	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
