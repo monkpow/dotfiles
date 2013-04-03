@@ -12,6 +12,14 @@ function gbin {
     fi
 }
 
+function gitClearOldBranches { 
+  for k in $(git branch | sed /\*/d); do 
+	if [ -n "$(git log -1 --since='4 weeks ago' -s $k)" ]; then
+	  git branch -d $k
+	fi
+  done
+}
+
 function gbout {
     COMMITS=$(git log $1.. --no-merges --format='%h | %an | %ad | %s' --date=local)
     if [ -n "$COMMITS" ]; then

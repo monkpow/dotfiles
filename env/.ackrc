@@ -1,4 +1,5 @@
 --type-set=scss=.scss
+--type-set=less=.less
+--type-set=asp=.cshtml
 --type-set=features=.feature
---ignore-dir=coverage
 --ignore-dir=tmp
