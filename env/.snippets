@@ -380,3 +380,21 @@ windows network password: 8xN998w9cM
 localhost:3000/sessions/foo?user_name=msepcot
 
 defaults write com.apple.screencapture location  ~/Desktop/screen_grabs
+
+
+http://colinaarts.com/articles/the-magic-of-overflow-hidden/
+
+stage db: dev-tracker01
+
+COUNTER=0;for line in `cat web_ad_requests.txt`; do COUNTER=$[COUNTER + 1]; curl -o web_$COUNTER.json http://ads.tunein.com$line; done;
+
+# regexp inplace in files
+ for file in `ls *json`;do echo $file; ruby -pe 'gsub(/(jQuery[^{]*|\);$)/, $/)' < $file > $file.json2 ; done;
+
+ # rename all files in a dir
+ for file in `ls *json2`; do mv "$file" "${file/.json.json2/.json}"; done;
+
+ eXRkK5wn
+
+#replace inplace
+ ruby -pi.bak -e "gsub(/oldtext/, 'newtext')" *.txt

@@ -21,3 +21,6 @@ alias npd='cd ~/dotfiles/node/'
 alias web='cd /Volumes/tunin.com/platform/Web/TuneIn/TuneIn.Web.Site'
 alias flash='cd /Volumes/tunin.com/platform/Web/CE/UI/rt-tools/swf/mplayer/radiotime'
 alias amp='cd ~/src/trackr.git/trackr/'
+alias cane="bundle exec cane --abc-glob '{app,lib,spec}/**/*.rb' --style-glob '{app,lib,spec}/**/*.rb' --style-measure 120 --gte 'coverage/covered_percent,90' --no-doc"
+alias rcb="rake && cane && brakeman -q"
+alias vi="vim"

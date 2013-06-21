@@ -1,6 +1,6 @@
 # Get the aliases and functions
 
-export PATH="/usr/local/bin":$PATH
+export PATH="/usr/local/bin":"/usr/local/Cellar/vim/7.3.875/bin/":$PATH
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
