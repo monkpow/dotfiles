@@ -398,3 +398,10 @@ COUNTER=0;for line in `cat web_ad_requests.txt`; do COUNTER=$[COUNTER + 1]; curl
 
 #replace inplace
  ruby -pi.bak -e "gsub(/oldtext/, 'newtext')" *.txt
+
+
+ RAILS_ENV=development bundle exec rake assets:precompile
+
+ 2Million
+
+ TeamCity Box (amplifier): vnc://172.20.0.115#Engineering#2Million

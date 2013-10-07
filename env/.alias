@@ -24,3 +24,5 @@ alias amp='cd ~/src/trackr.git/trackr/'
 alias cane="bundle exec cane --abc-glob '{app,lib,spec}/**/*.rb' --style-glob '{app,lib,spec}/**/*.rb' --style-measure 120 --gte 'coverage/covered_percent,90' --no-doc"
 alias rcb="rake && cane && brakeman -q"
 alias vi="vim"
+alias smoke_test="base_path=http://0.0.0.0:3000 driver=chrome rake test"
+

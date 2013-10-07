@@ -1,8 +1,13 @@
-for file in `find app -name "*.js"`; do
-  ruby -pi -e "gsub(/function\(/, 'function (')" $file;
-  #ruby -pi -e "gsub(/if\(/, 'if (')" $file;
-  ruby -pi -e "gsub(/\( /, '(')" $file;
-  ruby -pi -e "gsub(/\s\)/, ')')" $file;
-  ruby -pi -e "gsub(/\t/, '  ')" $file;
-  #ruby -pi -e "gsub(/\S{/, ' {')" $file;
-done;
+#!/usr/bin/ruby
+# e.g. ruby -i js/jsFormatter.rb ~/.vim/test_files/calendar.js
+
+while line=gets
+  line.gsub! /function\(/, 'function ('
+  line.gsub! /if\(/, 'if ('
+  line.gsub! /\( /, '('
+  line.gsub! /\s\)/, ')'
+  line.gsub! /\t/, '  '
+  line.gsub! /\)\{/, ') {'
+  #line.gsub! /(\s)\{/, '\1 '
+  print line
+end

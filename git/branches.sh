@@ -1,7 +1,7 @@
 #!/bin/bash
- 
+
 $(git fetch --prune)
- 
+
 for branch in $(git branch -r); do
   if ([ "$branch" == "origin/HEAD" ] || [ "$branch" == "origin/master" ] || [ "$branch" == "->" ]); then
     continue
