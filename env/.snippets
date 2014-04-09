@@ -405,3 +405,42 @@ COUNTER=0;for line in `cat web_ad_requests.txt`; do COUNTER=$[COUNTER + 1]; curl
  2Million
 
  TeamCity Box (amplifier): vnc://172.20.0.115#Engineering#2Million
+
+
+ rake spec SPEC=spec/path/to/my_spec.rb
+ rake spec SPEC=spec/path/to/my_spec.rb#00 where 00 is the line number of a specific test
+
+#soon to be new build server
+ pa02tcbuild01
+
+
+
+# curl status of build server http://dev-app02.tunein.corp:8888/httpAuth/app/rest/builds/19790/status, build 19790
+http://dev-app02.tunein.corp:8888/httpAuth/app/rest/buildTypes/id:bt7/builds?count=1
+
+
+curl -v --basic --user nik@tunein.corp:NK@db89! --request GET http://dev-app02.tunein.corp:8888/httpAuth/app/rest/buildTypes/id:bt7/builds?count=1
+
+
+gbin sequencer_elaboration | tail -2 | awk '{print $1}' | xargs git co
+
+
+bundle exec rake db:migrate RAILS_ENV=test
+
+git log --author="nik" --pretty=tformat: --numstat spec/javascripts | awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -    
+
+
+
+#TrackerDB
+We now have a read-only account for trakcer DB. Unless you need admin rights, it's advisable to use the following account. You should be able to run all the normal queries using this account.
+
+Host: trackerdb.pa.tunein.corp
+Port: 3306
+DB: tracker_meta
+Username: tracker_ro
+Password is the standard admin password (Can tell you in person if you don't know it already)
+
+
+
+#delete merged branches
+git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
