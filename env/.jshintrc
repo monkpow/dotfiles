@@ -13,7 +13,7 @@
   "plusplus":false,      // This option prohibits the use of unary increment and decrement operators.
   "quotmark":"single",
   "regexp":false,       // This option prohibits the use of unsafe . in regular expressions.
-  "undef":true,         // This option prohibits the use of explicitly undeclared variables.
+  "undef":false,         // This option prohibits the use of explicitly undeclared variables.
   "unused":true,        // This option warns when you define and never use your variables.
   "strict":false,        // This option requires all functions to run in EcmaScript 5's strict mode.
   "trailing":true,     // This option makes it an error to leave a trailing whitespace in your code.
