@@ -317,17 +317,11 @@ ssh nkrimm@ssa1.pv.sv.nextag.com # Orang3ric3753
  Last login: Tue May  8 09:03:48 2012 from 10.28.24.2
  [kato@mb-app1 ~]$ 
 
-
-
-
 NODE_PATH=/usr/local/lib/node_modules:/Users/Nik/dotfiles/node cucumber.js features/myFeature.feature
 
 SVN user:rt_nik
 https://radiotime.svn.cvsdude.com/Enterprise/RadioTime/trunk
 https://radiotime.svn.cvsdude.com/Ops
-
-r3@lRadio
-
 
 #gbout
 git log master.. --no-merges --format='%h | %an | %ad | %s' --date=local
@@ -340,10 +334,6 @@ Team City: http://dev-app02:8888/overview.html
 
 git log --numstat --pretty="%H" --author="Nik Krimm" rev1…rev2 | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
 
-external only stations: 35596
-download this stream: http://tunein.com/radio/WRBC-The-Blaze-s134922/o
-sudo route -n add 10.0.20.0/24 10.32.250.80
-
 Hey Nik, the build was blocked on an error in the project file.  To see these in the future, RDP to dev-app02 and then navigate to c:\automation\tunein_redesign\continuousintegration and look at the build_dev.log.
 
 var player = new FlashPlayer({ stream: new Stream({Url: "http://pub3.sky.fm/sky_the80s"}), parentNode: "body" });
@@ -353,17 +343,12 @@ really shitty connection station: http://tunein.com/radio/Delta-FM-944-s141774/#
 
 C:\Users\Nik-Win7-VM\Desktop\tunin.com\platform\Web\TuneIn\TuneIn.Web.Site>C:\Ruby187\bin\ruby.exe assets\selenium\tuner\plays_media_test.rb --verbose
 
-log server: 10.32.11.115
-
 you can mount as SMB, not nfs11:26
   Nicholas Krimmright now?Nicholas11:26
   Nicholas Krimm(checking it out!)checking11:26
 	Mike Cook\\hostname\F$\path\to\log
 
 	turn -Ilib test/test_all.rb
-
-
-	r3@lRadio
 
 
 // Cool singleton pattern in JS
@@ -373,9 +358,6 @@ var singleton = new function() {
   this.publicMethod  = function () {}
   this.publicMethod2 = function () {}
 };
-
-
-windows network password: 8xN998w9cM
 
 localhost:3000/sessions/foo?user_name=msepcot
 
@@ -394,53 +376,22 @@ COUNTER=0;for line in `cat web_ad_requests.txt`; do COUNTER=$[COUNTER + 1]; curl
  # rename all files in a dir
  for file in `ls *json2`; do mv "$file" "${file/.json.json2/.json}"; done;
 
- eXRkK5wn
-
 #replace inplace
  ruby -pi.bak -e "gsub(/oldtext/, 'newtext')" *.txt
 
-
  RAILS_ENV=development bundle exec rake assets:precompile
-
- 2Million
-
- TeamCity Box (amplifier): vnc://172.20.0.115#Engineering#2Million
-
 
  rake spec SPEC=spec/path/to/my_spec.rb
  rake spec SPEC=spec/path/to/my_spec.rb#00 where 00 is the line number of a specific test
 
-#soon to be new build server
- pa02tcbuild01
-
-
-
 # curl status of build server http://dev-app02.tunein.corp:8888/httpAuth/app/rest/builds/19790/status, build 19790
 http://dev-app02.tunein.corp:8888/httpAuth/app/rest/buildTypes/id:bt7/builds?count=1
 
-
-curl -v --basic --user nik@tunein.corp:NK@db89! --request GET http://dev-app02.tunein.corp:8888/httpAuth/app/rest/buildTypes/id:bt7/builds?count=1
-
-
 gbin sequencer_elaboration | tail -2 | awk '{print $1}' | xargs git co
-
 
 bundle exec rake db:migrate RAILS_ENV=test
 
 git log --author="nik" --pretty=tformat: --numstat spec/javascripts | awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -    
-
-
-
-#TrackerDB
-We now have a read-only account for trakcer DB. Unless you need admin rights, it's advisable to use the following account. You should be able to run all the normal queries using this account.
-
-Host: trackerdb.pa.tunein.corp
-Port: 3306
-DB: tracker_meta
-Username: tracker_ro
-Password is the standard admin password (Can tell you in person if you don't know it already)
-
-
 
 #delete merged branches
 git branch --merged | grep -v "\*" | xargs -n 1 git branch -d

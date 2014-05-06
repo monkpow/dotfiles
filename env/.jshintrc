@@ -63,7 +63,7 @@
 
                          // Legacy: These options are legacy from JSLint. Aside from bug fixes they will not be improved in any way and might be removed at any point.
   "nomen":true,         // This option disallows the use of dangling _ in variables. We don't know why would you need it.
-  "onevar": true,       // This option allows only one var statement per function. Some people think that having a single var in a function, at the top of the function, helps readability.
+  "onevar":true,       // This option allows only one var statement per function. Some people think that having a single var in a function, at the top of the function, helps readability.
   "passfail":true,       // This option makes JSHint stop on the first error or warning.
   "white":true,          // This option make JSHint check your source code against Douglas Crockford's JavaScript coding style.
   "indent":2
