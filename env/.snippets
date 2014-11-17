@@ -395,3 +395,8 @@ git log --author="nik" --pretty=tformat: --numstat spec/javascripts | awk '{ add
 
 #delete merged branches
 git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+
+ssh-agent, ssh-add
+
+
+awk '{print $11}' old_branches | xargs git push origin --delete

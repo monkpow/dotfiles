@@ -26,14 +26,7 @@ if [ -f ~/.git_completion ]; then
   PS1='\n\W:\[\033[32m\]$(__git_ps1 "(%s)")\n> '
 fi
 
+export CLICOLOR=1
 export PS1
 
-
-#export NODE_PATH='/usr/local/lib/node_modules'
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-
-#source ~/dotfiles/git/git_helpers.bash
-
-export SAUCE_USERNAME=radio_chris
-export SAUCE_ACCESS_KEY=05000672-8027-4869-a5ce-da1a6dde3d33
+source ~/dotfiles/git/git_helpers.bash

@@ -5,3 +5,4 @@
 --type-set=coffee=.coffee
 --type-set=features=.feature
 --ignore-dir=tmp
+--ignore-dir=node_modules

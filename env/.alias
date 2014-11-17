@@ -25,4 +25,6 @@ alias cane="bundle exec cane --abc-glob '{app,lib,spec}/**/*.rb' --style-glob '{
 alias rcb="rake && cane && brakeman -q"
 alias vi="vim"
 alias smoke_test="base_path=http://0.0.0.0:3000 driver=chrome rake test"
-
+alias pretty_log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias jshint='bundle exec rake jshint'
+alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n10 | uniq"
