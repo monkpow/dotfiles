@@ -317,7 +317,86 @@ ssh nkrimm@ssa1.pv.sv.nextag.com # Orang3ric3753
  Last login: Tue May  8 09:03:48 2012 from 10.28.24.2
  [kato@mb-app1 ~]$ 
 
-
-
-
 NODE_PATH=/usr/local/lib/node_modules:/Users/Nik/dotfiles/node cucumber.js features/myFeature.feature
+
+SVN user:rt_nik
+https://radiotime.svn.cvsdude.com/Enterprise/RadioTime/trunk
+https://radiotime.svn.cvsdude.com/Ops
+
+#gbout
+git log master.. --no-merges --format='%h | %an | %ad | %s' --date=local
+
+C:\Users\Nik-Win7-VM\Desktop\tunin.com\platform\Bin\Community\Chutzpah>chutzpah.console ..>.>.\Web\TuneIn\TuneIn.Web.S
+ite\assets\js\jasmine\TunerSpecRunner.html ..>.>.\Web\TuneIn\TuneIn.Web.Site\assets\js\jasmine\TunerEventSpecRunner.ht
+ml
+
+Team City: http://dev-app02:8888/overview.html
+
+git log --numstat --pretty="%H" --author="Nik Krimm" rev1…rev2 | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
+
+Hey Nik, the build was blocked on an error in the project file.  To see these in the future, RDP to dev-app02 and then navigate to c:\automation\tunein_redesign\continuousintegration and look at the build_dev.log.
+
+var player = new FlashPlayer({ stream: new Stream({Url: "http://pub3.sky.fm/sky_the80s"}), parentNode: "body" });
+player.render()
+
+really shitty connection station: http://tunein.com/radio/Delta-FM-944-s141774/#debug=true
+
+C:\Users\Nik-Win7-VM\Desktop\tunin.com\platform\Web\TuneIn\TuneIn.Web.Site>C:\Ruby187\bin\ruby.exe assets\selenium\tuner\plays_media_test.rb --verbose
+
+you can mount as SMB, not nfs11:26
+  Nicholas Krimmright now?Nicholas11:26
+  Nicholas Krimm(checking it out!)checking11:26
+	Mike Cook\\hostname\F$\path\to\log
+
+	turn -Ilib test/test_all.rb
+
+
+// Cool singleton pattern in JS
+var singleton = new function() {
+  var privateVar;
+
+  this.publicMethod  = function () {}
+  this.publicMethod2 = function () {}
+};
+
+localhost:3000/sessions/foo?user_name=msepcot
+
+defaults write com.apple.screencapture location  ~/Desktop/screen_grabs
+
+
+http://colinaarts.com/articles/the-magic-of-overflow-hidden/
+
+stage db: dev-tracker01
+
+COUNTER=0;for line in `cat web_ad_requests.txt`; do COUNTER=$[COUNTER + 1]; curl -o web_$COUNTER.json http://ads.tunein.com$line; done;
+
+# regexp inplace in files
+ for file in `ls *json`;do echo $file; ruby -pe 'gsub(/(jQuery[^{]*|\);$)/, $/)' < $file > $file.json2 ; done;
+
+ # rename all files in a dir
+ for file in `ls *json2`; do mv "$file" "${file/.json.json2/.json}"; done;
+
+#replace inplace
+ ruby -pi.bak -e "gsub(/oldtext/, 'newtext')" *.txt
+
+ RAILS_ENV=development bundle exec rake assets:precompile
+
+ rake spec SPEC=spec/path/to/my_spec.rb
+ rake spec SPEC=spec/path/to/my_spec.rb#00 where 00 is the line number of a specific test
+
+# curl status of build server http://dev-app02.tunein.corp:8888/httpAuth/app/rest/builds/19790/status, build 19790
+http://dev-app02.tunein.corp:8888/httpAuth/app/rest/buildTypes/id:bt7/builds?count=1
+
+gbin sequencer_elaboration | tail -2 | awk '{print $1}' | xargs git co
+
+bundle exec rake db:migrate RAILS_ENV=test
+
+git log --author="nik" --pretty=tformat: --numstat spec/javascripts | awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -    
+
+#delete merged branches
+git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+
+ssh-agent, ssh-add
+
+
+awk '{print $11}' old_branches | xargs git push origin --delete

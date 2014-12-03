@@ -1,4 +1,8 @@
 --type-set=scss=.scss
+--type-set=less=.less
+--type-set=javascript=.ejs
+--type-set=asp=.cshtml
+--type-set=coffee=.coffee
 --type-set=features=.feature
---ignore-dir=coverage
 --ignore-dir=tmp
+--ignore-dir=node_modules

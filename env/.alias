@@ -19,4 +19,13 @@ alias brake='bundle exec rake'
 alias jenkins='ssh buildadmin@dev-build1.corp.nextag.com'
 alias npd='cd ~/dotfiles/node/'
 alias amp='ssh nkrimm@nik.amplifier.com'
-
+alias web='cd /Volumes/tunin.com/platform/Web/TuneIn/TuneIn.Web.Site'
+alias flash='cd /Volumes/tunin.com/platform/Web/CE/UI/rt-tools/swf/mplayer/radiotime'
+alias amp='cd ~/src/trackr.git/trackr/'
+alias cane="bundle exec cane --abc-glob '{app,lib,spec}/**/*.rb' --style-glob '{app,lib,spec}/**/*.rb' --style-measure 120 --gte 'coverage/covered_percent,90' --no-doc"
+alias rcb="rake && cane && brakeman -q"
+alias vi="vim"
+alias smoke_test="base_path=http://0.0.0.0:3000 driver=chrome rake test"
+alias pretty_log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias jshint='bundle exec rake jshint'
+alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n10 | uniq"
