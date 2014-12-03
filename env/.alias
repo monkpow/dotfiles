@@ -18,3 +18,5 @@ alias log5='git log --oneline | head -n5'
 alias brake='bundle exec rake'
 alias jenkins='ssh buildadmin@dev-build1.corp.nextag.com'
 alias npd='cd ~/dotfiles/node/'
+alias amp='ssh nkrimm@nik.amplifier.com'
+
