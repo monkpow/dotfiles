@@ -23,10 +23,13 @@ if [ -f ~/.git_completion ]; then
   GIT_PS1_SHOWDIRTYSTATE=true
   GIT_PS1_SHOWSTASHSTATE=true
   GIT_PS1_SHOWUPSTREAM="auto"
-  PS1='\n\W:\[\033[32m\]$(__git_ps1 "(%s)")\n> '
+  PS1='\n\w\[\033[32m\]$(__git_ps1 "(%s)")\n> '
 fi
 
 export CLICOLOR=1
 export PS1
 
 source ~/dotfiles/git/git_helpers.bash
+
+#makes a goofy face
+ack --bar

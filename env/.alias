@@ -1,31 +1,10 @@
-alias snip="cat ~/dotfiles/env/.snippets"
-alias apollo="cd ~/src/apollo"
-alias core="cd ~/src/ror_core"
-alias snip!="vi ~/dotfiles/env/.snippets"
 alias alias!="vi ~/dotfiles/env/.alias;. ~/dotfiles/env/.alias"
-#alias jslint="~/jslint/jsl-0.2.6-linux/jsl -process "
-alias ls="ls -lhoG"
-alias profile="vi ~/.bash_profile && . ~/.bash_profile" 
-#alias vim="/usr/local/bin/vim"
-alias site='cd ~/src/tiger'
 alias hosts='sudo vi /etc/hosts'
-alias mgr='/home/build/dotfiles/ruby/mgr.rb'
-alias pm='python manage.py'
-#alias jenkins='(cd ~/src/emerald-main/ && ./bin/run_jenkins.sh)'
-alias activate='(cd ~/src/emerald-main && source ./bin/activate_env.sh)'
-alias run_tests='./manage-dev.sh test user templates product search tags'
 alias log5='git log --oneline | head -n5'
-alias brake='bundle exec rake'
-alias jenkins='ssh buildadmin@dev-build1.corp.nextag.com'
-alias npd='cd ~/dotfiles/node/'
-alias amp='ssh nkrimm@nik.amplifier.com'
-alias web='cd /Volumes/tunin.com/platform/Web/TuneIn/TuneIn.Web.Site'
-alias flash='cd /Volumes/tunin.com/platform/Web/CE/UI/rt-tools/swf/mplayer/radiotime'
-alias amp='cd ~/src/trackr.git/trackr/'
-alias cane="bundle exec cane --abc-glob '{app,lib,spec}/**/*.rb' --style-glob '{app,lib,spec}/**/*.rb' --style-measure 120 --gte 'coverage/covered_percent,90' --no-doc"
-alias rcb="rake && cane && brakeman -q"
-alias vi="vim"
-alias smoke_test="base_path=http://0.0.0.0:3000 driver=chrome rake test"
+alias ls="ls -lhoG"
 alias pretty_log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias jshint='bundle exec rake jshint'
+alias profile="vi ~/.bash_profile && . ~/.bash_profile" 
 alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n10 | uniq"
+alias snip!="vi ~/dotfiles/env/.snippets"
+alias snip="cat ~/dotfiles/env/.snippets"
+alias dev="cd ~/dev/brighttag"
