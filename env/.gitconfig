@@ -1,29 +1,26 @@
 [color]
 	ui = true
-[alias]
-	ci = commit
-	co = checkout
-	br = branch
-	st = status
-	a = add
-	d = rm
-	sh = show
-[user]
-	name = Nik (Fire Eater) Krimm
-	email = nik@tunein.com
 [push]
 	default = current
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/nkrimm/.gitignore_global
 	autocrlf = input
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [pull]
 	default = current
 [diff]
-	mnemonicprefix = true
+  mnemonicprefix = true
+[credential]
+  helper = osxkeychain
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[user]
+	name = Nik Krimm
+	email = nkrimm@signal.co
+
