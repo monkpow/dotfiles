@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rbtp () {
+  people=achen,alawry,ckaye,drashid,nkrimm,sgravener
+  branch=$(git symbolic-ref --short -q HEAD)
+  rbt post --branch $branch --target-people $people -o
+}

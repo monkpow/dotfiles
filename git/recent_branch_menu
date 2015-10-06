@@ -1,0 +1,19 @@
+#!/bin/bash
+# Bash Menu Script Example
+
+PS3='Choose a recent branch'
+
+option=(`git reflog | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n20 | uniq | awk '{print $4}' | tr "\\n" "|"`)
+
+echo $option
+
+
+eval "case \"$choice\" in
+    $option)
+        #`git co $option`
+        break
+        ;;
+esac"
+
+#options=("Option 1" "Option 2" "Option 3" "Quit")
+
