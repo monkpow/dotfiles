@@ -2,9 +2,20 @@ alias alias!="vi ~/dotfiles/env/.alias;. ~/dotfiles/env/.alias"
 alias hosts='sudo vi /etc/hosts'
 alias log5='git log --oneline | head -n5'
 alias ls="ls -lhoG"
-alias pretty_log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias pretty_log="git log --graph --pretty=format:'%Cred%h%Cueset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias profile="vi ~/.bash_profile && . ~/.bash_profile" 
-alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n10 | uniq"
+alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n50 | uniq"
 alias snip!="vi ~/dotfiles/env/.snippets"
 alias snip="cat ~/dotfiles/env/.snippets"
-alias dev="cd ~/dev/brighttag"
+alias dev="cd ~/dev/brighttag/cadence/ui"
+alias selenium="cd ~/dev/brighttag/cadence/ci/ && java -jar selenium-server-standalone-2.43.0.jar"
+alias cukes="cd ~/dev/brighttag/cadence/ci/ && TESTENV=vagrant_hybrid BROWSER=firefox cucumber"
+alias karma-debug="karma start karma.conf.js --browsers=Chrome --single-run=false --debug"
+alias jira='jira_client'
+alias reset="cd ~/dev/brighttag/cadence/ci && TESTENV=vagrant_hybrid BROWSER=firefox cucumber features/login.feature:6"
+alias guestvm='ssh nkrimm@guest01vg1'
+alias cadence='cd ~/dev/brighttag/cadence/ui && PRETTY_LOGS=true CADENCE_ENV=vagrant node cadence.js'
+alias cadence-debug='cd ~/dev/brighttag/cadence/ui && PRETTY_LOGS=true CADENCE_ENV=vagrant node debug cadence.js'
+alias start_vms='cd ~/dev/brighttag/vagrant/ops  && vagrant up && cd ~/dev/brighttag/vagrant/guestvm && vagrant up guest01vg1'
+alias stop_vms='cd ~/dev/brighttag/vagrant/ops  && vagrant halt && cd ~/dev/brighttag/vagrant/guestvm && vagrant halt guest01vg1'
+alias clojure='rlwrap java -cp ~/dotfiles/clojure/clojure-1.7.0.jar clojure.main'

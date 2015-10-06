@@ -12,8 +12,8 @@
   "nonew":true,         // This option prohibits the use of constructor functions for side-effects. Some people like to call constructor functions without assigning its result to any variable:
   "plusplus":false,      // This option prohibits the use of unary increment and decrement operators.
   "quotmark":"single",
-  "regexp":false,       // This option prohibits the use of unsafe . in regular expressions.
-  "undef":false,         // This option prohibits the use of explicitly undeclared variables.
+  "regexp":true,       // This option prohibits the use of unsafe . in regular expressions.
+  "undef":true,         // This option prohibits the use of explicitly undeclared variables.
   "unused":true,        // This option warns when you define and never use your variables.
   "strict":false,        // This option requires all functions to run in EcmaScript 5's strict mode.
   "trailing":true,     // This option makes it an error to leave a trailing whitespace in your code.
@@ -52,9 +52,10 @@
   "couch":false,         // This option defines globals exposed by CouchDB.
   "devel":false,         // This option defines globals that are usually used for logging poor-man's debugging: console, alert, etc.
   "dojo":false,          // This option defines globals exposed by the Dojo Toolkit.
+  "jasmine":true,
   "jquery":true,        // This option defines globals exposed by the jQuery JavaScript library.
   "mootools":false,      // This option defines globals exposed by the MooTools JavaScript framework.
-  "node":false,          // This option defines globals available when your code is running inside of the Node runtime environment.
+  "node":true,          // This option defines globals available when your code is running inside of the Node runtime environment.
   "nonstandard":false,   // This option defines non-standard but widely adopted globals such as escape and unescape.
   "prototypejs":false,   // This option defines globals exposed by the Prototype JavaScript framework.
   "rhino":false,         // This option defines globals available when your code is running inside of the Rhino runtime environment.
@@ -66,5 +67,6 @@
   "onevar":true,       // This option allows only one var statement per function. Some people think that having a single var in a function, at the top of the function, helps readability.
   "passfail":true,       // This option makes JSHint stop on the first error or warning.
   "white":true,          // This option make JSHint check your source code against Douglas Crockford's JavaScript coding style.
-  "indent":2
+  "indent":2,
+  "globals" : { "jade": true, "Bright": true, "_": true, "Handlebars": false, "sandbox": false, "getJSONFixture": false, "Backbone": true, "Foundation": true }
 }

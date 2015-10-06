@@ -400,3 +400,125 @@ ssh-agent, ssh-add
 
 
 awk '{print $11}' old_branches | xargs git push origin --delete
+
+redis-server /usr/local/etc/redis.conf
+
+sudo apachectl start
+
+
+mysql> select U.id, GU.* from User U, Groups_Users GU where email='kmarren@signal.co' AND U.id = GU.user_id;
+mysql> select U.id, AR.* from User U, AccountRole AR where email='kmarren@signal.co' AND U.id = AR.user_id;
+
+
+cd ~/dev/brighttag/cadence/ci/
+TESTENV=vagrant_hybrid BROWSER=firefox SKIPRESET=true cucumber features/login.feature:6
+TESTENV=vagrant_hybrid BROWSER=firefox cucumber features/login.feature:6
+
+java -jar selenium-server-standalone-2.43.0.jar
+
+#restarting dead datahub
+nkrimm@guestvm:~$ sudo rm /mnt/mongodb/mongod.lock 
+nkrimm@guestvm:~$ sudo service mongodb start
+nkrimm@guestvm:~$ b
+bright@guestvm:~$ cd datahub/
+bright@guestvm:~/datahub$ ./stop && ./start
+
+FIXME by adding a check for empty guid
+
+for branch in `git branch -r --merged | grep -v HEAD`; do echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; done | sort -r
+
+// show all events in jquery
+$._data( $("#foo")[0], "events" );
+
+
+
+// selenium
+http://jenkins01of1:8080/jenkins/job/CadenceUI/2259/console
+grid runs on jenkins
+there's a ./startGrid.sh in bright's home dir
+I think the cadence client is exclusively using the box by Kevin's desk
+http://seleniumgrid:4444/
+
+
+#reset all services on guestvm
+btiab.service migrations && btiab.service datahub && btiab.service hiveway && btiab.service cookiehub && btiab.service segfire && btiab.service loghub
+
+
+node debug $(which grunt) jasmine_node:all
+
+karma start karma.conf.js --browsers=Chrome --single-run=false --debug
+
+# update permissions
+http://sagacity.stage.thebrighttag.com/users/nkrimm@signal.co
+
+
+#to update configuration on staging box
+ssh [username]@ops01st1
+ssh cadence01st1
+sudo puppetd -t
+b # become bright user
+cd ./cadence
+./stop && ./start
+cd ./fuse
+./stop && ./start
+
+
+see logs in prod:
+ssh -A nkrimm@jump01ea1
+ssh cadence01ea1
+cd /mnt/log/cadence
+
+
+when npm is down:
+sinopia@rb:~$ nvm use v0.10.28
+Now using node v0.10.28
+sinopia@rb:~$ ./run_sinopia.sh
+
+
+
+# curl a BrandConfig coming out of segfire
+# from bright  user on guestvm
+curl -s 'localhost:8081/brands/cBJbfsha/config' | jq '.'
+
+
+for name in nkrimm kmarren sgravener alawry drashid achen kaye; do echo $name; git log --oneline --since=90.days.ago --committer=$name | wc -l; done
+
+
+#make selenium run firefox in the background
+you can edit Firefox.app/Contents/Info.plist
+  <key>LSBackgroundOnly</key>
+  <string>1</string></string></key>
+
+
+ack -l 'req.t\(' | xargs ruby -pi -e 'gsub(/req.t\(/, "t\(")'
+
+curl to test datahub
+sshed into datahub02st1
+drashid@datahub02st1:~$ curl -HFrom:drashid@signal.co localhost:8081/accounts/2/brands/c4yR3Xwy/segments/ctrtZyee | python -m json.tool
+
+
+login with bad cookies
+ curl --cookie-jar cookies.txt -H "Content-Type: application/json" -X POST http://localhost:3000/login -d "
+ {\"username\": \"dkamen@segway.com\", \"password\": \"password\"}
+
+
+ curl -H "Content-Type: application/json" -HFrom:drashid@signal.co -X PUT --data @forced-nestedness.json 23.253.40.18:8081/accounts/2/brands/c4yR3Xwy/segments/cZd4J8P3
+ that ip is datahub01st1, if you're wondering. it'll replicate to the others
+
+
+// to get a directory on a dns'ed box to show up as a simple file server
+I just ran 'python -m SimpleHTTPServer 9999' in that directory, good little one liner to keep handy
+
+mysql datahub -hbtiab05ci5 -ubright -pdatahub
+
+// datahub logs
+nkrimm@guest01vg1:~$ tail -f /mnt/log/datahub/datahub.0.log
+
+
+// connect to the windows vm
+Get Chicken of the VNC. OS X's built-in remote desktop client doesn't work for some reason. Sorry Charney, haven't tested Linux options.
+
+Host: 10.111.254.194
+Password: oneforall
+
+
