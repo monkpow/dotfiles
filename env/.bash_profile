@@ -41,6 +41,7 @@ export PS1
 source ~/dotfiles/git/git_helpers.bash
 source ~/dotfiles/rb/rb_post
 source ~/dotfiles/shell/randAscii.sh
+source ~/dotfiles/git/log_branches.bash
 
 
 

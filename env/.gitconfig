@@ -1,13 +1,13 @@
 [color]
-	ui = true
+  ui = true
 [push]
-	default = current
+  default = current
 [core]
-	editor = /usr/bin/vim
-	excludesfile = /Users/nkrimm/.gitignore_global
-	autocrlf = input
+  editor = /usr/bin/vim
+  excludesfile = /Users/nkrimm/.gitignore_global
+  autocrlf = input
 [pull]
-	default = current
+  default = current
 [diff]
   mnemonicprefix = true
 [credential]
@@ -21,6 +21,6 @@
   type = cat-file -t
   dump = cat-file -p
 [user]
-	name = Nik Krimm
-	email = nkrimm@signal.co
+  name = Nik Krimm
+  email = nkrimm@signal.co
 

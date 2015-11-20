@@ -521,4 +521,26 @@ Get Chicken of the VNC. OS X's built-in remote desktop client doesn't work for s
 Host: 10.111.254.194
 Password: oneforall
 
+sync roni
+cd /mnt/src/roni && bundle && bin/roni-sync-all local
 
+
+control ui cukes
+BROWSER=firefox SELENV=local TESTENV=continuous-vagrant cucumber
+
+control ui roni 
+cd /mnt/src/roni && bundle && bin/roni-sync-all local
+
+reset migrations
+ bt/migrations -> resetDB.sh
+
+jump jenkins:  you can ssh into ops01dv2 and then ssh into jenkins-worker03dv2
+
+
+ git diff --full-index origin/master > ~/mydiff.diff
+
+ nkrimm@worker03jk1:~$ cd /mnt/jenkins/workspace/HubJasmine
+ nkrimm@worker03jk1:/mnt/jenkins/workspace/HubJasmine$ export WORKSPACE=`pwd`; /mnt/jenkins/repos/jenkins/hub/job.sh
+
+
+ bright@jenkins-worker04dv2:/mnt/jenkins/workspace/build_signaltms$ export WORKSPACE=`pwd`;export JENKINS_JOB=true; /mnt/jenkins/repos/jenkins/hub/job.sh
