@@ -1,0 +1,61 @@
+source .env_sources/builder_bash_functions.sh 
+source .env_sources/deployer_bash_functions.sh
+
+CONTROLVAGRANTDEPS="control control-yjp signaltms translations btstatic datahub"
+CONTROLMASTERDEPS="migrations carerunner"
+
+CADENCEDEPS=""
+
+function build-control-vagrant-deps () {
+  for svc in $CONTROLVAGRANTDEPS
+  do
+    echo "****************************************************"
+    echo "Building: " $svc 
+    echo "****************************************************"
+    build.service $svc vagrant
+    echo "****************************************************"
+  done  
+}
+
+function build-control-master-deps () {
+  for svc in $CONTROLMASTERSDEPS
+  do
+    echo "****************************************************"
+    echo "Building: " $svc 
+    echo "****************************************************"
+    build.service $svc master
+    echo "****************************************************"
+  done  
+}
+
+function deploy-control-vagrant-deps () {
+  for svc in $CONTROLVAGRANTDEPS
+  do
+    echo "****************************************************"
+    echo "Deploying: " $svc 
+    echo "****************************************************"
+    deploy.service $svc vagrant
+    echo "****************************************************"
+  done  
+}
+
+function deploy-control-master-deps () {
+  for svc in $CONTROLMASTERSDEPS
+  do
+    echo "****************************************************"
+    echo "Deploying: " $svc 
+    echo "****************************************************"
+    deploy.service $svc master
+    echo "****************************************************"
+  done  
+}
+
+function build-control () {
+  build-control-vagrant-deps
+  build-control-master-deps
+}
+
+function deploy-control () {
+  deploy-control-vagrant-deps
+  deploy-control-master-deps
+}
