@@ -59,3 +59,15 @@ export PATH
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
+
+
+
+# to change the location of the doc
+# defaults write com.apple.dock pinning -string [start|middle|end]
+# then, killall Dock to restart Dock
+
+# make dock turn on real slow
+# defaults write com.apple.dock autohide-delay -float 2; killall Dock
+# undo
+# defaults delete com.apple.dock autohide-delay; killall Dock
+

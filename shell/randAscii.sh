@@ -1,6 +1,6 @@
 #!/bin/bash
 
-case $[($RANDOM % 11)  + 1] in
+case $[($RANDOM % 15)  + 1] in
   1)
     ack --bar 
     ;;
@@ -40,6 +40,11 @@ case $[($RANDOM % 11)  + 1] in
   13)
     cat ~/dotfiles/ascii/unicorn2
     ;;
+  14) 
+    cat ~/dotfiles/ascii/yoda
+    ;;
+  15) 
+    cat ~/dotfiles/ascii/nemisys
 
 esac
 

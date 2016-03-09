@@ -7,12 +7,14 @@ alias profile="vi ~/.bash_profile && . ~/.bash_profile"
 alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n50 | uniq"
 alias snip!="vi ~/dotfiles/env/.snippets"
 alias snip="cat ~/dotfiles/env/.snippets"
-alias dev="cd ~/dev/brighttag/ui"
+alias dev="cd ~/dev/brighttag/ui/control"
+alias tagjs="cd ~/dev/brighttag/bt/js"
 alias selenium="cd ~/dev/brighttag/cadence/ci/ && java -jar selenium-server-standalone-2.43.0.jar"
 alias cukes="cd ~/dev/brighttag/cadence/ci/ && TESTENV=vagrant_hybrid BROWSER=firefox cucumber"
 alias karma_="karma start karma.config.js --browsers=Chrome --single-run=true"
 alias karma-debug="karma start karma.config.js --browsers=Chrome --single-run=false --debug"
-alias jira='jira_client'
+alias kd="node_modules/karma/bin/karma start karma.config.js --browsers=Chrome --single-run=false --debug"
+alias jira='~/dev/brighttag/jira/jira_client/jira_client'
 alias reset="cd ~/dev/brighttag/cadence/ci && TESTENV=vagrant_hybrid BROWSER=firefox cucumber features/login.feature:6"
 alias guestvm='ssh nkrimm@guest01vg1'
 alias cadence='cd ~/dev/brighttag/cadence/ui && PRETTY_LOGS=true CADENCE_ENV=vagrant node cadence.js'
@@ -21,7 +23,7 @@ alias start_vms='cd ~/dev/brighttag/vagrant/ops  && vagrant up && cd ~/dev/brigh
 alias stop_vms='cd ~/dev/brighttag/vagrant/ops  && vagrant halt && cd ~/dev/brighttag/vagrant/guestvm && vagrant halt guest01vg1'
 alias clojure='rlwrap java -cp ~/dotfiles/clojure/clojure-1.7.0.jar clojure.main'
 alias puppet_bomb='cd ~/dev/brighttag/ops/bin && ./vg-manifest | ./bt-ops-instance-find | ./bt-ops-instances-run -u vagrant -i /Users/nik/.vagrant.d/insecure_private_key "sudo puppetd -t"'
-alias update_all_gits='DEV_DIR=~/dev/brighttag; unalias ls; for src_dir in `ls $DEV_DIR`; do cd $DEV_DIR/$src_dir && git pull origin master; cd $DEV_DIR; done'
+alias update_all_gits='DEV_DIR=~/dev/brighttag; unalias ls; for src_dir in `ls $DEV_DIR`; do cd $DEV_DIR/$src_dir && git co master && git pull origin master; cd $DEV_DIR; done'
 alias jump="ssh -A nkrimm@jump01ea1"
 alias jumpdev2="ssh -A nkrimm@ops01dv2"
 alias ops="ssh -A nkrimm@ops01vg1"
