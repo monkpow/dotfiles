@@ -2,7 +2,7 @@ var fs = require('fs'),
   path = require('path');
 
 function randomFrom(list) {
-  return list[Math.floor(Math.random() *list.length)];
+  return list[Math.floor(Math.random() * list.length)];
 }
 
 function write(err, contents) {

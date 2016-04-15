@@ -1,9 +1,17 @@
 #!/bin/bash
 # Bash Menu Script Example
 
+# this looks really useful
+#read -p "Continue (y/n)?" choice
+#case "$choice" in 
+#    y|Y ) echo "yes";;
+#      n|N ) echo "no";;
+#        * ) echo "invalid";;
+#      esac
+
 PS3='Choose a recent branch'
 
-option=(`git reflog | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n20 | uniq | awk '{print $4}' | tr "\\n" "|"`)
+option=(`git reflog | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n5 | uniq | awk '{print $4}' | tr "\\n" "|"`)
 
 echo $option
 

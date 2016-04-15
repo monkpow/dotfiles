@@ -544,3 +544,13 @@ jump jenkins:  you can ssh into ops01dv2 and then ssh into jenkins-worker03dv2
 
 
  bright@jenkins-worker04dv2:/mnt/jenkins/workspace/build_signaltms$ export WORKSPACE=`pwd`;export JENKINS_JOB=true; /mnt/jenkins/repos/jenkins/hub/job.sh
+
+ curl -HFrom:sally@carerunner.com datahub01vg1:8081/sites/addchanneltest/datafeeds/12/pages | python -m json.tool
+
+
+bright@reports01ea1:~$ mongoexport --db stathub --collection site_metrics_30m --query "{siteId: 'oyXml1M', timeStamp: {\$gte: 1454306400000} }" --out /tmp/nkrimm.out.json
+
+db.site_metrics_30m.find({siteId: 'oyXml1M'}).sort({timeStamp:-1}).limit(2).pretty();
+sudo service mongodb status
+
+ curl "localhost:8084/sites/carerunner1/dashboard?start=1458021600000&end=1460613600000&interval=21600000&_=1460577655015"
