@@ -554,3 +554,49 @@ db.site_metrics_30m.find({siteId: 'oyXml1M'}).sort({timeStamp:-1}).limit(2).pret
 sudo service mongodb status
 
  curl "localhost:8084/sites/carerunner1/dashboard?start=1458021600000&end=1460613600000&interval=21600000&_=1460577655015"
+
+
+  curl -si 'http://tagserve.vg1.thebrighttag.com:8080/api/preview/disableLegacyCookie' -H 'Pragma: no-cache' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36' -H 'Accept: image/webp,image/*,*/*;q=0.8' -H 'Referer: http://continuous.vg1.signal.co/preview' -H 'Cookie: mp_dev_mixpanel=%7B%22distinct_id%22%3A%20%2215182fdc06b46-08b8c8f6e-10336d50-13c680-15182fdc06c7cf%22%7D; cvo_tid1=CXzGBnqPucc|1448908551|1452794174|1; cvo_sid1=VX4MWCAF7WT5; mp_gapinc_mixpanel=%7B%22distinct_id%22%3A%20%22ci_28215732%22%2C%22ci%22%3A%20%2228215732%22%7D; _ga=GA1.2.302640148.1420667678; btp=on' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed
+
+
+
+  sudo launchctl limit maxfiles 65536 65536
+  sudo launchctl limit maxproc 2048 2048
+  ulimit -n 65536
+  ulimit -u 2048
+
+
+  for i in $(seq 1 100); do curl -s http://s.btstatic.com/tag.orig.js | grep "overridePercent = 1"; done
+
+
+  curl -HContent-Type:application/json -X POST -d @- -HFrom:nkrimm@signal.co -v datahub01st1:8081/sites/sFZs4lv/export <  '/Users/nik/Desktop/configs/sFZs4lv_Tポイント_2016-06-24T19-57-51+00-00.txt' 
+
+
+  ssh tagserve01st1 "curl --silent http://localhost:8080/version"
+
+
+
+
+curl -H "Content-Type: application/json" 'http://continuous.vg1.signal.co/session' | jq '.'
+curl -c cookiejar -H "Content-Type: application/json" 'http://continuous.vg1.signal.co/session' | jq '.'
+curl -b cookiejar -c cookiejar -H "Content-Type: application/json" -X POST -d '{"saved_key": "saved_value"}' 'http://continuous.vg1.signal.co/session' | jq '.'
+curl -c cookiejar -H "Content-Type: application/json" -X POST -d '{"saved_key": "saved_value"}' 'http://continuous.vg1.signal.co/session' | jq '.'
+curl -b cookiejar -H "Content-Type: application/json" 'http://continuous.vg1.signal.co/session' | jq '.'
+curl -b cookiejar -c cookiejar -H "Content-Type: application/json" -X DELETE 'http://continuous.vg1.signal.co/session' | jq '.'
+
+
+
+#A useful incantation for adding a bunch of tags to this test account.
+# Turn on webdev tools, turn on persist session
+# Add a single tag to the account via web
+# Grab the curl from that PUT
+# Looks a bit like this:
+for i in `seq 1 3000`; do curl 'http://continuous.vg1.signal.co/sites/OGuKyl2/tags/create' -X PUT -H 'Cookie: hsfirstvisit=http%3A%2F%2Fwww.signal.co%2Fblog%2F|https%3A%2F%2Fwww.google.com%2F|1426792466404; optimizelyEndUserId=oeu1426792466738r0.998122098390013; __utma=263383438.1647771500.1426792466.1448922081.1452542056.4; bi-ga=GA1.2.1647771500.1426792466; __hstc=214295496.e25bbed7e4a3eceedc4ac189d56b69f9.1426792466406.1452542053392.1453219130592.11; hubspotutk=e25bbed7e4a3eceedc4ac189d56b69f9; optimizelySegments=%7B%222092630379%22%3A%22search%22%2C%222093420517%22%3A%22false%22%2C%222105700254%22%3A%22gc%22%7D; optimizelyBuckets=%7B%223365690224%22%3A%223397330044%22%7D; bi-sid-v2=59Fd7zFJKIpVQJSfeiib.1547827136555; bi-st=635888159351178000; bi-vamp-v3=blocked; _ga=GA1.2.1647771500.1426792466; btp=on; uichallenge=FkihAff38aCuqn9qqeJPavuj2fL97OnecQZG8DNAprhp1GyUYqjM6vPkZ9qoP3pIjvYgmBJNZhDHnyBswQGKFnN3HELBoVTbP4j6mtouvDWgO4q5hx1DYhnQD8a6Q9XN; bt_sess=DBik%2Fh5Ziq94%2BWnw1p9N9YUKVEWSCiAO17yihVhljXNhQB5Gdboq%2F6PPup4IcUM374fEZduOrrhI2d3io9IC8RskdU%2BjmRmQVMdxGHX%2F8jhPHrVzqSemnc26NNiVeryQQvlfmSD%2BZFQuyFYbw9Ojr2sLA%2BO7BPv6sNNS%2BQW4oypDXfTGTSayRyy%2BJdeCVzmWUjmlhDmUO8stnQEno0W7v9HluASYMuIgumF0oCFP9l8Agi5nC5bPWPOyehxIUMCfhIggbeqIFj1QnRogZqYJyxoEx%2FsOmJzVVlGK77el%2F4s80mQ%2BumZe%2FmKu%2FzAXcMw%2FOsP1QtbMXfXUd%2B8YfPqIcaf4bx9Nn3cfkkF%2FEULRVLIDp%2FmWhZqa7LrwUWPzijJY7cA5443YkSEoIQeDXqwp8xwbYCe%2BmdpVRE%2BZIbT%2BAfdw%2FwVyyhpRUyRZkcRV5yxO5itUYMlD2tYe5V4NhRnreh7PaE4sJ37ywDaxMpPqPe6ATiYY5iaJEBKMH2jAHU3hkPM83Jx1jtcJPeDSDDxT9%2BOGRe7o7zkZpZQ5Fw0JBE%2BghljQdGJeqVz%2FFwKJSEwxMuuishrzqgZUKknENoqtKwFHf%2FfJ8KjZSicep5V4xr2NMPX7O%2BNUYPajS753aK2p0vZtbvubL8vKoNcs%2FqLbyoEK4Jo7F%2FlzilncJz%2Fgh7cuxSz3NOC8fylQlxhZTTkM2koctTD9j6P%2FkAMlimJNJRVuGC4ZHKL%2BPEfvTHWJNOKYCUKn4Me%2FOstTjk9RNgQE9go8TbaZFsACGMQNB1WiGQ8zQHc3MhQgztqCtlp1aPlV%2B5k4aZ6Zk%2FgkBizVwLSPuDDz0O7X3X7wSX5sGsTOZS%2Bb2nqtoiZFjrCo1qJbSbCcd5g%2Bv5pKDbj%2FHs5b%2ByPrAxJE8Gpp48J5KXuZq2bThIwZkLEzKOFSi8j3J8IAqV58Ak8cWKrx3y27QK5Ysw%2FkSXIssZaDMw3OtV56mPqjGkzM1La3q2uauqUEgX0Z6QA5z6O3%2BgqYuMsGErwDiwLDxNNDGDobL39OtpJa9qI9vM1USE2D3erTP%2BGPtTjpgCgoHtKBVLGOT61Yh97KaRf5qZk3ez3lmLJsyNXQVcJt1M8xgXoQ9Aw5UNie0qyFc2sqjQvB9BlHf0dwoqoIFlFFqtdW606i98IKbCf9Ln5%2FyLOKG501tXwuHLRCUm2YJrJpwJlqVZ5YiRQ8SdPxyIkBkNDrzegtqmITUwh9ZqVKSXPkmysURSle1ybBcB9GmL8QNSYO3Pz%2FbRBrI3GGt1vR; currentSiteID=OGuKyl2; currentSite=NK+Test+Starwood; sessionEnd=1472671287364' -H 'Origin: http://continuous.vg1.signal.co' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Accept: */*' -H 'Referer: http://continuous.vg1.signal.co/sites/OGuKyl2/tags/add/bt_cadence_general_behavior' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data '{"name":"['$i'] Testing lots of items","comments":"woot","challengeToken":"FkihAff38aCuqn9qqeJPavuj2fL97OnecQZG8DNAprhp1GyUYqjM6vPkZ9qoP3pIjvYgmBJNZhDHnyBswQGKFnN3HELBoVTbP4j6mtouvDWgO4q5hx1DYhnQD8a6Q9XN","tagDefinitionId":"bt_cadence_general_behavior","tagDefFieldValue":{"behaviors":"1234","channel":"","vars":""},"groups":[]}' --compressed; done;
+
+
+curl -HContent-Type:application/json -X PUT -d @- -HFrom:nkrimm@signal.co -v datahub.vg1:8081/sites/qUTXGn1/export <  '/Users/nik/Desktop/configs/6EeDEhH_02/tags_to_pages.txt' #pages.txt' 
+
+rbt post | tail -n3 | head | xargs open
+
+ruby -pi.bak -e "gsub(/oldtext/, 'newtext')" README.md 
+DEBUG=express:* node index.js

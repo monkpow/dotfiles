@@ -32,7 +32,7 @@ if [ -f ~/.git_completion ]; then
   GIT_PS1_SHOWDIRTYSTATE=true
   GIT_PS1_SHOWSTASHSTATE=true
   GIT_PS1_SHOWUPSTREAM="auto"
-  PS1='\n\w\[\033[32m\]$(__git_ps1 "(%s)")\n> '
+  PS1='\n\w\[\033[32m\]$(__git_ps1 "(%s)")\n\n'
 fi
 
 export CLICOLOR=1
@@ -55,12 +55,9 @@ alias node="env NODE_NO_READLINE=1 rlwrap node"
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
-
-
+# Key bindings, up/down arrow searches through history
+#"\e[A": history-search-backward
+#"\e[B": history-search-forward
 
 # to change the location of the doc
 # defaults write com.apple.dock pinning -string [start|middle|end]
@@ -71,3 +68,8 @@ export PATH
 # undo
 # defaults delete com.apple.dock autohide-delay; killall Dock
 
+
+# to address NodeJS error “EMFILE, too many open files” on Mac OS on TMS
+# http://stackoverflow.com/questions/19981065/nodejs-error-emfile-too-many-open-files-on-mac-os
+#ulimit -n 65536
+#ulimit -u 2048
