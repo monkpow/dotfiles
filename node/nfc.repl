@@ -1,0 +1,5 @@
+var TagsM = require('application/models/datahub/sites/site/tags')
+function _getBody(buffer) { return buffer.getBody('UTF-8'); }
+function _logBody(buffer) { console.log(_getBody(buffer)) }
+function _k(h) { return Object.keys(h) }
+function _c(d) { console.log(d) }
