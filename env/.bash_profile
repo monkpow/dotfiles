@@ -1,9 +1,9 @@
 # Get the aliases and functions
 
 PATH="/System/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-PATH="/usr/local/bin":"/usr/local/Cellar/vim/7.3.875/bin/":${PATH}
 PATH="~/dev/brighttag/pypr/jira/jira_client/":${PATH}
 PATH="~/dotfiles/clojure/lein":${PATH}
+PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 
 export PATH
 
@@ -48,7 +48,7 @@ node ~/dotfiles/shell/randAscii.js
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # use vim keybindings in node repl
-alias node="env NODE_NO_READLINE=1 rlwrap node"
+#alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave

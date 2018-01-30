@@ -56,3 +56,7 @@ function rebase_and_merge {
   BRANCH=$(parse_git_branch)
   gbout master && git co master && git pull origin master && git co $BRANCH && git rebase master && git co master &&  git merge $BRANCH
 }
+
+
+
+

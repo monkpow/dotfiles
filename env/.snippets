@@ -600,3 +600,29 @@ rbt post | tail -n3 | head | xargs open
 
 ruby -pi.bak -e "gsub(/oldtext/, 'newtext')" README.md 
 DEBUG=express:* node index.js
+
+
+git shortlog -sn
+
+curl -HFrom:sally@carerunner.com datahub.vg1:8081/sites/carerunner1/tags | jq '.'
+
+
+TESTENV=continuous-vagrant BROWSER=firefox SKIPRESET=true cucumber features/login.feature:6
+
+pkill -f node
+
+// local proxy
+ssh control01ea1 -L 8300:localhost:8300
+
+// yjtest user via sudo
+tyamazaki@signal.co
+https://control-yjp.thebrighttag.com/sudo
+sudo as ykawasumi@signal.co
+
+
+for dev in nkrimm alawry aoh vkuo crhyne adunlap; do echo $dev; git log --since=90.days.ago --no-merges --author="$dev" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done;
+
+
+
+ENV=chrome_docker TESTENV=local BROWSER=chrome SKIPRESET=true cucumber features
+docker start --name=selenium-chrome-standalone -e SCREEN_WIDTH=1920 -e SCREEN_HEIGHT=1080 -e TZ=America/Chicago -p 5901:5900 -p 4445:4444 selenium/standalone-chrome-debug

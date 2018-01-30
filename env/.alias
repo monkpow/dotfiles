@@ -1,36 +1,27 @@
 alias alias!="vi ~/dotfiles/env/.alias;. ~/dotfiles/env/.alias"
-alias cadence-debug='cd ~/dev/brighttag/cadence/ui && PRETTY_LOGS=true CADENCE_ENV=vagrant node debug cadence.js'
-alias cadence='cd ~/dev/brighttag/cadence/ui && PRETTY_LOGS=true CADENCE_ENV=vagrant node cadence.js'
-alias check_all_dirs_on_master='DEV_DIR=~/dev/brightag/; unalias ls; for src_dir in `ls $DEV_DIR`; do cd $DEV_DIR/$src_dir && echo $DEV_DIR `git branch | grep "^\* "`; cd $DEV_DIR; done'
-alias clojure='rlwrap java -cp ~/dotfiles/clojure/clojure-1.7.0.jar clojure.main'
-alias cukes="cd ~/dev/brighttag/cadence/ci/ && TESTENV=vagrant_hybrid BROWSER=firefox cucumber"
-alias dev="cd ~/dev/brighttag/ui/control"
-alias dev_stathub="cd ~/dev/brighttag/bt/stathub"
-alias guestvm='ssh nkrimm@guest01vg1'
+alias cukes="BROWSER=firefox SELENV=local TESTENV=continuous-vagrant cucumber"
+alias dev="cd ~/dev/brighttag/ui/control_node"
+alias guestb='ssh bright@guest01vg1'
 alias hosts='sudo vi /etc/hosts'
 alias jira='~/dev/brighttag/jira/jira_client/jira_client'
 alias jump="ssh -A nkrimm@jump01ea1"
 alias jumpdev2="ssh -A nkrimm@ops01dv2"
-alias karma-debug="karma start karma.config.js --browsers=Chrome --single-run=false --debug"
-alias karma_="karma start karma.config.js --browsers=Chrome --single-run=true"
-alias kd="node_modules/karma/bin/karma start karma.config.js --browsers=Chrome --single-run=false --debug"
 alias log5='git log --oneline | head -n5'
 alias ls="ls -lhoG"
-alias ops="ssh -A nkrimm@ops01vg1"
+alias ops="ssh -A bright@ops01vg1"
 alias oz_prod="curl http://oz:9374/manifest/environment/prod/"
 alias oz_stage="curl http://oz:9374/manifest/environment/stage/"
 alias pretty_log="git log --graph --pretty=format:'%Cred%h%Cueset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias profile="vi ~/.bash_profile && . ~/.bash_profile" 
-alias puppet_bomb='cd ~/dev/brighttag/ops/bin && ./vg-manifest | ./bt-ops-instance-find | ./bt-ops-instances-run -u vagrant -i /Users/nik/.vagrant.d/insecure_private_key "sudo puppetd -t"'
-alias recent_branches_new="ruby ~/dotfiles/git/recent_branch_menu"
-alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n50 | uniq"
-alias reset="cd ~/dev/brighttag/cadence/ci && TESTENV=vagrant_hybrid BROWSER=firefox cucumber features/login.feature:6"
+alias recent_branches="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n10 | uniq"
+alias recent_branches_lots="git reflog --date=relative | grep 'moving' | sed -e 's/checkout: moving from/_/' | sed -e 's/\(HEAD@\)//'|  sed -e 's/[{}:]//g' | head -n190 | uniq"
 alias selenium="cd ~/dev/brighttag/cadence/ci/ && java -jar selenium-server-standalone-2.43.0.jar"
+alias shownames="git show --name-only | awk 'NR > 6 { print }'"
 alias snip!="vi ~/dotfiles/env/.snippets"
 alias snip="cat ~/dotfiles/env/.snippets"
 alias start_vms='cd ~/dev/brighttag/vagrant/ops  && vagrant up && cd ~/dev/brighttag/vagrant/guestvm && vagrant up guest01vg1'
 alias stop_vms='cd ~/dev/brighttag/vagrant/ops  && vagrant halt && cd ~/dev/brighttag/vagrant/guestvm && vagrant halt guest01vg1'
-alias tagjs="cd ~/dev/brighttag/bt/js"
-alias update_all_gits='DEV_DIR=~/dev/brighttag; unalias ls; for src_dir in `ls $DEV_DIR`; do cd $DEV_DIR/$src_dir && git co master && git pull origin master; cd $DEV_DIR; done'
 alias fun='cd ~/Projects/express-http-proxy/'
 alias mine='git log --author=krimm --oneline'
+alias pm='git pull origin master'
+alias ap='git add -p'

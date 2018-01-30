@@ -9,5 +9,7 @@
 --ignore-dir=public/js/jade
 --ignore-dir=node_modules
 --ignore-dir=coverage
+--ignore-dir=jsdoc
+--ignore-dir=built
 --ignore-dir=.sass-cache
 --ignore-dir=bower_components

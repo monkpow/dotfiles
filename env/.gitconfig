@@ -21,6 +21,6 @@
   type = cat-file -t
   dump = cat-file -p
 [user]
-  name = Nik Krimm
+  name = Nik 'Fire Eater' Krimm
   email = nkrimm@signal.co
 
