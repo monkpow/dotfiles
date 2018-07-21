@@ -25,3 +25,5 @@ alias fun='cd ~/Projects/express-http-proxy/'
 alias mine='git log --author=krimm --oneline'
 alias pm='git pull origin master'
 alias ap='git add -p'
+alias writer="cd '~/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents'"
+alias writer="cd '/Users/home/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents'"

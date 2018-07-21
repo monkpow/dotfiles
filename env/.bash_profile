@@ -73,3 +73,7 @@ export PATH
 # http://stackoverflow.com/questions/19981065/nodejs-error-emfile-too-many-open-files-on-mac-os
 #ulimit -n 65536
 #ulimit -u 2048
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
