@@ -1,0 +1,17 @@
+./audible-activator.py 
+Username: nkrimm@gmail.com	
+Password: 
+[*] Player ID is 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+activation_bytes: 012ca104
+
+$FFMPEG -loglevel error  -activation_bytes "$ACTIVATION_BYTES" -i "$FROMPATH" -vn -c:a copy "$TOPATH"
+
+~/Downloads/ffmpeg-20171109-723b6ba-macos64-static/bin/ffmpeg -loglevel error -activation_bytes "012ca104" -i ~/Music/iTunes/iTunes\ Media/Audiobooks/Necronomicon\ \(Unabridged\).aax -vn -c:a copy Necronomicom.mpeg
+
+
+
+
+
+~/Downloads/ffmpeg-20171109-723b6ba-macos64-static/bin/ffmpeg -loglevel error -activation_bytes 012ca104 -i ~/Music/iTunes/iTunes\ Media/Audiobooks/Necronomicon\ \(Unabridged\).aax -vn -c:a copy Necronomicon6.m4a
+
+ls -1 | while read f; do sed -e 's/ /\\ /g' | sed -e 's/(/\\(/g' | sed -e 's/)/\\)/g'; done;
