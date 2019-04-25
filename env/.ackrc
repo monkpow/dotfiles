@@ -5,11 +5,6 @@
 --type-set=coffee=.coffee
 --type-set=features=.feature
 --ignore-dir=tmp
---ignore-dir=public/assets/public
---ignore-dir=public/js/jade
---ignore-dir=node_modules
 --ignore-dir=coverage
---ignore-dir=jsdoc
---ignore-dir=built
---ignore-dir=.sass-cache
---ignore-dir=bower_components
+--ignore-dir=log
+--ignore-file=match:/Gemfile.lock/
