@@ -19,7 +19,6 @@ alias writer="cd '~/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents'"
 alias writer="cd '/Users/home/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents'"
 alias nuke_portal="source exports && bundle exec rake build:clean && bundle exec rake build:create_admin_user[test@blue-lava.net] && bundle exec rake build:seeds"
 alias nuke_pm="bundle exec rake build:clean && bundle exec rake build:create_admin_user[nik@blue-lava.net]"
-alias trello="TRELLO_USER=nik@blue-lava.net TRELLO_TOKEN=6e71b1166a1abcd688d1ba01e932a0b1de1ec87ff96199d4d8687abf670b145e TRELLO_KEY=74c8b86edc49880a4f360a697c72d85a 3llo"
 
 #alias my_branches_on_remote="for branch in `git branch -r | grep -v HEAD`;do echo -e `git show --format=\"%ai %ar by %an\" \"$branch\" | head -n 1` \\t$branch; done | sort -r | grep Nik"
 alias kill_pumas="ps aux | grep puma | grep -v grep | awk {'print$2'} | xargs kill"

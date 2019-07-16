@@ -66,7 +66,8 @@ export PATH
 # undo
 # defaults delete com.apple.dock autohide-delay; killall Dock
 
-
+rvm use ruby-2.4.6
+                       
 # to address NodeJS error “EMFILE, too many open files” on Mac OS on TMS
 # http://stackoverflow.com/questions/19981065/nodejs-error-emfile-too-many-open-files-on-mac-os
 #ulimit -n 65536
