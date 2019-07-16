@@ -1,9 +1,7 @@
 # Get the aliases and functions
 
-PATH="/System/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-PATH="~/dev/brighttag/pypr/jira/jira_client/":${PATH}
-PATH="~/dotfiles/clojure/lein":${PATH}
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 export PATH
 

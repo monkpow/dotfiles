@@ -1,0 +1,7 @@
+rake db:drop
+source exports
+bundle exec rake db:create
+bundle exec rake db:schema:load
+bundle exec rake initial_setup['Test','nik@test.net','12345678','NikTest','KrimmTest'] 
+bundle exec rake sync_program_manager
+bundle exec rake import_assessment["./resources/seed_test_1120_ones.csv"]

@@ -18,9 +18,10 @@
   st = status
   br = branch
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  remotes = for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --author Nik
   type = cat-file -t
   dump = cat-file -p
 [user]
   name = Nik 'Fire Eater' Krimm
-  email = nkrimm@signal.co
+  email = nik@blue-lava.net 
 

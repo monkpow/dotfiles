@@ -626,3 +626,5 @@ for dev in nkrimm alawry aoh vkuo crhyne adunlap; do echo $dev; git log --since=
 
 ENV=chrome_docker TESTENV=local BROWSER=chrome SKIPRESET=true cucumber features
 docker start --name=selenium-chrome-standalone -e SCREEN_WIDTH=1920 -e SCREEN_HEIGHT=1080 -e TZ=America/Chicago -p 5901:5900 -p 4445:4444 selenium/standalone-chrome-debug
+
+ps aux | grep puma | awk {'print$2'} | xargs kill

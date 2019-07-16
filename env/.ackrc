@@ -8,3 +8,4 @@
 --ignore-dir=coverage
 --ignore-dir=log
 --ignore-file=match:/Gemfile.lock/
+--ignore-file=match:/.byebug_history/
