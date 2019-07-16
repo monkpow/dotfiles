@@ -3,8 +3,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 
-function gbin {
-    COMMITS=$(git log ..$1 --no-merges --format='%h | %an | %ad | %s' --date=local)
+function gbin { COMMITS=$(git log ..$1 --no-merges --format='%h | %an | %ad | %s' --date=local)
     if [ -n "$COMMITS" ]; then
         echo branch \($1\) has these commits and \($(parse_git_branch)\) does not
         echo "$COMMITS"
@@ -55,6 +54,10 @@ postgreview ()
 function rebase_and_merge {
   BRANCH=$(parse_git_branch)
   gbout master && git co master && git pull origin master && git co $BRANCH && git rebase master && git co master &&  git merge $BRANCH
+}
+
+function list_old_remotes {
+  git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n | grep "Nik '" | grep 'remote'
 }
 
 
