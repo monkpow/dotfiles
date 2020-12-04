@@ -1,3 +1,6 @@
+// good source http://www.ascii-art.de/ascii/c/cat.txt
+
+
 var fs = require('fs'),
   path = require('path');
 

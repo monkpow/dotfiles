@@ -1,7 +1,8 @@
 alias alias!="vi ~/dotfiles/env/.alias;. ~/dotfiles/env/.alias"
 alias dev="cd ~/src/BlueLavaPortal"
 alias hosts='sudo vi /etc/hosts'
-alias log5="git log --oneline | head -n5"
+alias log5="git log --oneline -n5"
+alias ll="git log --oneline -n7"
 alias ls="ls -laoFG"
 alias pretty_log="git log --graph --pretty=format:'%Cred%h%Cueset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias profile="vi ~/.bash_profile && . ~/.bash_profile"
@@ -17,9 +18,11 @@ alias pm='cd ~/src/ProgramManager'
 alias ap='git add -p'
 alias writer="cd '~/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents'"
 alias writer="cd '/Users/home/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents'"
-alias nuke_portal="source exports && bundle exec rake build:clean && bundle exec rake build:create_admin_user[test@blue-lava.net] && bundle exec rake build:seeds"
+alias nuke_portal="bundle exec rake build:clean && bundle exec rake build:create_admin_user[test@blue-lava.net]"
 alias nuke_pm="bundle exec rake build:clean && bundle exec rake build:create_admin_user[nik@blue-lava.net]"
 
 #alias my_branches_on_remote="for branch in `git branch -r | grep -v HEAD`;do echo -e `git show --format=\"%ai %ar by %an\" \"$branch\" | head -n 1` \\t$branch; done | sort -r | grep Nik"
 alias kill_pumas="ps aux | grep puma | grep -v grep | awk {'print$2'} | xargs kill"
 alias project_files="git show --oneline --name-only | grep '/'"
+alias sprint="node ~/src/bl_utilities/jira-client/commands/my-current-sprint.js"
+alias clear_test_db="bundle exec rake db:schema:load RAILS_ENV=test"

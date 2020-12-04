@@ -57,9 +57,16 @@ function rebase_and_merge {
 }
 
 function list_old_remotes {
-  git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n | grep "Nik '" | grep 'remote'
+  git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --since=1.week.ago | sort -k5n -k2M -k3n -k4n | grep "Nik '" | grep 'remote'
 }
 
 
 
-
+function delete_old_remotes
+  for k in $(git branch | sed /\*/d); do 
+    if [ -n "$(git log -1 --since='1 week ago' -s $k)" ]; then
+      echo "cowardly doing nothing"
+      #git branch -D $k
+    fi
+  done
+end
